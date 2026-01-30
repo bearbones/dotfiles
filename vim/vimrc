@@ -1,16 +1,110 @@
 " Personal vim configuration
 " Minimal since vim bindings are primarily used in IDEs (Cursor, CLion, PyCharm)
 
+" =============================================================================
+" Core Settings
+" =============================================================================
 set nocompatible
+set encoding=utf-8
+set background=dark
+
+" Line numbers
 set number
 set relativenumber
+
+" Indentation
 set expandtab
 set tabstop=4
 set shiftwidth=4
 set autoindent
 set smartindent
+
+" Soft wrap (visual only, no inserted newlines)
+set wrap
+set linebreak
+set breakindent
+
+" =============================================================================
+" Search
+" =============================================================================
 set hlsearch
 set incsearch
 set ignorecase
-set smartcase
+set smartcase           " Case-sensitive if uppercase present
+
+" =============================================================================
+" Leader Key
+" =============================================================================
+let mapleader = ","
+let maplocalleader = ","
+
+" =============================================================================
+" Quality of Life
+" =============================================================================
 set backspace=indent,eol,start
+set hidden              " Allow switching buffers without saving
+set autowrite           " Auto-save when switching buffers
+set autoread            " Reload files changed outside vim
+set scrolloff=5         " Keep 5 lines above/below cursor
+set sidescrolloff=5
+
+" Mouse disabled - lets terminal handle selection for cmd+C copying
+set mouse=
+
+" Y yanks to end of line (consistent with D and C)
+nnoremap Y y$
+
+" Clear search highlighting with Leader+/
+nnoremap <leader>/ :nohlsearch<CR>
+
+" Also clear on Escape (double-tap in normal mode)
+nnoremap <silent> <Esc><Esc> :nohlsearch<CR>
+
+" =============================================================================
+" System Clipboard (Leader shortcuts)
+" =============================================================================
+" Leader+y to yank to system clipboard
+nnoremap <leader>y "+y
+vnoremap <leader>y "+y
+nnoremap <leader>Y "+y$
+
+" Leader+p to paste from system clipboard
+nnoremap <leader>p "+p
+nnoremap <leader>P "+P
+vnoremap <leader>p "+p
+
+" =============================================================================
+" Typo Corrections
+" =============================================================================
+command! W w
+command! Q q
+command! Wq wq
+command! WQ wq
+command! Qa qa
+command! QA qa
+command! Wa wa
+command! WA wa
+command! Wqa wqa
+command! WQa wqa
+command! WQA wqa
+
+" =============================================================================
+" Persistent Undo
+" =============================================================================
+if has('persistent_undo')
+    set undofile
+    set undodir=~/.vim/undo
+    silent! call mkdir(&undodir, 'p')
+endif
+set undolevels=1000
+set undoreload=10000
+
+" =============================================================================
+" Visual Improvements
+" =============================================================================
+set showcmd             " Show partial commands
+set showmode            " Show current mode
+set ruler               " Show cursor position
+set laststatus=2        " Always show status line
+set wildmenu            " Better command-line completion
+set wildmode=longest:full,full
