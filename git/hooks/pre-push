@@ -1,0 +1,52 @@
+#!/usr/bin/env bash
+# Block pushes where the diff vs. the remote branch is unusually large.
+# Catches accidental mass-deletions from bad git plumbing / merge commits.
+#
+# Override: LARGE_DIFF_OK=1 git push
+
+THRESHOLD=${LARGE_DIFF_THRESHOLD:-300}
+
+if [ -n "$LARGE_DIFF_OK" ]; then
+    exit 0
+fi
+
+while read local_ref local_sha remote_ref remote_sha; do
+    # Skip branch deletions
+    [ "$local_sha" = "0000000000000000000000000000000000000000" ] && continue
+
+    if [ "$remote_sha" = "0000000000000000000000000000000000000000" ]; then
+        # New branch — compare against the merge-base with the default branch
+        default=$(git symbolic-ref refs/remotes/origin/HEAD 2>/dev/null | sed 's|refs/remotes/origin/||')
+        default=${default:-master}
+        base=$(git merge-base "$local_sha" "origin/$default" 2>/dev/null)
+        [ -z "$base" ] && continue
+    else
+        base="$remote_sha"
+    fi
+
+    file_count=$(git diff --name-only "$base" "$local_sha" 2>/dev/null | wc -l | tr -d ' ')
+
+    if [ "$file_count" -gt "$THRESHOLD" ]; then
+        echo ""
+        echo "🚫  pre-push: LARGE DIFF BLOCKED ($file_count files changed, threshold $THRESHOLD)"
+        echo "    Branch : $local_ref → $remote_ref"
+        echo "    Base   : ${base:0:10}"
+        echo ""
+        echo "    Breakdown of changed file types:"
+        git diff --name-only "$base" "$local_sha" 2>/dev/null \
+            | sed 's|.*/||; s|.*\.||' \
+            | sort | uniq -c | sort -rn | head -10 \
+            | awk '{printf "      %5d  .%s\n", $1, $2}'
+        echo ""
+        echo "    First 20 changed paths:"
+        git diff --name-only "$base" "$local_sha" 2>/dev/null \
+            | head -20 | sed 's/^/      /'
+        echo ""
+        echo "    To push anyway:  LARGE_DIFF_OK=1 git push"
+        echo "    Change threshold: LARGE_DIFF_THRESHOLD=500 git push"
+        echo ""
+        exit 1
+    fi
+done
+
+exit 0
