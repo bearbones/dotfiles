@@ -4,6 +4,7 @@
 
 [core]
     autocrlf = input
+    hooksPath = ~/.git-hooks
 
 [credential]
     helper =

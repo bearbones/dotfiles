@@ -1,0 +1,29 @@
+#!/usr/bin/env bash
+# Pre-commit dispatcher — runs every executable script in checks/ in sorted
+# order. All checks run even if an earlier one fails, so you see the full
+# picture before fixing anything.
+#
+# Skip one check:  SKIP=ruff,debug-leftovers git commit
+# Skip all:        git commit --no-verify
+
+CHECKS_DIR="$(cd "$(dirname "$0")" && pwd)/checks"
+[[ -d "$CHECKS_DIR" ]] || exit 0
+
+SKIP_LIST="${SKIP:-}"
+failed=0
+
+for check in "$CHECKS_DIR"/[0-9]*.sh; do
+    [[ -x "$check" ]] || continue
+    name="$(basename "$check" .sh | sed 's/^[0-9]*-//')"
+
+    if [[ ",${SKIP_LIST}," == *",${name},"* ]]; then
+        printf "  \033[33mskip\033[0m  %s\n" "$name"
+        continue
+    fi
+
+    if ! "$check"; then
+        failed=1
+    fi
+done
+
+exit $failed
