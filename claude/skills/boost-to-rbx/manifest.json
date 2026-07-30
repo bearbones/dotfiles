@@ -1,0 +1,3261 @@
+[
+  {
+    "owners": [
+      "@GameEngine/ads-user-experience-reviewers"
+    ],
+    "batch_id": "ads-user-experience-reviewers-001",
+    "files": [
+      "Client/App.UnitTest/DeviceIdProviderTest.cpp",
+      "Client/App/ads/tests/ReportableAdInstanceTest.cpp",
+      "Client/App/ads/tests/VisibilityCheckDispatcherTest.cpp"
+    ]
+  },
+  {
+    "owners": [
+      "@GameEngine/aiaas"
+    ],
+    "batch_id": "aiaas-001",
+    "files": [
+      "Client/App/generativeAI/tests/GenerationServiceTests.cpp",
+      "Client/App/generativeAI/tests/ModelGenerationJobTests.cpp"
+    ]
+  },
+  {
+    "owners": [
+      "@GameEngine/consumer-app-foundation"
+    ],
+    "batch_id": "consumer-app-foundation-001",
+    "files": [
+      "Client/Analytics/tests/DurationLoggerTest.cpp",
+      "Client/Analytics/tests/PerfDataUtilsTest.cpp",
+      "Client/App.UnitTest/BrowserServiceTest.cpp",
+      "Client/App.UnitTest/LmsClientTest.cpp",
+      "Client/App.UnitTest/LocalStorageTest.cpp",
+      "Client/App.UnitTest/MemStorageTest.cpp",
+      "Client/App/universalapp/tests/MessageBusComponentTest.cpp",
+      "Client/App/universalapp/tests/MessageBusServiceTest.cpp",
+      "Client/App/universalapp/tests/MessageBusTest.cpp",
+      "Client/App/universalapp/tests/TransportLayerTest.cpp",
+      "Client/AppBridge/tests/AccountSettingsEmailRequestTest.cpp",
+      "Client/AppBridge/tests/AppBridge.UnitTest.h",
+      "Client/AppBridge/tests/AppReleaseNumberTest.cpp",
+      "Client/AppBridge/tests/AppTracingTest.cpp",
+      "Client/AppBridge/tests/AudioFocusManagmentTest.cpp",
+      "Client/AppBridge/tests/BaseUrlsTest.cpp",
+      "Client/AppBridge/tests/BrowserTrackerIdRequestTest.cpp",
+      "Client/AppBridge/tests/CheckAppVersionRequestTest.cpp",
+      "Client/AppBridge/tests/DeviceHandleEncryptTest.cpp",
+      "Client/AppBridge/tests/ExperienceActionObservableTest.cpp",
+      "Client/AppBridge/tests/ExperienceContextHolderTest.cpp",
+      "Client/AppBridge/tests/ExperienceCoordinatorTest.cpp",
+      "Client/AppBridge/tests/ExperienceEventDispatcherTest.cpp",
+      "Client/AppBridge/tests/ExperienceFactoryTest.cpp",
+      "Client/AppBridge/tests/FeatureValueTest.cpp",
+      "Client/AppBridge/tests/FunctionMarshallerTest.cpp",
+      "Client/AppBridge/tests/JoinGameParamsTest.cpp",
+      "Client/AppBridge/tests/PreloadedCacheManagerTest.cpp",
+      "Client/AppBridge/tests/RequestWrapperTest.cpp",
+      "Client/AppBridge/tests/ScreenTimeTest.cpp",
+      "Client/AppBridge/tests/SingleSurfaceAppTest.cpp",
+      "Client/AppBridge/tests/StartupMessageServiceTests.cpp",
+      "Client/AppBridge/tests/SurfaceControllerTest.cpp",
+      "Client/AppBridge/tests/TaskSchedulerTest.cpp",
+      "Client/AppBridge/tests/TimerTest.cpp",
+      "Client/AppBridge/tests/UserAppLaunchInfoRequestTest.cpp",
+      "Client/AppBridge/tests/UserControllerTest.cpp",
+      "Client/AppBridge/tests/UserRoleRequestTest.cpp",
+      "Client/AppBridge/tests/main.cpp",
+      "Client/AppBridge/tests/platform/microsoft/universalapp/cookie/CookieProtocolTest.cpp"
+    ]
+  },
+  {
+    "owners": [
+      "@GameEngine/consumer-app-foundation"
+    ],
+    "batch_id": "consumer-app-foundation-002",
+    "files": [
+      "Client/AppBridge/tests/platform/microsoft/universalapp/experience/ExperienceProtocolTest.cpp",
+      "Client/AppBridge/tests/platform/microsoft/universalapp/linking/LinkingProtocolTest.cpp",
+      "Client/AppBridge/tests/universalapp/authentication/LuobuAuthenticationProtocolTest.cpp",
+      "Client/AppBridge/tests/universalapp/cookie/CookieProtocolCoreTest.cpp",
+      "Client/AppBridge/tests/universalapp/experience/ExperienceProtocolCoreTest.cpp",
+      "Client/AppBridge/tests/universalapp/experimentation/ExperimentationProtocolCoreTest.cpp",
+      "Client/AppBridge/tests/universalapp/screen/ScreenProtocolCoreTest.cpp",
+      "Client/AppLifecycleManager/tests/AppLifecycleManagerTest.cpp",
+      "Client/AppLifecycleManager/tests/AppLifecycleObserverServiceTest.cpp",
+      "Client/AppPlatformQoSEmergency/tests/AppPlatformQoSEmergencyHandlerTest.cpp",
+      "Client/AppPlatformQoSEmergency/tests/AppPlatformQoSEmergencyObservableTest.cpp",
+      "Client/DeferredAssetManager/tests/DeferredAssetManagerTest.cpp",
+      "Client/Protocols/Account/tests/SessionCheckManagerTest.cpp",
+      "Client/Protocols/Account/tests/XboxAccountImplTest.cpp",
+      "Client/Protocols/Achievement/tests/PlatformAchievementImplTest.cpp",
+      "Client/Protocols/AppRatingPrompt/tests/AppRatingPromptProtocolCoreTest.cpp",
+      "Client/Protocols/BasicCrashReporter/tests/BasicCrashReporter.test.cpp",
+      "Client/Protocols/BugReporterV2/tests/BugReporterProtocolV2Test.cpp",
+      "Client/Protocols/BugReporterV2/tests/BugReporterServiceV2Test.cpp",
+      "Client/Protocols/DataModelProtocol/tests/DataModelProtocolTest.cpp",
+      "Client/Protocols/ExampleProtocol/tests/DataModel/ExampleProtocolServiceTest.cpp",
+      "Client/Protocols/ExampleProtocol/tests/ExampleProtocolCoreTest.cpp",
+      "Client/Protocols/ExampleV2/tests/ExampleV2HandlerTest.cpp",
+      "Client/Protocols/ExampleV2/tests/ExampleV2ServiceTest.cpp",
+      "Client/Protocols/ExperienceCoordination/tests/CrossExperienceContextualizerTest.cpp",
+      "Client/Protocols/ExperienceCoordination/tests/CrossExperienceExecutorTest.cpp",
+      "Client/Protocols/ExperienceCoordination/tests/CrossExperienceFactoryTest.cpp",
+      "Client/Protocols/FacialAgeEstimation/tests/FacialAgeEstimationProtocolCoreTest.cpp",
+      "Client/Protocols/FacialAgeEstimation/tests/FacialAgeEstimationServiceTest.cpp",
+      "Client/Protocols/Linking/tests/LinkingProtocolCoreTest.cpp",
+      "Client/Protocols/Linking/tests/LinkingServiceTest.cpp",
+      "Client/Protocols/LocalStorage/tests/LocalStorageHandlerTest.cpp",
+      "Client/Protocols/MediaPicker/tests/MediaPickerProtocolTest.cpp",
+      "Client/Protocols/Prefetch/tests/PrefetchProtocolCoreTest.cpp",
+      "Client/Protocols/ProtocolsHelper/tests/ProtocolHandlerUtilTest.cpp",
+      "Client/Protocols/ProtocolsHelper/tests/ProtocolHandlerWinUtilTest.cpp",
+      "Client/Protocols/ProtocolsHelper/tests/SubsystemWeakPtrTest.cpp",
+      "Client/Protocols/Realtime/tests/RealtimeProtocol.test.cpp",
+      "Client/Protocols/SystemDialog/tests/SystemDialogHandlerTest.cpp",
+      "Client/Protocols/SystemInfo/tests/SystemInfoProtocolCoreTest.cpp"
+    ]
+  },
+  {
+    "owners": [
+      "@GameEngine/consumer-app-foundation"
+    ],
+    "batch_id": "consumer-app-foundation-003",
+    "files": [
+      "Client/Protocols/SystemTheme/tests/SystemThemeProtocolTest.cpp",
+      "Client/Protocols/SystemTheme/tests/SystemThemeServiceTest.cpp",
+      "Client/Protocols/Telemetry/tests/TelemetryProtocolTest.cpp",
+      "Client/Protocols/WebView/tests/WebViewConfigTest.cpp",
+      "Client/Protocols/WebView/tests/WebViewProtocolCoreTest.cpp",
+      "Client/Protocols/WebView/tests/WebViewServiceTest.cpp",
+      "Client/Protocols/WidgetData/tests/DefaultWidgetDataProtocolTest.cpp",
+      "Client/RobloxStarter/tests/RobloxStarterTest.cpp"
+    ]
+  },
+  {
+    "owners": [
+      "@GameEngine/content-interop-mesh-import"
+    ],
+    "batch_id": "content-interop-mesh-import-001",
+    "files": [
+      "Client/App.UnitTest/AsyncBackoffDelayMapTest.cpp",
+      "Client/AssetExport/GltfExport/tests/Primitives.test.cpp",
+      "Client/AssetExport/GltfExport/tests/SceneCounts.test.cpp",
+      "Client/AssetImport/AssetImport/tests/Core/CoreTypes.test.cpp",
+      "Client/AssetImport/AssetImport/tests/Core/SimplifierRbxMeshData.test.cpp",
+      "Client/AssetImport/AssetImport/tests/Core/UploadNodeId.test.cpp",
+      "Client/AssetImport/AssetImport/tests/Framework/ImportManager.test.cpp",
+      "Client/AssetImport/AssetImport/tests/Framework/ImportPreset.test.cpp",
+      "Client/AssetImport/AssetImport/tests/Framework/Node.test.cpp",
+      "Client/AssetImport/AssetImport/tests/Framework/SettingsContent.test.cpp",
+      "Client/AssetImport/AssetImport/tests/Framework/SettingsStore.test.cpp",
+      "Client/AssetImport/AssetImport/tests/Framework/TextureContentCache.test.cpp",
+      "Client/AssetImport/AssetImport/tests/HierarchyInspector.utility.cpp",
+      "Client/AssetImport/AssetImport/tests/Status/StatusManager.test.cpp",
+      "Client/AssetImport/AssetImport/tests/Utils/CageUtils.test.cpp",
+      "Client/AssetImport/AssetImport/tests/Utils/ImportUtils.test.cpp",
+      "Client/AssetImport/AssetImport/tests/Utils/MeshUtils.test.cpp",
+      "Client/AssetImport/AssetImport/tests/Utils/RigUtils.test.cpp",
+      "Client/AssetImport/AssetImportIntegration/tests/AssetImportIntegration.test.cpp",
+      "Client/AssetImport/AssetImportIntegration/tests/ImportData.test.cpp",
+      "Client/AssetImport/AssetImportIntegration/tests/InstanceUtils/InstanceBuilder.test.cpp",
+      "Client/AssetImport/AssetImportIntegration/tests/RigBuilder/Attachment.test.cpp",
+      "Client/AssetImport/AssetImportIntegration/tests/RigBuilder/AvatarSetup.test.cpp",
+      "Client/AssetImport/AssetImportIntegration/tests/RigBuilder/CageUtils.test.cpp",
+      "Client/AssetImport/AssetImportIntegration/tests/RigBuilder/CreateBones.test.cpp",
+      "Client/AssetImport/AssetImportIntegration/tests/RigBuilder/ImportAnimation.test.cpp",
+      "Client/AssetImport/AssetImportIntegration/tests/RigBuilder/ImportFacs.test.cpp",
+      "Client/AssetImport/AssetImportIntegration/tests/RigBuilder/Makeup.test.cpp",
+      "Client/AssetImport/AssetImportIntegration/tests/RigBuilder/Motor6D.test.cpp",
+      "Client/AssetImport/AssetImportIntegration/tests/RigBuilder/RigImporter.test.cpp",
+      "Client/AssetImport/AssetImportIntegration/tests/RigBuilder/RigInstanceBuilder.test.cpp",
+      "Client/AssetImport/AssetImportIntegration/tests/RigBuilder/SaveInitialPoses.test.cpp",
+      "Client/AssetImport/AssetImportIntegration/tests/Statuses.test.cpp",
+      "Client/AssetImport/AssetImportIntegration/tests/Utils/IntegrationUtils.test.cpp",
+      "Client/AssetImport/AssetImportSdk/tests/AssetImportSdk.test.cpp",
+      "Client/AssetImport/AssetImportTest.Lib/include/AssetImportTest.Lib/ImportManagerCompare.h",
+      "Client/AssetImport/AssetImportTest.Lib/src/ImportManagerCompare.cpp",
+      "Client/AssetImport/AssetImportUpload/tests/AssetUploadMetrics.test.cpp",
+      "Client/AssetImport/AssetImportUpload/tests/FutureUploadRequest.test.cpp",
+      "Client/AssetImport/AssetImportUpload/tests/KnownAssetCache.test.cpp"
+    ]
+  },
+  {
+    "owners": [
+      "@GameEngine/content-interop-mesh-import"
+    ],
+    "batch_id": "content-interop-mesh-import-002",
+    "files": [
+      "Client/AssetImport/AssetImportUpload/tests/TestUtils/DummyRequest.h",
+      "Client/AssetImport/AssetImportUpload/tests/UploadRequestGroup.test.cpp",
+      "Client/AssetImport/AssetImportUpload/tests/UploadSession.test.cpp",
+      "Client/AssetImport/Filetypes/FbxImport/tests/Core/ConvertFbxMeshToRbx.test.cpp",
+      "Client/AssetImport/Filetypes/FbxImport/tests/Core/FbxAnimLoader.test.cpp",
+      "Client/AssetImport/Filetypes/FbxImport/tests/Core/FbxMeshJointLoader.test.cpp",
+      "Client/AssetImport/Filetypes/FbxImport/tests/Core/FbxMeshSkinLoader.test.cpp",
+      "Client/AssetImport/Filetypes/FbxImport/tests/Core/FbxMeshUVImport.test.cpp",
+      "Client/AssetImport/Filetypes/FbxImport/tests/Core/FbxSceneLoader.test.cpp",
+      "Client/AssetImport/Filetypes/FbxImport/tests/Core/FbxSceneMeshParser.test.cpp",
+      "Client/AssetImport/Filetypes/FbxImport/tests/HierarchyInspector.utility.cpp",
+      "Client/AssetImport/Filetypes/FbxImport/tests/Parsers/Fbx/FbxIsTrivialMaterial.test.cpp",
+      "Client/AssetImport/Filetypes/FbxImport/tests/Parsers/Fbx/FbxParser.test.cpp",
+      "Client/AssetImport/Filetypes/GltfImport/tests/Core/GltfFacsLoader.test.cpp",
+      "Client/AssetImport/Filetypes/GltfImport/tests/Core/GltfLoadTangents.test.cpp",
+      "Client/AssetImport/Filetypes/GltfImport/tests/Core/GltfMeshJointLoader.test.cpp",
+      "Client/AssetImport/Filetypes/GltfImport/tests/Core/GltfMeshSkinLoader.test.cpp",
+      "Client/AssetImport/Filetypes/GltfImport/tests/Core/GltfNameClean.test.cpp",
+      "Client/AssetImport/Filetypes/GltfImport/tests/Parsers/GltfParser.test.cpp",
+      "Client/AssetImport/Text2Mesh/tests/Text2Mesh.test.cpp"
+    ]
+  },
+  {
+    "owners": [
+      "@GameEngine/content-interop-mesh-import",
+      "@GameEngine/game-engine-avatar"
+    ],
+    "batch_id": "content-interop-mesh-import-001",
+    "files": [
+      "Client/App.UnitTest/AssetServiceTests.cpp"
+    ]
+  },
+  {
+    "owners": [
+      "@GameEngine/content-interop-mesh-import",
+      "@GameEngine/game-engine-studio-optional-all"
+    ],
+    "batch_id": "content-interop-mesh-import-001",
+    "files": [
+      "Client/RobloxStudio/Features/Importing/AssetImportService/tests/AssetImportService.test.cpp",
+      "Client/RobloxStudio/Features/Importing/LegacyImporters/tests/BulkImport/BulkImportModel.test.cpp",
+      "Client/RobloxStudio/Features/Importing/LegacyImporters/tests/BulkImport/BulkImporterAssetTypeHelper.test.cpp",
+      "Client/RobloxStudio/Features/Importing/LegacyImporters/tests/BulkImport/BulkImporterJob.test.cpp",
+      "Client/RobloxStudio/Features/Importing/LegacyImporters/tests/BulkImport/BulkImporterMock.test.cpp",
+      "Client/RobloxStudio/Features/Importing/LegacyImporters/tests/BulkImport/MeshSplitting/ImagePassThrough.test.cpp",
+      "Client/RobloxStudio/Features/Importing/LegacyImporters/tests/BulkImport/MeshSplitting/MeshPassThrough.test.cpp",
+      "Client/RobloxStudio/Features/Importing/LegacyImporters/tests/BulkImport/MeshSplitting/MeshSplitter.test.cpp",
+      "Client/RobloxStudio/Features/Importing/LegacyImporters/tests/BulkImport/MeshSplitting/MeshSplitterMock.test.cpp",
+      "Client/RobloxStudio/Features/Importing/LegacyImporters/tests/BulkImport/MeshSplitting/MeshSplitterModel.test.cpp",
+      "Client/RobloxStudio/Features/Importing/LegacyImporters/tests/BulkImport/MeshSplitting/MeshSplitterName.test.cpp",
+      "Client/RobloxStudio/Features/Importing/LegacyImporters/tests/BulkImport/MeshSplitting/MeshSplittingCancel.test.cpp",
+      "Client/RobloxStudio/Features/Importing/LegacyImporters/tests/BulkImport/MeshSplitting/MeshSplittingTestFixture.cpp",
+      "Client/RobloxStudio/Features/Importing/LegacyImporters/tests/BulkImport/UploadAliasRequest.test.cpp",
+      "Client/RobloxStudio/Features/Importing/LegacyImporters/tests/BulkImport/UploadImageRequest.test.cpp",
+      "Client/RobloxStudio/Features/Importing/LegacyImporters/tests/BulkImport/UploadMeshRequest.test.cpp",
+      "Client/RobloxStudio/Features/Importing/LegacyImporters/tests/BulkImport/UploadServerMock.cpp",
+      "Client/RobloxStudio/Features/Importing/LegacyImporters/tests/FbxHandling/FbxMemoryAllocator.test.cpp",
+      "Client/RobloxStudio/Features/Importing/LegacyImporters/tests/FbxHandling/MeshImport.test.cpp",
+      "Client/RobloxStudio/Features/Importing/LegacyImporters/tests/FbxHandling/MeshImportTestUtil.h",
+      "Client/RobloxStudio/Features/Importing/Text2MeshStudio/tests/Text2MeshBaseDataModelObserver.test.cpp"
+    ]
+  },
+  {
+    "owners": [
+      "@GameEngine/content-quality",
+      "@GameEngine/creator-services-translation"
+    ],
+    "batch_id": "content-quality-001",
+    "files": [
+      "Client/App/internationalization/tests/PolicyServiceTest.cpp"
+    ]
+  },
+  {
+    "owners": [
+      "@GameEngine/crash-reporter-and-hang-monitor"
+    ],
+    "batch_id": "crash-reporter-and-hang-monitor-001",
+    "files": [
+      "Client/Protocols/AppHangMonitor/tests/AppHangMonitor.test.cpp",
+      "Client/Protocols/AppHangMonitor/tests/InferredHangTracker.test.cpp"
+    ]
+  },
+  {
+    "owners": [
+      "@GameEngine/creator-services"
+    ],
+    "batch_id": "creator-services-001",
+    "files": [
+      "Client/App.UnitTest/LogServiceTest.cpp"
+    ]
+  },
+  {
+    "owners": [
+      "@GameEngine/creator-services-communication"
+    ],
+    "batch_id": "creator-services-communication-001",
+    "files": [
+      "Client/App.UnitTest/DomainCardinalityLimiterTests.cpp",
+      "Client/App.UnitTest/HttpServiceTests.cpp",
+      "Client/App.UnitTest/InternalMessagingServiceTest.cpp",
+      "Client/App.UnitTest/MatchmakingServiceTest.cpp",
+      "Client/App.UnitTest/MessagingServiceTest.cpp",
+      "Client/App.UnitTest/MessagingServiceTestHelper.h",
+      "Client/App.UnitTest/SecretTests.cpp",
+      "Client/App.UnitTest/ServerRestartNotificationsTest.cpp",
+      "Client/App.UnitTest/WebStreamClientTests.cpp",
+      "Client/App/experiencejoin/tests/AuthorizeTeleportRequestTest.cpp",
+      "Client/App/experiencejoin/tests/AuthorizeTeleportResponseTest.cpp",
+      "Client/App/experiencejoin/tests/JoinApiClientTest.cpp",
+      "Client/App/experiencejoin/tests/JoinApiUtilTest.cpp",
+      "Client/App/experiencejoin/tests/ReservedServersApiClientTest.cpp",
+      "Client/App/experiencejoin/tests/TeleportValidatorTest.cpp",
+      "Client/AppBridge/tests/GameJoinUtilTest.cpp",
+      "Client/AppBridge/tests/TeleportOptionsTest.cpp",
+      "Client/AppBridge/tests/TeleportServiceMetricsTests.cpp",
+      "Client/AppBridge/tests/TeleportTests.cpp",
+      "Client/AppBridge/tests/TeleportTests.h",
+      "Client/AppBridge/tests/VerifyTeleportOptions.h",
+      "Client/RealtimeClient/tests/CsmConnectionManagerTest.cpp"
+    ]
+  },
+  {
+    "owners": [
+      "@GameEngine/creator-services-data"
+    ],
+    "batch_id": "creator-services-data-001",
+    "files": [
+      "Client/App.UnitTest/BadgeServiceTests.cpp",
+      "Client/App.UnitTest/DataStoreOnUpdateTests.cpp",
+      "Client/App.UnitTest/DataStoreServiceMetricsTests.cpp",
+      "Client/App.UnitTest/DataStoreServiceTests.cpp",
+      "Client/App.UnitTest/MemoryStoreServiceTests.cpp",
+      "Client/App.UnitTest/util/UserTest.cpp",
+      "Client/App.UnitTest/v8datamodel/PlayerDataRecordConfigTests.cpp",
+      "Client/App.UnitTest/v8datamodel/PlayerDataRecordTests.cpp",
+      "Client/App.UnitTest/v8datamodel/PlayerDataServiceTests.cpp",
+      "Client/App.UnitTest/v8datamodel/PlayerDataTests.cpp",
+      "Client/App/script/tests/LuaUserTest.cpp"
+    ]
+  },
+  {
+    "owners": [
+      "@GameEngine/creator-services-data",
+      "@GameEngine/game-engine-languages",
+      "@GameEngine/game-engine-languages-ecosystem"
+    ],
+    "batch_id": "creator-services-data-001",
+    "files": [
+      "Client/App.UnitTest/DataStoreSerializeTest.cpp"
+    ]
+  },
+  {
+    "owners": [
+      "@GameEngine/creator-services-platform"
+    ],
+    "batch_id": "creator-services-platform-001",
+    "files": [
+      "Client/App.UnitTest/ConvertVariantToJsonTest.cpp",
+      "Client/App.UnitTest/ExperienceAuthTests.cpp",
+      "Client/App.UnitTest/opencloud/OpenCloudServiceTests.cpp"
+    ]
+  },
+  {
+    "owners": [
+      "@GameEngine/creator-services-translation"
+    ],
+    "batch_id": "creator-services-translation-001",
+    "files": [
+      "Client/App/internationalization/tests/AnalyticsServiceProcessorTest.cpp",
+      "Client/App/internationalization/tests/AsyncPlayerCallbackQueueHandlerTest.cpp",
+      "Client/App/internationalization/tests/BoostUnitTestFixes.h",
+      "Client/App/internationalization/tests/ClientTranslationLRUCacheTest.cpp",
+      "Client/App/internationalization/tests/CloudLocalizationTableTest.cpp",
+      "Client/App/internationalization/tests/DynamicTranslationProcessorTest.cpp",
+      "Client/App/internationalization/tests/DynamicTranslationSenderTest.cpp",
+      "Client/App/internationalization/tests/DynamicTranslationTokenizerTest.cpp",
+      "Client/App/internationalization/tests/IntegrityCheckedProcessorMockedTest.cpp",
+      "Client/App/internationalization/tests/IntegrityCheckedProcessorTestUtil.cpp",
+      "Client/App/internationalization/tests/IntegrityCheckedProcessorTestUtil.h",
+      "Client/App/internationalization/tests/LocaleIdTest.cpp",
+      "Client/App/internationalization/tests/LocaleManifestTest.cpp",
+      "Client/App/internationalization/tests/LocalizationExportToCSVsTest.cpp",
+      "Client/App/internationalization/tests/LocalizationFormatTest.cpp",
+      "Client/App/internationalization/tests/LocalizationImportFromCSVsTest.cpp",
+      "Client/App/internationalization/tests/LocalizationServiceTest.cpp",
+      "Client/App/internationalization/tests/LocalizationTableAnalyticsSenderTest.cpp",
+      "Client/App/internationalization/tests/LocalizationTableTest.cpp",
+      "Client/App/internationalization/tests/LocalizationTestsCommon.cpp",
+      "Client/App/internationalization/tests/LocalizationTestsCommon.h",
+      "Client/App/internationalization/tests/LocalizationUtilsTest.cpp",
+      "Client/App/internationalization/tests/PlayerEmulatorServiceTests.cpp",
+      "Client/App/internationalization/tests/ServerToClientSenderTest.cpp",
+      "Client/App/internationalization/tests/TextScraperTest.cpp",
+      "Client/App/internationalization/tests/TranslationLocaleIdTest.cpp",
+      "Client/Transcoders/Shared/ACRLocalizationCodec/tests/ACRLocalizationCodecTest.cpp"
+    ]
+  },
+  {
+    "owners": [
+      "@GameEngine/creator-services-translation",
+      "@GameEngine/engine-datamodel-workflow"
+    ],
+    "batch_id": "creator-services-translation-001",
+    "files": [
+      "Client/App/experienceStateCapture/tests/BatchFileSystemSenderTest.cpp",
+      "Client/App/experienceStateCapture/tests/ExperienceStateRecordingServiceTest.cpp",
+      "Client/App/experienceStateCapture/tests/FileUploaderTest.cpp",
+      "Client/App/experienceStateCapture/tests/NumPyExporterTest.cpp",
+      "Client/App/experienceStateCapture/tests/NumPyWriterTest.cpp",
+      "Client/App/experienceStateCapture/tests/VisibilityUtilitiesTest.cpp"
+    ]
+  },
+  {
+    "owners": [
+      "@GameEngine/engine-datamodel-workflow"
+    ],
+    "batch_id": "engine-datamodel-workflow-001",
+    "files": [
+      "Client/App/v8datamodel/tests/DataModelChangeTracking/ChangeTrackingVariantSerializationTest.cpp",
+      "Client/App/v8datamodel/tests/DataModelChangeTracking/DataModelChangeBufferTest.cpp"
+    ]
+  },
+  {
+    "owners": [
+      "@GameEngine/experience-signals-platform"
+    ],
+    "batch_id": "experience-signals-platform-001",
+    "files": [
+      "Client/App.UnitTest/AnalyticsServiceTest.cpp"
+    ]
+  },
+  {
+    "owners": [
+      "@GameEngine/game-engine-animation"
+    ],
+    "batch_id": "game-engine-animation-001",
+    "files": [
+      "Client/App.UnitTest/PathfindingTest.cpp",
+      "Client/App/avatar/tests/animation/ADFTrackTest.cpp",
+      "Client/App/avatar/tests/animation/AnimationClipTest.cpp",
+      "Client/App/avatar/tests/animation/AnimationContextTest.cpp",
+      "Client/App/avatar/tests/animation/AnimationMaskTest.cpp",
+      "Client/App/avatar/tests/animation/AnimationPerfAndMemoryTest.cpp",
+      "Client/App/avatar/tests/animation/AnimationPoseTest.cpp",
+      "Client/App/avatar/tests/animation/AnimationTrackTest.cpp",
+      "Client/App/avatar/tests/animation/AnimatorAnalyticsIkControlTest.cpp",
+      "Client/App/avatar/tests/animation/AnimatorAnalyticsLodTest.cpp",
+      "Client/App/avatar/tests/animation/AnimatorAnalyticsTests.cpp",
+      "Client/App/avatar/tests/animation/AnimatorNonSAReplicationTest.cpp",
+      "Client/App/avatar/tests/animation/AnimatorReplicationTest.cpp",
+      "Client/App/avatar/tests/animation/AnimatorTest.cpp",
+      "Client/App/avatar/tests/animation/ArticulatedJointTest.cpp",
+      "Client/App/avatar/tests/animation/ClipEvaluatorTest.cpp",
+      "Client/App/avatar/tests/animation/CurveAnimationTest.cpp",
+      "Client/App/avatar/tests/animation/CurvesTest.cpp",
+      "Client/App/avatar/tests/animation/DataModelRigWatcherTest.cpp",
+      "Client/App/avatar/tests/animation/FaceAnimationTests.cpp",
+      "Client/App/avatar/tests/animation/GetTrackByAnimationIdTest.cpp",
+      "Client/App/avatar/tests/animation/HumanoidRigDescriptionTest.cpp",
+      "Client/App/avatar/tests/animation/IkControlRigUpdateTest.cpp",
+      "Client/App/avatar/tests/animation/IkLimitTest.cpp",
+      "Client/App/avatar/tests/animation/KeyframeSequenceTest.cpp",
+      "Client/App/avatar/tests/animation/PoseAdjusterTest.cpp",
+      "Client/App/avatar/tests/animation/PoseTest.cpp",
+      "Client/App/avatar/tests/animation/PropertyAnimationTestFixture.cpp",
+      "Client/App/avatar/tests/animation/RetargeterTest.cpp",
+      "Client/App/avatar/tests/animation/RigTest.cpp",
+      "Client/App/avatar/tests/animation/RobustRetargeterTest.cpp",
+      "Client/App/avatar/tests/animation/RootMotionTest.cpp",
+      "Client/App/avatar/tests/animation/TPoseAdjusterEngineDefaultVersionTest.cpp",
+      "Client/App/avatar/tests/animation/TPoseAdjusterEngineFactoryTest.cpp",
+      "Client/App/avatar/tests/animation/TPoseAdjusterEngineV02Test.cpp",
+      "Client/App/avatar/tests/animation/TPoseAdjusterTestUtils.h",
+      "Client/App/avatar/tests/animation/ValueCurveVariantMathTest.cpp",
+      "Client/App/avatar/tests/animation/ValueCurvesTest.cpp",
+      "Client/App/avatar/tests/animation/lod/AnimationLodConfigBuildersTests.cpp",
+      "Client/App/avatar/tests/animation/lod/AnimationLodConfigUtilsTests.cpp"
+    ]
+  },
+  {
+    "owners": [
+      "@GameEngine/game-engine-animation"
+    ],
+    "batch_id": "game-engine-animation-002",
+    "files": [
+      "Client/App/avatar/tests/animation/lod/AnimationLodControllerV2Test.cpp",
+      "Client/App/avatar/tests/animation/lod/FadingLodWeightTest.cpp",
+      "Client/App/avatar/tests/animation/lod/FadingLodWeightTestV2.cpp",
+      "Client/App/avatar/tests/animation/lod/LodPointTest.cpp",
+      "Client/App/avatar/tests/animation/lod/PidControllerTest.cpp"
+    ]
+  },
+  {
+    "owners": [
+      "@GameEngine/game-engine-audio"
+    ],
+    "batch_id": "game-engine-audio-001",
+    "files": [
+      "Client/App/audio/tests/GridCellTest.cpp",
+      "Client/App/audio/tests/InterpolatingDelayTest.cpp",
+      "Client/App/audio/tests/PathfinderTest.cpp",
+      "Client/App/audio/tests/SmootherTest.cpp",
+      "Client/App/audio/tests/SoundShimTest.cpp",
+      "Client/App/audio/tests/SoundTest.cpp",
+      "Client/App/audio/tests/SoundTestUtils.cpp",
+      "Client/App/audio/tests/VolumetricEmitterTest.cpp",
+      "Client/App/audio/tests/VorbisFileWriterTest.cpp",
+      "Client/App/audio/tests/include/audio/SoundTestUtils.h"
+    ]
+  },
+  {
+    "owners": [
+      "@GameEngine/game-engine-avatar"
+    ],
+    "batch_id": "game-engine-avatar-001",
+    "files": [
+      "Client/App.UnitTest/BatchThumbnailTests.cpp",
+      "Client/App.UnitTest/LCQualityValidationUtil/BoundingBoxManipulationTest.cpp",
+      "Client/App.UnitTest/LCQualityValidationUtil/CalculateClosestPointOnTriangleTest.cpp",
+      "Client/App.UnitTest/LCQualityValidationUtil/CalculateMaxCageDistanceTest.cpp",
+      "Client/App.UnitTest/LCQualityValidationUtil/CoplanarTriangleIntersectionTest.cpp",
+      "Client/App.UnitTest/LCQualityValidationUtil/ValidatePropertiesSensibleTest.cpp",
+      "Client/App.UnitTest/MeshPartFeatureTest.cpp",
+      "Client/App.UnitTest/RbfTest.cpp",
+      "Client/App.UnitTest/v8datamodel/PlayersUserPresenceTest.cpp",
+      "Client/App/avatar/tests/AccessoryDescriptionTest.cpp",
+      "Client/App/avatar/tests/BoneTest.cpp",
+      "Client/App/avatar/tests/CageMeshProjectionTest.cpp",
+      "Client/App/avatar/tests/CreatePlayerAndLocalCharacterHelper.h",
+      "Client/App/avatar/tests/DefaultCharacterTest.cpp",
+      "Client/App/avatar/tests/FaceAnimationRigHelpersTests.cpp",
+      "Client/App/avatar/tests/FaceAnimationTestsCommon.cpp",
+      "Client/App/avatar/tests/FileMeshDataToChunksTest.cpp",
+      "Client/App/avatar/tests/HSRAssetDataExtractorTest.cpp",
+      "Client/App/avatar/tests/HumanoidConstantsTests.cpp",
+      "Client/App/avatar/tests/MeshOptimizerTest.cpp",
+      "Client/App/avatar/tests/PlayerCharacterLoaderTest.cpp",
+      "Client/App/avatar/tests/PlayerTest.cpp",
+      "Client/App/avatar/tests/R15PlusFlattenTest.cpp",
+      "Client/App/avatar/tests/ReplaceBodyPartR15Test.cpp",
+      "Client/App/avatar/tests/UGCValidationServiceTest.cpp",
+      "Client/App/avatar/tests/settings/AbilityRulesTest.cpp",
+      "Client/App/avatar/tests/settings/AccessoryRulesTest.cpp",
+      "Client/App/avatar/tests/settings/AnimationRulesTest.cpp",
+      "Client/App/avatar/tests/settings/AvatarRulesTest.cpp",
+      "Client/App/avatar/tests/settings/AvatarSettingsTest.cpp",
+      "Client/App/avatar/tests/settings/BodyRulesTest.cpp",
+      "Client/App/avatar/tests/settings/ClothingRulesTest.cpp",
+      "Client/App/avatar/tests/settings/CollisionRulesTest.cpp",
+      "Client/App/v8datamodel/tests/Player.test.cpp"
+    ]
+  },
+  {
+    "owners": [
+      "@GameEngine/game-engine-avatar",
+      "@GameEngine/game-engine-physics"
+    ],
+    "batch_id": "game-engine-avatar-001",
+    "files": [
+      "Client/App.UnitTest/humanoid/DescriptionHelperTest.cpp",
+      "Client/App.UnitTest/humanoid/HumanoidTest.cpp"
+    ]
+  },
+  {
+    "owners": [
+      "@GameEngine/game-engine-avatar-emotion"
+    ],
+    "batch_id": "game-engine-avatar-emotion-001",
+    "files": [
+      "Client/App.UnitTest/compression/HuffmanTest.cpp",
+      "Client/App/avatar/tests/animation/AnimationStreamTrackTest.cpp",
+      "Client/App/avatar/tests/animation/TrackerAnimationStreamSourceTests.cpp",
+      "Client/App/avatar/tests/animation/TrackerStreamAnimationTest.cpp",
+      "Client/App/avatar/tests/animation/realtime/AudioInputProcessorTest.cpp",
+      "Client/App/avatar/tests/animation/realtime/LoomTrackerEngineTest.cpp",
+      "Client/App/avatar/tests/animation/realtime/RTAnimationTrackerTest.cpp",
+      "Client/App/avatar/tests/animation/realtime/TestUtil.cpp",
+      "Client/App/avatar/tests/animation/realtime/TestUtil.h",
+      "Client/App/avatar/tests/animation/realtime/VideoInputProcessorTest.cpp",
+      "Client/App/avatar/tests/messaging/FacsCompressionTests.cpp",
+      "Client/App/avatar/tests/messaging/ServiceTests.cpp",
+      "Client/App/avatar/tests/tracker/FaceAnimatorServiceTest.cpp",
+      "Client/App/avatar/tests/tracker/LoomTrackerTest.cpp",
+      "Client/App/avatar/tests/tracker/LoomTrackerTestUtils.cpp",
+      "Client/App/avatar/tests/tracker/LoomTrackerTestUtils.h",
+      "Client/App/avatar/tests/tracker/QueueProcessorThreadTest.cpp",
+      "Client/App/avatar/tests/tracker/TrackerLodControllerTest.cpp",
+      "Client/App/avatar/tests/tracker/TrackerWorkerThreadTest.cpp"
+    ]
+  },
+  {
+    "owners": [
+      "@GameEngine/game-engine-avatar-marketplace"
+    ],
+    "batch_id": "game-engine-avatar-marketplace-001",
+    "files": [
+      "Client/App/avatar/tests/AvatarEditorServiceTest.cpp"
+    ]
+  },
+  {
+    "owners": [
+      "@GameEngine/game-engine-avatar-personalization"
+    ],
+    "batch_id": "game-engine-avatar-personalization-001",
+    "files": [
+      "Client/App.UnitTest/humanoid/HumanoidDescriptionTest.cpp",
+      "Client/AssetImport/AvatarGeneration/tests/AutoSetup.test.cpp",
+      "Client/AssetImport/AvatarGeneration/tests/EyeColor.test.cpp",
+      "Client/RobloxStudio/Features/Importing/Photo2AvatarStudio/tests/AvatarGenerationDataModelObserver.test.cpp"
+    ]
+  },
+  {
+    "owners": [
+      "@GameEngine/game-engine-avatar-personalization",
+      "@GameEngine/game-engine-datamodel"
+    ],
+    "batch_id": "game-engine-avatar-personalization-001",
+    "files": [
+      "Client/App.UnitTest/serialization/ContentAtomicSerializationTest.cpp"
+    ]
+  },
+  {
+    "owners": [
+      "@GameEngine/game-engine-cli"
+    ],
+    "batch_id": "game-engine-cli-001",
+    "files": [
+      "Client/App.UnitTest/InstanceTreeToStringTest.cpp",
+      "Client/App.UnitTest/PKeyMapGeneratorTest.cpp",
+      "Client/Project/tests/ProgramOptionsUtility.test.cpp",
+      "Client/Project/tests/Project.test.cpp",
+      "Client/Project/tests/RojoProjectParser.test.cpp"
+    ]
+  },
+  {
+    "owners": [
+      "@GameEngine/game-engine-cli",
+      "@GameEngine/game-engine-studio-debugger",
+      "@GameEngine/game-engine-studio-optional-all"
+    ],
+    "batch_id": "game-engine-cli-001",
+    "files": [
+      "Client/JsonRpc/tests/DecoratedMessageStreamFixture.cpp",
+      "Client/JsonRpc/tests/TestBackoffTimer.cpp",
+      "Client/JsonRpc/tests/TestClient.cpp",
+      "Client/JsonRpc/tests/TestClientAndServer.cpp",
+      "Client/JsonRpc/tests/TestErrorObject.cpp",
+      "Client/JsonRpc/tests/TestIOStreamMessageStream.cpp",
+      "Client/JsonRpc/tests/TestInvocation.cpp",
+      "Client/JsonRpc/tests/TestManagedMessageStream.cpp",
+      "Client/JsonRpc/tests/TestMemoryMessageStream.cpp",
+      "Client/JsonRpc/tests/TestMessageStreamDecorator.cpp",
+      "Client/JsonRpc/tests/TestMultiplexMessageStream.cpp",
+      "Client/JsonRpc/tests/TestRequestBuilder.cpp",
+      "Client/JsonRpc/tests/TestRequestMessage.cpp",
+      "Client/JsonRpc/tests/TestResponseBuilder.cpp",
+      "Client/JsonRpc/tests/TestResponseId.cpp",
+      "Client/JsonRpc/tests/TestResponseMessage.cpp",
+      "Client/JsonRpc/tests/TestServer.cpp",
+      "Client/JsonRpc/tests/TestTcpMessageStream.cpp",
+      "Client/LuauLocalDebug/tests/AssetDeliveryProxyTest.cpp",
+      "Client/LuauLocalDebug/tests/FileSyncUtilsTest.cpp",
+      "Client/LuauLocalDebug/tests/IncrementalPatchBuilderTest.cpp"
+    ]
+  },
+  {
+    "owners": [
+      "@GameEngine/game-engine-client-telemetry"
+    ],
+    "batch_id": "game-engine-client-telemetry-001",
+    "files": [
+      "Client/App.UnitTest/AnalyticsTest.cpp",
+      "Client/App.UnitTest/EventIngestServiceTest.cpp",
+      "Client/RobloxTelemetry/Bindings/tests/TelemetryBridgeTest.cpp",
+      "Client/RobloxTelemetry/tests/AttributesTest.cpp",
+      "Client/RobloxTelemetry/tests/BatchManagerTest.cpp",
+      "Client/RobloxTelemetry/tests/IRobloxTelemetryImplTest.cpp",
+      "Client/RobloxTelemetry/tests/RobloxTelemetryInterfaceTest.cpp",
+      "Client/RobloxTelemetry/tests/RobloxTelemetryTest.cpp",
+      "Client/RobloxTelemetry/tests/RobloxTelemetryUrlsTest.cpp",
+      "Client/RobloxTelemetry/tests/V2EventBaseTest.cpp",
+      "Client/RobloxTelemetry/tests/V2PointStateTest.cpp"
+    ]
+  },
+  {
+    "owners": [
+      "@GameEngine/game-engine-client-telemetry",
+      "@GameEngine/game-engine-systems-core"
+    ],
+    "batch_id": "game-engine-client-telemetry-001",
+    "files": [
+      "Client/EngineTelemetry/tests/EngineStabilityStatsTest.cpp"
+    ]
+  },
+  {
+    "owners": [
+      "@GameEngine/game-engine-collision",
+      "@GameEngine/game-engine-geometry"
+    ],
+    "batch_id": "game-engine-collision-001",
+    "files": [
+      "Client/ConvexDecomp/tests/VoxelHACD.test.cpp"
+    ]
+  },
+  {
+    "owners": [
+      "@GameEngine/game-engine-consoles"
+    ],
+    "batch_id": "game-engine-consoles-001",
+    "files": [
+      "Client/Applications/PlayStationClient/PlayStationBridge/tests/commerce/PlayStationIAPManagerTest.cpp"
+    ]
+  },
+  {
+    "owners": [
+      "@GameEngine/game-engine-creator-store"
+    ],
+    "batch_id": "game-engine-creator-store-001",
+    "files": [
+      "Client/App.UnitTest/AssetCounterServiceTest.cpp",
+      "Client/CreatorStore/tests/CreatorStoreServiceTest.cpp"
+    ]
+  },
+  {
+    "owners": [
+      "@GameEngine/game-engine-creator-store",
+      "@GameEngine/game-engine-studio-optional-all"
+    ],
+    "batch_id": "game-engine-creator-store-001",
+    "files": [
+      "Client/RobloxStudio/Platform/WebBrowserManager/tests/WebBrowserWidget.test.cpp"
+    ]
+  },
+  {
+    "owners": [
+      "@GameEngine/game-engine-data-model-patcher"
+    ],
+    "batch_id": "game-engine-data-model-patcher-001",
+    "files": [
+      "Client/App.UnitTest/AppConfigurationTest.cpp",
+      "Client/DataModelPatcher/tests/DataModelPatchBackgroundLoaderTest.cpp",
+      "Client/DataModelPatcher/tests/DataModelPatchConfigCollectionTest.cpp",
+      "Client/DataModelPatcher/tests/DataModelPatchConfigTest.cpp",
+      "Client/DataModelPatcher/tests/DataModelPatchConfigurerTest.cpp",
+      "Client/DataModelPatcher/tests/DataModelPatchDeploymentTest.cpp",
+      "Client/DataModelPatcher/tests/DataModelPatchProviderTest.cpp",
+      "Client/DataModelPatcher/tests/DataModelPatcherTest.cpp"
+    ]
+  },
+  {
+    "owners": [
+      "@GameEngine/game-engine-datamodel"
+    ],
+    "batch_id": "game-engine-datamodel-001",
+    "files": [
+      "Client/App.UnitTest/AuroraService.test.cpp",
+      "Client/App.UnitTest/BinaryStringTest.cpp",
+      "Client/App.UnitTest/CastingTest.cpp",
+      "Client/App.UnitTest/ConflictingEnums.test.cpp",
+      "Client/App.UnitTest/CustomEvents.cpp",
+      "Client/App.UnitTest/DataModelInstanceIdTest.cpp",
+      "Client/App.UnitTest/InstancePoolTest.cpp",
+      "Client/App.UnitTest/InstanceTests/Instance.test.cpp",
+      "Client/App.UnitTest/InstanceTests/InstanceRefTest.cpp",
+      "Client/App.UnitTest/ReflectionTest.cpp",
+      "Client/App.UnitTest/SettingsTest.cpp",
+      "Client/App.UnitTest/XmlElement.cpp",
+      "Client/App.UnitTest/serialization/RobloxSerializerTest.cpp",
+      "Client/App.UnitTest/serialization/SerializationTest.cpp",
+      "Client/App.UnitTest/serialization/SerializationTest.h",
+      "Client/App.UnitTest/serialization/VariantSerializerTest.cpp",
+      "Client/App.UnitTest/v8datamodel/DataModel.test.cpp",
+      "Client/App.UnitTest/v8datamodel/ReflectionServiceTests.cpp",
+      "Client/EngineContext/tests/src/EngineContextIntegration.test.cpp",
+      "Client/EngineContext/tests/src/EngineContextLifecycle.test.cpp",
+      "Client/EngineContext/tests/src/EngineModule.test.cpp",
+      "Client/EngineContext/tests/src/Handle.test.cpp",
+      "Client/EngineContext/tests/src/NotificationWarehouse.test.cpp",
+      "Client/EngineContext/tests/src/OwningCircularBuffer.test.cpp",
+      "Client/PropertyStorage/tests/PropertyStorageTest.cpp",
+      "Client/RCCService/tests/TestRccReflectionInfo.cpp",
+      "Client/RobloxStudio/Integration/StudioApp/tests/GeneratedLinkTest.test.cpp",
+      "Client/RobloxStudio/Integration/StudioApp/tests/GeneratedPropertyTest.test.cpp",
+      "Client/RobloxStudio/Integration/StudioApp/tests/StudioReflectionInfo.test.cpp",
+      "Client/Rokit/src/DataModelLite.cpp"
+    ]
+  },
+  {
+    "owners": [
+      "@GameEngine/game-engine-datamodel",
+      "@GameEngine/game-engine-economy-client"
+    ],
+    "batch_id": "game-engine-datamodel-001",
+    "files": [
+      "Client/App.UnitTest/StandardCursorPagesTest.cpp"
+    ]
+  },
+  {
+    "owners": [
+      "@GameEngine/game-engine-datamodel",
+      "@GameEngine/game-engine-languages-ecosystem"
+    ],
+    "batch_id": "game-engine-datamodel-001",
+    "files": [
+      "Client/App.UnitTest/TypeNameCollisions.test.cpp",
+      "Client/Reflection/src/DescribedBase.cpp",
+      "Client/Reflection/tests/TypeTest.cpp"
+    ]
+  },
+  {
+    "owners": [
+      "@GameEngine/game-engine-datamodel",
+      "@GameEngine/game-engine-networking-replication",
+      "@GameEngine/game-engine-networking-transport",
+      "@GameEngine/game-engine-streaming"
+    ],
+    "batch_id": "game-engine-datamodel-001",
+    "files": [
+      "Client/App.UnitTest.Lib/DataModelFixture.cpp"
+    ]
+  },
+  {
+    "owners": [
+      "@GameEngine/game-engine-datamodel-serializer",
+      "@GameEngine/game-engine-security-threatmgmt"
+    ],
+    "batch_id": "game-engine-datamodel-serializer-001",
+    "files": [
+      "Client/App/v8xml/tests/AssetSaveQueueProcessorTest.cpp",
+      "Client/App/v8xml/tests/AssetSaveQueueTest.cpp"
+    ]
+  },
+  {
+    "owners": [
+      "@GameEngine/game-engine-economy-client"
+    ],
+    "batch_id": "game-engine-economy-client-001",
+    "files": [
+      "Client/App.UnitTest/ResponseConsolidatorTests.cpp",
+      "Client/App/RequestOrchestration/tests/AbstractRequestOrchestratorTests.cpp",
+      "Client/App/RequestOrchestration/tests/InsertionOrderedMapTests.cpp",
+      "Client/App/RequestOrchestration/tests/Jitter/AbstractJittererTests.cpp",
+      "Client/App/RequestOrchestration/tests/NoOpCacheTests.cpp",
+      "Client/App/economy/tests/BulkPurchaseHandlerTests.cpp",
+      "Client/App/economy/tests/CommerceService/SignalPromptCommerceProductPurchaseFinishedTests.cpp",
+      "Client/App/economy/tests/GamePassHelpersTests.cpp",
+      "Client/App/economy/tests/LoadTestCoordinatorTests.cpp",
+      "Client/App/economy/tests/LoadTestsTests.cpp",
+      "Client/App/economy/tests/MarketplaceApiClientTests.cpp",
+      "Client/App/economy/tests/MarketplaceServiceTests.cpp",
+      "Client/App/economy/tests/MarketplaceService_GamePassCacheTests.cpp",
+      "Client/App/economy/tests/MarketplaceService_LegacyGamePassRerouteTests.cpp",
+      "Client/App/economy/tests/MarketplaceService_ProcessRemoteEventTests.cpp",
+      "Client/App/economy/tests/MarketplaceService_PromptBundlePurchaseTests.cpp",
+      "Client/App/economy/tests/MarketplaceService_SignalsTests.cpp",
+      "Client/App/economy/tests/MarketplaceService_SubscriptionTests.cpp",
+      "Client/App/economy/tests/MarketplaceUrlConstructionTests.cpp",
+      "Client/App/economy/tests/ProductInfoValidationReporterTests.cpp",
+      "Client/App/economy/tests/Recommendations/RecommendationsHelpersTests.cpp",
+      "Client/App/economy/tests/RequestOrchestration/DevProductInfoRequestorTests.cpp",
+      "Client/App/economy/tests/RequestOrchestration/DeveloperSubscriptions/GetProductInfoRequestorTests.cpp",
+      "Client/App/economy/tests/RequestOrchestration/GamePassOwnershipRequestorTests.cpp",
+      "Client/App/economy/tests/RequestOrchestration/GamePassPurchaseTests.cpp",
+      "Client/App/economy/tests/RequestOrchestration/GamePassesProductInfoRequestorTests.cpp",
+      "Client/App/economy/tests/RequestOrchestration/OrchestrationLayerTests.cpp",
+      "Client/App/economy/tests/RequestOrchestration/Recommendations/RankProductsRequestorTests.cpp",
+      "Client/App/economy/tests/RequestOrchestration/Recommendations/TopProductsRequestorTests.cpp",
+      "Client/App/economy/tests/subscription/SubscriptionPurchaseTests.cpp",
+      "Client/RobloxStudio.UnitTest/ApiDeveloperProductsUrlTest.cpp",
+      "Client/RobloxStudio.UnitTest/MarketplaceService/Subscription/SubscriptionPurchaseTests.cpp"
+    ]
+  },
+  {
+    "owners": [
+      "@GameEngine/game-engine-environment",
+      "@GameEngine/game-engine-solver"
+    ],
+    "batch_id": "game-engine-environment-001",
+    "files": [
+      "Client/Physics/Math/tests/SphericalHarmonicInterpolatorTest.cpp"
+    ]
+  },
+  {
+    "owners": [
+      "@GameEngine/game-engine-experimentation"
+    ],
+    "batch_id": "game-engine-experimentation-001",
+    "files": [
+      "Client/App.UnitTest/experimentation/IxpControllerTest.cpp"
+    ]
+  },
+  {
+    "owners": [
+      "@GameEngine/game-engine-gameplay"
+    ],
+    "batch_id": "game-engine-gameplay-001",
+    "files": [
+      "Client/App.UnitTest/GamepadCursorAPITest.cpp",
+      "Client/App.UnitTest/GamepadServiceTest.cpp",
+      "Client/App.UnitTest/PlayerGuiScreenOrientationTest.cpp",
+      "Client/App.UnitTest/ProximityPromptTest.cpp",
+      "Client/App/input/tests/src/InputActionAPITest.cpp",
+      "Client/App/input/tests/src/InputActionDirection3DTest.cpp",
+      "Client/App/input/tests/src/InputActionDynamicHierarchyTest.cpp",
+      "Client/App/input/tests/src/InputActionEngineSystemSinking.cpp",
+      "Client/App/input/tests/src/InputActionGamepad.cpp",
+      "Client/App/input/tests/src/InputActionInvalidConfigurations.cpp",
+      "Client/App/input/tests/src/InputActionLifecycleTest.cpp",
+      "Client/App/input/tests/src/InputActionModifiersTest.cpp",
+      "Client/App/input/tests/src/InputActionMultiPlayerTest.cpp",
+      "Client/App/input/tests/src/InputActionServerAuthTest.cpp",
+      "Client/App/input/tests/src/InputActionTouch.cpp",
+      "Client/App/input/tests/src/InputActionViewportPosition.cpp",
+      "Client/App/input/tests/src/InputActionWindowFocusTest.cpp",
+      "Client/App/input/tests/src/InputBindingCalculationTest.cpp",
+      "Client/App/input/tests/src/InputContextLifecycleTest.cpp"
+    ]
+  },
+  {
+    "owners": [
+      "@GameEngine/game-engine-gameplay",
+      "@GameEngine/game-engine-rendering"
+    ],
+    "batch_id": "game-engine-gameplay-001",
+    "files": [
+      "Client/App.UnitTest/CameraTests.cpp"
+    ]
+  },
+  {
+    "owners": [
+      "@GameEngine/game-engine-gameplay",
+      "@GameEngine/game-engine-ui-subsystem"
+    ],
+    "batch_id": "game-engine-gameplay-001",
+    "files": [
+      "Client/App/tween/tests/TweenService.test.cpp"
+    ]
+  },
+  {
+    "owners": [
+      "@GameEngine/game-engine-geometry"
+    ],
+    "batch_id": "game-engine-geometry-001",
+    "files": [
+      "Client/App.UnitTest/EditableImageTest.cpp",
+      "Client/App.UnitTest/EmbeddedContentTest.cpp",
+      "Client/App.UnitTest/InstanceDefaultNameTest.cpp",
+      "Client/App.UnitTest/RuntimeContentHideIdTest.cpp",
+      "Client/Geometry/CSG3AdaptivePrecisionFloat/tests/CSG3AdaptivePrecisionFloat.test.cpp",
+      "Client/Geometry/CSG3MeshConversion/tests/CSG3MeshConversion.test.cpp",
+      "Client/Geometry/CsgApi/tests/CSG3Tests.cpp",
+      "Client/Geometry/CsgApi/tests/CSG3TestsCommon.cpp",
+      "Client/Geometry/CsgApi/tests/CSG3TestsCommon.h",
+      "Client/Geometry/CsgApi/tests/CSGMeshTest.cpp",
+      "Client/Geometry/CsgApi/tests/CSGOperations3Tests.cpp",
+      "Client/Geometry/CsgApi/tests/DCD/RegTests.cpp",
+      "Client/Geometry/CsgApi/tests/DCD/Task.test.cpp",
+      "Client/Geometry/CsgApi/tests/DCD/TaskPart.test.cpp",
+      "Client/Geometry/CsgApi/tests/ManifoldRegressionTests.cpp",
+      "Client/Geometry/CsgApi/tests/PartOperationAssetTests.cpp",
+      "Client/Geometry/CsgKernel/tests/Quadric.test.cpp",
+      "Client/Geometry/CsgKernel/tests/Simplify.test.cpp",
+      "Client/Geometry/DynamicConvexDecomp/tests/Buffer.test.cpp",
+      "Client/Geometry/DynamicConvexDecomp/tests/CDECKernel.test.cpp",
+      "Client/Geometry/DynamicConvexDecomp/tests/CDECKernelUtil.test.cpp",
+      "Client/Geometry/DynamicConvexDecomp/tests/ConvexDecomposition.test.cpp",
+      "Client/Geometry/DynamicConvexDecomp/tests/CopylessStringStream.test.cpp",
+      "Client/Geometry/DynamicConvexDecomp/tests/HillClimb.test.cpp",
+      "Client/Geometry/DynamicConvexDecomp/tests/Operation.test.cpp",
+      "Client/Geometry/DynamicConvexDecomp/tests/Primitives.test.cpp",
+      "Client/Geometry/DynamicConvexDecomp/tests/RotationSystem.test.cpp",
+      "Client/Geometry/DynamicConvexDecomp/tests/Streams.test.cpp",
+      "Client/Geometry/DynamicConvexDecomp/tests/TestHelpers.test.cpp",
+      "Client/Geometry/DynamicConvexDecomp/tests/TestUtility.h",
+      "Client/Geometry/EditableMeshData/tests/EditableMesh.test.cpp",
+      "Client/Geometry/EditableMeshData/tests/EditableMeshData.performance.cpp",
+      "Client/Geometry/EditableMeshData/tests/EditableMeshData.test.cpp",
+      "Client/Geometry/EditableMeshData/tests/EditableService.test.cpp",
+      "Client/Geometry/EditableMeshData/tests/SOA.test.cpp",
+      "Client/Geometry/GeometryCommon/tests/AABB_OBB_Performance.cpp",
+      "Client/Geometry/GeometryCommon/tests/FloatStreamMath.test.cpp",
+      "Client/Geometry/GeometryCommon/tests/KDTreePerformance.cpp",
+      "Client/Geometry/GeometryCommon/tests/SolidMeshUtils.test.cpp",
+      "Client/Geometry/MeshCleanup/tests/MeshCleanup.test.cpp"
+    ]
+  },
+  {
+    "owners": [
+      "@GameEngine/game-engine-geometry"
+    ],
+    "batch_id": "game-engine-geometry-002",
+    "files": [
+      "Client/Geometry/MeshLOD/tests/MeshCompression.test.cpp",
+      "Client/Geometry/MeshLOD/tests/MeshLOD.test.cpp",
+      "Client/Geometry/MeshLOD/tests/MeshLODRegression.test.cpp",
+      "Client/Geometry/MeshSimplification/tests/GeometryUtils.test.cpp",
+      "Client/Geometry/MeshSimplification/tests/TopologyUtils.test.cpp",
+      "Client/Geometry/MeshSimplification/tests/WildMeshSimplifier.test.cpp",
+      "Client/Transcoders/MeshLODTranscoder/tests/MeshLODTranscoder.test.cpp",
+      "Client/Transcoders/MeshLODTranscoder/tests/SolidAssetLODTranscoder.test.cpp"
+    ]
+  },
+  {
+    "owners": [
+      "@GameEngine/game-engine-geometry-deformables"
+    ],
+    "batch_id": "game-engine-geometry-deformables-001",
+    "files": [
+      "Client/App/avatar/tests/wrap/SkinningTransferR15PlusMathTest.cpp"
+    ]
+  },
+  {
+    "owners": [
+      "@GameEngine/game-engine-harmony"
+    ],
+    "batch_id": "game-engine-harmony-001",
+    "files": [
+      "Client/PerformanceControl/include/PerformanceControl/PerformanceControlTestUtils.h",
+      "Client/PerformanceControl/tests/PowerMonitor.test.cpp",
+      "Client/PerformanceControl/tests/src/CoordinatorV2Test.cpp",
+      "Client/PerformanceControl/tests/src/EffectPredictorTest.cpp",
+      "Client/PerformanceControl/tests/src/EffectTest.cpp",
+      "Client/PerformanceControl/tests/src/FunctionCurveTest.cpp",
+      "Client/PerformanceControl/tests/src/MappedFileTests.cpp",
+      "Client/PerformanceControl/tests/src/MultiResourceOrchestratorTest.cpp",
+      "Client/PerformanceControl/tests/src/OomModelTest.cpp",
+      "Client/PerformanceControl/tests/src/PerformanceControlImGuiV2Test.cpp",
+      "Client/PerformanceControl/tests/src/PlannerTest.cpp",
+      "Client/PerformanceControl/tests/src/ReclamationTestRunnerV2Test.cpp",
+      "Client/PerformanceControl/tests/src/ReclamationTestRunnerV2Test_DEPRECATED.cpp",
+      "Client/PerformanceControl/tests/src/TelemetryReporterTest.cpp",
+      "Client/PerformanceControl/tests/src/TimestampMinMaxBufferTest.cpp",
+      "Client/PerformanceControl/tests/src/TunableTest.cpp"
+    ]
+  },
+  {
+    "owners": [
+      "@GameEngine/game-engine-http"
+    ],
+    "batch_id": "game-engine-http-001",
+    "files": [
+      "Client/App.UnitTest/CaptureStorageTest.cpp",
+      "Client/App.UnitTest/ContentProvider/AssetRequestTest.cpp",
+      "Client/App.UnitTest/ContentProvider/ContentIdRewriteLegacyThumbnailUrlsTest.cpp",
+      "Client/App.UnitTest/ContentProvider/ContentProviderTest.cpp",
+      "Client/App.UnitTest/ContentProvider/InstanceIdentifierTest.cpp",
+      "Client/App.UnitTest/ExponentialBackoffTest.cpp",
+      "Client/App.UnitTest/HttpAppTests.cpp",
+      "Client/App.UnitTest/URLParserTest.cpp",
+      "Client/AssetProvider/Cache/tests/AssetCacheHttpCacheImplTests.cpp",
+      "Client/AssetProvider/Cache/tests/AssetCachePendingMapTests.cpp",
+      "Client/AssetProvider/Cache/tests/AssetCacheRBXStorageImplTests.cpp",
+      "Client/AssetProvider/Cache/tests/HttpRedirectCacheHttpCacheImplTests.cpp",
+      "Client/AssetProvider/Cache/tests/HttpRedirectCacheRBXStorageImplTests.cpp",
+      "Client/AssetProvider/Common/tests/Http/PollableHttpRequestTests.cpp",
+      "Client/AssetProvider/Common/tests/RequestCoalescerTests.cpp",
+      "Client/AssetProvider/Common/tests/Runtime/DeferredWritesTaskFactoryTests.cpp",
+      "Client/AssetProvider/Common/tests/Runtime/PrioAwarePerTaskFiberFactoryTests.cpp",
+      "Client/AssetProvider/Common/tests/Runtime/PriorityAwareStdWorkerThreadTaskFactoryTests.cpp",
+      "Client/AssetProvider/Common/tests/Runtime/WorkerThreadTaskFactoryTests.cpp",
+      "Client/AssetProvider/Http/tests/AssetDelivery/BatchAssetDeliveryClientV2Tests.cpp",
+      "Client/AssetProvider/Http/tests/AssetDelivery/BatchAssetDeliveryResolveQueueTests.cpp",
+      "Client/AssetProvider/Http/tests/AssetDelivery/UnbatchedAssetDeliveryApiClientTests.cpp",
+      "Client/AssetProvider/Http/tests/RbxCdnClientImplTests.cpp",
+      "Client/AssetProvider/Workflow/tests/AssetResolutionWorkflowTest.cpp",
+      "Client/AssetProvider/Workflow/tests/BatchAssetApiWorkflowV2Test.cpp",
+      "Client/AssetProvider/Workflow/tests/CdnOnlyAssetWorkflowTest.cpp",
+      "Client/AssetProvider/Workflow/tests/NoDeDupeWorkflowCollectionTest.cpp",
+      "Client/AssetProvider/tests/AssetProvider.UnitTest.cpp",
+      "Client/AssetProvider/tests/AssetProviderTest.cpp",
+      "Client/AssetProvider/tests/ContentIdFormatterTest.cpp",
+      "Client/RbxStorage/ClientStorage/tests/ClientStorageInterfaceTests.cpp",
+      "Client/RbxStorage/tests/FileCacheTests.cpp",
+      "Client/RbxStorage/tests/MemCacheTests.cpp",
+      "Client/RbxStorage/tests/RbxStorageBench.cpp",
+      "Client/RbxStorage/tests/RbxStorageTests.cpp",
+      "Client/RbxStorage/tests/Sqlite3Tests.cpp",
+      "Client/RbxStorage/tests/SqliteCacheTests.cpp",
+      "Client/RbxStorage/tests/SqliteCacheTestsOld.cpp",
+      "Client/RbxStorage/tests/StorageCategoryTests.cpp",
+      "Client/RbxStorage/tests/StorageInterfaceTests.cpp"
+    ]
+  },
+  {
+    "owners": [
+      "@GameEngine/game-engine-http"
+    ],
+    "batch_id": "game-engine-http-002",
+    "files": [
+      "Client/RbxStorage/tests/StorageKeyTests.cpp",
+      "Client/RbxStorage/tests/TestUtils.cpp",
+      "Client/RbxStorage/tests/TestUtils.h",
+      "Client/SignalR-Common/tests/SignalRConnectionTest.cpp",
+      "Client/SignalR-Common/tests/SignalRHubConnectionTest.cpp",
+      "Client/SignalR-Common/tests/TestHelpers.cpp",
+      "Client/SignalRCore/tests/SignalRCoreCallbackManagerTest.cpp",
+      "Client/SignalRCore/tests/SignalRCoreHubTest.cpp"
+    ]
+  },
+  {
+    "owners": [
+      "@GameEngine/game-engine-installer"
+    ],
+    "batch_id": "game-engine-installer-001",
+    "files": [
+      "Client/App.UnitTest/ExecutableConfigurationUrlTest.cpp"
+    ]
+  },
+  {
+    "owners": [
+      "@GameEngine/game-engine-interactivity"
+    ],
+    "batch_id": "game-engine-interactivity-001",
+    "files": [
+      "Client/App.UnitTest/NoiseTest.cpp"
+    ]
+  },
+  {
+    "owners": [
+      "@GameEngine/game-engine-languages",
+      "@GameEngine/game-engine-languages-analysis"
+    ],
+    "batch_id": "game-engine-languages-001",
+    "files": [
+      "Client/ScriptServices/docs/ValidateDocumentation.test.cpp",
+      "Client/ScriptServices/tests/Documentation.test.cpp",
+      "Client/ScriptServices/tests/LanguageService.test.cpp",
+      "Client/ScriptServices/tests/RobloxDefinitions.ExamineRuntime.test.cpp",
+      "Client/ScriptServices/tests/RobloxDefinitions.test.cpp",
+      "Client/ScriptServices/tests/ScanForStrictScripts.test.cpp",
+      "Client/ScriptServices/tests/ScriptServiceFixture.cpp",
+      "Client/ScriptServices/tests/TranslatePath.test.cpp"
+    ]
+  },
+  {
+    "owners": [
+      "@GameEngine/game-engine-languages",
+      "@GameEngine/game-engine-languages-ecosystem"
+    ],
+    "batch_id": "game-engine-languages-001",
+    "files": [
+      "Client/App.ParallelStressTest/App.ParallelStressTest.cpp",
+      "Client/App.UnitTest.Lib/CollectionTestFixture.cpp",
+      "Client/App.UnitTest.Lib/ScriptTestFixture.cpp",
+      "Client/App.UnitTest.Lib/include/rbx/test/ScriptTestFixture.h",
+      "Client/App/script/tests/ActorTest.cpp",
+      "Client/App/script/tests/App.Script.UnitTest.cpp",
+      "Client/App/script/tests/AuroraScriptBenchmark.cpp",
+      "Client/App/script/tests/AuroraScriptTest.cpp",
+      "Client/App/script/tests/DataModelAnalysisServiceTest.cpp",
+      "Client/App/script/tests/DataModelSummaryToolTest.cpp",
+      "Client/App/script/tests/DebugValueConverterTest.cpp",
+      "Client/App/script/tests/DebuggerPlaybook.cpp",
+      "Client/App/script/tests/EncodingServiceTest.cpp",
+      "Client/App/script/tests/LuaAsyncFunctionListTest.cpp",
+      "Client/App/script/tests/LuaCFrameTest.cpp",
+      "Client/App/script/tests/LuaCallbackTest.cpp",
+      "Client/App/script/tests/LuaCapabilities.cpp",
+      "Client/App/script/tests/LuaClassesTest.cpp",
+      "Client/App/script/tests/LuaCollectionServiceTest.cpp",
+      "Client/App/script/tests/LuaCompiler.cpp",
+      "Client/App/script/tests/LuaDebugger.Playbooks.cpp",
+      "Client/App/script/tests/LuaDebugger.cpp",
+      "Client/App/script/tests/LuaDeferredTests.cpp",
+      "Client/App/script/tests/LuaDescendantSignals.cpp",
+      "Client/App/script/tests/LuaExecuteInNewThread.cpp",
+      "Client/App/script/tests/LuaFontTest.cpp",
+      "Client/App/script/tests/LuaMemoryCategories.cpp",
+      "Client/App/script/tests/LuaOrgBugs.cpp",
+      "Client/App/script/tests/LuaPath2DControlPointTest.cpp",
+      "Client/App/script/tests/LuaRaycastTest.cpp",
+      "Client/App/script/tests/LuaReflection.cpp",
+      "Client/App/script/tests/LuaRequireTest.cpp",
+      "Client/App/script/tests/LuaSandbox.cpp",
+      "Client/App/script/tests/LuaScriptTest.cpp",
+      "Client/App/script/tests/LuaTaskTests.cpp",
+      "Client/App/script/tests/LuaTokenizer.cpp",
+      "Client/App/script/tests/LuaVector2Test.cpp",
+      "Client/App/script/tests/LuaVector2int16Test.cpp",
+      "Client/App/script/tests/LuaVector3Test.cpp",
+      "Client/App/script/tests/LuaYieldingTest.cpp"
+    ]
+  },
+  {
+    "owners": [
+      "@GameEngine/game-engine-languages",
+      "@GameEngine/game-engine-languages-ecosystem"
+    ],
+    "batch_id": "game-engine-languages-002",
+    "files": [
+      "Client/App/script/tests/LuauResumeBlockerTest.cpp",
+      "Client/App/script/tests/ModuleScriptTest.cpp",
+      "Client/App/script/tests/ParallelLuauHybridQueueTest.cpp",
+      "Client/App/script/tests/QueryDescendantsTest.cpp",
+      "Client/App/script/tests/ReflectionUtil.h",
+      "Client/App/script/tests/ScriptCompilationCacheTest.cpp",
+      "Client/App/script/tests/ScriptContextCoverageTest.cpp",
+      "Client/App/script/tests/ScriptContextDetailedErrorSignalTest.cpp",
+      "Client/App/script/tests/ScriptContextNativeCodegenTest.cpp",
+      "Client/App/script/tests/ScriptContextTimeoutTest.cpp",
+      "Client/App/script/tests/ScriptProfilerTest.cpp",
+      "Client/App/script/tests/ScriptRuntimeTest.cpp",
+      "Client/App/script/tests/ScriptUtilitiesTest.cpp",
+      "Client/App/script/tests/SegmentedQueueTest.cpp",
+      "Client/App/script/tests/SharedTableTest.cpp",
+      "Client/App/script/tests/SharedTableTestHelper.h",
+      "Client/App/v8datamodel/tests/Collection.benchmark.cpp",
+      "Client/App/v8datamodel/tests/Collection.test.cpp"
+    ]
+  },
+  {
+    "owners": [
+      "@GameEngine/game-engine-languages-ecosystem"
+    ],
+    "batch_id": "game-engine-languages-ecosystem-001",
+    "files": [
+      "Client/App.UnitTest/AttributeTests.cpp",
+      "Client/App.UnitTest/VariantUtilTest.cpp"
+    ]
+  },
+  {
+    "owners": [
+      "@GameEngine/game-engine-lua-app"
+    ],
+    "batch_id": "game-engine-lua-app-001",
+    "files": [
+      "Client/App.UnitTest/EngineFeatureTest.cpp",
+      "Client/App.UnitTest/EventBroadcastSubsystemTest.cpp",
+      "Client/App.UnitTest/LuaTests/CoreScriptSyncServiceTest.cpp",
+      "Client/App.UnitTest/LuaWebServiceTest.cpp"
+    ]
+  },
+  {
+    "owners": [
+      "@GameEngine/game-engine-math"
+    ],
+    "batch_id": "game-engine-math-001",
+    "files": [
+      "Client/App.UnitTest/G3D.cpp",
+      "Client/App.UnitTest/MathTests.cpp",
+      "Client/Math/tests/src/SimdTests.cpp",
+      "Client/Math/tests/src/SplineTest.cpp"
+    ]
+  },
+  {
+    "owners": [
+      "@GameEngine/game-engine-modularization"
+    ],
+    "batch_id": "game-engine-modularization-001",
+    "files": [
+      "Client/App/util/tests/BatchLogEventSender.test.cpp",
+      "Client/App/util/tests/ContentMigrationTests.cpp",
+      "Client/App/util/tests/ContentTests.cpp",
+      "Client/App/util/tests/LogEntry.test.cpp",
+      "Client/App/util/tests/WaitForAllTest.cpp",
+      "Client/App/util/tests/session/SessionizationFixture.cpp"
+    ]
+  },
+  {
+    "owners": [
+      "@GameEngine/game-engine-navigation"
+    ],
+    "batch_id": "game-engine-navigation-001",
+    "files": [
+      "Client/App/navigation/tests/GetTilesInCircleTest.cpp",
+      "Client/App/navigation/tests/NavigationAnalyticsTest.cpp"
+    ]
+  },
+  {
+    "owners": [
+      "@GameEngine/game-engine-networking-replication"
+    ],
+    "batch_id": "game-engine-networking-replication-001",
+    "files": [
+      "Client/App.UnitTest/GuidTest.cpp",
+      "Client/App.UnitTest/RemoteSignal.cpp",
+      "Client/Network/tests/Replication/InstanceStateReplicatorTest.cpp",
+      "Client/Network/tests/Replication/JoinDataCacheTest.cpp",
+      "Client/Network/tests/Replication/LargeReplicatorNetworkTests.cpp",
+      "Client/Network/tests/Replication/LargeReplicatorPullTests.cpp",
+      "Client/Network/tests/Replication/LargeReplicatorSerializationTests.cpp",
+      "Client/NetworkBase/tests/ConnectionInfoTests.cpp",
+      "Client/NetworkBase/tests/InstanceStateReplicatorTests.cpp",
+      "Client/NetworkBase/tests/LargeReplicatorCacheTests.cpp",
+      "Client/NetworkBase/tests/LargeReplicatorNetAssetTests.cpp",
+      "Client/NetworkBase/tests/LargeReplicatorSenderTests.cpp",
+      "Client/NetworkBase/tests/LargeReplicatorTests.cpp",
+      "Client/NetworkBase/tests/NetAssetSerializerTests.cpp",
+      "Client/NetworkCore/tests/IpSubnetTest.cpp",
+      "Client/NetworkCore/tests/NetworkDataAssertTests.cpp"
+    ]
+  },
+  {
+    "owners": [
+      "@GameEngine/game-engine-networking-replication",
+      "@GameEngine/game-engine-networking-transport"
+    ],
+    "batch_id": "game-engine-networking-replication-001",
+    "files": [
+      "Client/NetworkTracing/tests/NetworkTracingTest.cpp"
+    ]
+  },
+  {
+    "owners": [
+      "@GameEngine/game-engine-networking-replication",
+      "@GameEngine/game-engine-streaming"
+    ],
+    "batch_id": "game-engine-networking-replication-001",
+    "files": [
+      "Client/Network/tests/AddedRemovedClass.cpp",
+      "Client/Network/tests/BacklogDetectorTest.cpp",
+      "Client/Network/tests/ClassWithPropertyOfEveryType.cpp",
+      "Client/Network/tests/ClientTests.cpp",
+      "Client/Network/tests/ClusterReplicationTest.cpp",
+      "Client/Network/tests/CompressorTest.cpp",
+      "Client/Network/tests/EventsTest.cpp",
+      "Client/Network/tests/FacsReplicationDataSerializerTest.cpp",
+      "Client/Network/tests/FlagFlipNetworkConnectionTests.cpp",
+      "Client/Network/tests/ForwardReferences.cpp",
+      "Client/Network/tests/LodEntityTests.cpp",
+      "Client/Network/tests/MegaModeTest.cpp",
+      "Client/Network/tests/Network.cpp",
+      "Client/Network/tests/NetworkOwnershipUnitTest.cpp",
+      "Client/Network/tests/NetworkPhysicsMechanismCacheTest.cpp",
+      "Client/Network/tests/NetworkPhysicsReceiverTest.cpp",
+      "Client/Network/tests/NetworkPhysicsSenderTest.cpp",
+      "Client/Network/tests/NetworkSchemaTest.cpp",
+      "Client/Network/tests/NetworkStreamTest.cpp",
+      "Client/Network/tests/NetworkTestClasses.h",
+      "Client/Network/tests/NetworkTracingReplicationTest.cpp",
+      "Client/Network/tests/OwnershipJobTest.cpp",
+      "Client/Network/tests/PlayerConfigurerTest.cpp",
+      "Client/Network/tests/PrefixReplicationTest.cpp",
+      "Client/Network/tests/PreloadedReplicationTest.cpp",
+      "Client/Network/tests/ReplicatorAttributeReplicationTest.cpp",
+      "Client/Network/tests/ReplicatorBatchedJoinTest.cpp",
+      "Client/Network/tests/ReplicatorCFrameOrderingTest.cpp",
+      "Client/Network/tests/ReplicatorCompletenessJobV2Test.cpp",
+      "Client/Network/tests/ReplicatorDestroyReplicationTest.cpp",
+      "Client/Network/tests/ReplicatorInstanceSynchronizationTest.cpp",
+      "Client/Network/tests/ReplicatorPropertyReplicationTest.cpp",
+      "Client/Network/tests/SchemaTest.cpp",
+      "Client/Network/tests/SerializersTest.cpp",
+      "Client/Network/tests/ServerBindAddr.cpp",
+      "Client/Network/tests/SetNetworkOwnership.cpp",
+      "Client/Network/tests/SharedStringTest.cpp",
+      "Client/Network/tests/SignalOrderTest.cpp",
+      "Client/Network/tests/SlimReplicationDataSerializerTest.cpp",
+      "Client/Network/tests/StateReasonTest.cpp"
+    ]
+  },
+  {
+    "owners": [
+      "@GameEngine/game-engine-networking-replication",
+      "@GameEngine/game-engine-streaming"
+    ],
+    "batch_id": "game-engine-networking-replication-002",
+    "files": [
+      "Client/Network/tests/TeamCreateTest.cpp",
+      "Client/Network/tests/TerrainSerialization.cpp",
+      "Client/Network/tests/TheNewClass.h",
+      "Client/Network/tests/TrackerDataReplicationTest.cpp",
+      "Client/Network/tests/UIntCounterTest.cpp"
+    ]
+  },
+  {
+    "owners": [
+      "@GameEngine/game-engine-networking-transport"
+    ],
+    "batch_id": "game-engine-networking-transport-001",
+    "files": [
+      "Client/Network/tests/TraceRouteServiceTests.cpp",
+      "Client/Network/tests/Transport/RakNet.cpp",
+      "Client/RbxTransport/Common/tests/CapabilityBitsTests.cpp",
+      "Client/RbxTransport/Common/tests/ListTests.cpp",
+      "Client/RbxTransport/Common/tests/OrderedListTests.cpp",
+      "Client/RbxTransport/Common/tests/RangeListTests.cpp",
+      "Client/RbxTransport/Config/tests/RbxTransportConfigTest.cpp",
+      "Client/RbxTransport/DummyService/tests/DummyServiceTests.cpp",
+      "Client/RbxTransport/Io/tests/src/NetEmUdp.cpp",
+      "Client/RbxTransport/Protocol/tests/ChannelTrackerTests.cpp",
+      "Client/RbxTransport/Protocol/tests/NetStreamHeaderFormatTests.cpp",
+      "Client/RbxTransport/Protocol/tests/NetStreamWireTests.cpp",
+      "Client/RbxTransport/Protocol/tests/QuicBenchmark.cpp",
+      "Client/RbxTransport/Protocol/tests/QuicTests.cpp",
+      "Client/RbxTransport/Protocol/tests/ReconstructNetStreamTests.cpp",
+      "Client/RbxTransport/Rna/tests/ConnectionTests.cpp",
+      "Client/RbxTransport/Rna/tests/MultiAppRegistrationTests.cpp",
+      "Client/RbxTransport/Rna/tests/RnaBenchmark.cpp",
+      "Client/RbxTransport/Rna/tests/RnaCreationTests.cpp",
+      "Client/RbxTransport/Rna/tests/RnaCrossImplCompatibilityTests.cpp",
+      "Client/RbxTransport/Rna/tests/RnaDestructionTests.cpp",
+      "Client/RbxTransport/Rna/tests/RnaKeyTests.cpp",
+      "Client/RbxTransport/Rna/tests/RnaRuppTests.cpp",
+      "Client/RbxTransport/Rna/tests/RnaSendReceiveTests.cpp",
+      "Client/RbxTransport/Rna/tests/RnaTestHelpers.cpp",
+      "Client/RbxTransport/Rna/tests/RnaTestHelpersTests.cpp",
+      "Client/RbxTransport/Rna/tests/RtcIoImpl/AppOpenUnreliableChannelTests.cpp",
+      "Client/RbxTransport/Rna/tests/RtcIoImpl/ChannelStreamParserTests.cpp",
+      "Client/RbxTransport/Rna/tests/RtcIoImpl/RtcIoAppConnectionTests.cpp",
+      "Client/RbxTransport/Rna/tests/RtcIoImpl/RtcIoListenerSharingTests.cpp",
+      "Client/RbxTransport/Rna/tests/RtcIoImpl/RtcIoListenerTests.cpp",
+      "Client/RbxTransport/Rna/tests/RtcIoImpl/RtcIoMultiAppFixture.h",
+      "Client/RbxTransport/Rna/tests/RtcIoImpl/RtcIoMultiAppTests.cpp",
+      "Client/RbxTransport/Rna/tests/RtcIoImpl/SharedRegistryTests.cpp",
+      "Client/RbxTransport/System/tests/ChannelReceiveQueueTests.cpp",
+      "Client/RbxTransport/System/tests/ComponentManagerTests.cpp",
+      "Client/RbxTransport/System/tests/ConnectionHandlerTests.cpp",
+      "Client/RbxTransport/System/tests/HandlerTestFixture.cpp",
+      "Client/RbxTransport/System/tests/ListenerHandlerTests.cpp",
+      "Client/RbxTransport/System/tests/SendChannelTests.cpp"
+    ]
+  },
+  {
+    "owners": [
+      "@GameEngine/game-engine-networking-transport"
+    ],
+    "batch_id": "game-engine-networking-transport-002",
+    "files": [
+      "Client/RbxTransport/System/tests/SystemTests.cpp",
+      "Client/RbxTransport/UnitTestLib/include/RbxTransport/UnitTest/Helpers.h",
+      "Client/RbxTransport/UnitTestLib/src/Helpers.cpp",
+      "Client/Rupp/tests/Ipv4EndpointTlvTests.cpp",
+      "Client/Rupp/tests/RuppTests.cpp",
+      "Client/Rupp/tests/TokenTlvTests.cpp"
+    ]
+  },
+  {
+    "owners": [
+      "@GameEngine/game-engine-notifications"
+    ],
+    "batch_id": "game-engine-notifications-001",
+    "files": [
+      "Client/Protocols/ToastNotifications/tests/ToastNotificationsProtocolCore.test.cpp"
+    ]
+  },
+  {
+    "owners": [
+      "@GameEngine/game-engine-openapi"
+    ],
+    "batch_id": "game-engine-openapi-001",
+    "files": [
+      "Client/OpenApi/tests/HttpWrapper.test.cpp",
+      "Client/OpenApi/tests/ModelBase.test.cpp",
+      "Client/OpenApi/tests/OauthAccessToken.test.cpp",
+      "Client/OpenApi/tests/ParameterToString.test.cpp"
+    ]
+  },
+  {
+    "owners": [
+      "@GameEngine/game-engine-physics"
+    ],
+    "batch_id": "game-engine-physics-001",
+    "files": [
+      "Client/App.UnitTest/DynamicsValidationTest.cpp",
+      "Client/App.UnitTest/WorkspaceTelemetryTest.cpp",
+      "Client/App/collision/tests/BvhTreePerformance.cpp",
+      "Client/Physics/tests/humanoid/HumanoidPhysicsTests.cpp",
+      "Client/Physics/tests/narrowphase/GjkTest.cpp",
+      "Client/Physics/tests/solver/IkDraggerTests.cpp",
+      "Client/Physics/tests/v8world/ExplicitAutoJointsTest.cpp",
+      "Client/Physics/tests/v8world/ModelPivotTest.cpp",
+      "Client/Physics/tests/v8world/ResimulationTest.cpp",
+      "Client/Physics/tests/v8world/SleepTests.cpp",
+      "Client/Physics/tests/v8world/StepPhysicsTest.cpp",
+      "Client/Physics/tests/v8world/WorldStepTests.cpp",
+      "Client/Physics/tests/water/HighAspectRatioBuoyancyTests.cpp"
+    ]
+  },
+  {
+    "owners": [
+      "@GameEngine/game-engine-physics",
+      "@GameEngine/game-engine-studio-optional-all"
+    ],
+    "batch_id": "game-engine-physics-001",
+    "files": [
+      "Client/RobloxStudio/Features/Physics/ConstraintGizmo/tests/ConstraintGizmoManager.test.cpp"
+    ]
+  },
+  {
+    "owners": [
+      "@GameEngine/game-engine-physics-platform"
+    ],
+    "batch_id": "game-engine-physics-platform-001",
+    "files": [
+      "Client/App/v8world/tests/ConvexDecompHolderTests.cpp"
+    ]
+  },
+  {
+    "owners": [
+      "@GameEngine/game-engine-rcc"
+    ],
+    "batch_id": "game-engine-rcc-001",
+    "files": [
+      "Client/App/util/tests/lms/NetworkQualityReportStoreTest.cpp",
+      "Client/RCCService/tests/CancellableOperationTest.cpp",
+      "Client/RCCService/tests/CryptoTest.cpp",
+      "Client/RCCService/tests/DependenciesTest.cpp",
+      "Client/RCCService/tests/EncryptedUserScoreTest.cpp",
+      "Client/RCCService/tests/ExternalAntiCheatTest.cpp",
+      "Client/RCCService/tests/FlagsCommandLineArgument.cpp",
+      "Client/RCCService/tests/FloodCheckTest.cpp",
+      "Client/RCCService/tests/GameControlTest.cpp",
+      "Client/RCCService/tests/GameServerStartupTest.cpp",
+      "Client/RCCService/tests/NetworkLatencyScopeTest.cpp",
+      "Client/RCCService/tests/PacketCaptureTest.cpp",
+      "Client/RCCService/tests/RCCMemoryLimitControllerTest.cpp",
+      "Client/RCCService/tests/RCCPlaceContentEdgeFetcherTest.cpp",
+      "Client/RCCService/tests/RccService.UnitTest.cpp",
+      "Client/RCCService/tests/RccService.UnitTest.h",
+      "Client/RCCService/tests/RemoteEventMonitorTest.cpp",
+      "Client/RCCService/tests/TempStoreS3UrlAssetFetchTest.cpp",
+      "Client/RCCService/tests/UserConsequencesServiceTest.cpp"
+    ]
+  },
+  {
+    "owners": [
+      "@GameEngine/game-engine-realtime"
+    ],
+    "batch_id": "game-engine-realtime-001",
+    "files": [
+      "Client/App.UnitTest/NotificationServiceRccRelayTest.cpp",
+      "Client/RealtimeClient/tests/RccRealtimeRelayTest.cpp",
+      "Client/RealtimeClient/tests/RealtimeConnectionManagerTest.cpp",
+      "Client/RealtimeClient/tests/RealtimeMessageDeduplicatorTest.cpp",
+      "Client/RealtimeClient/tests/RealtimeNotificationDetailTest.cpp",
+      "Client/RealtimeClient/tests/RealtimeReliabilityMeasurementTest.cpp"
+    ]
+  },
+  {
+    "owners": [
+      "@GameEngine/game-engine-rendering"
+    ],
+    "batch_id": "game-engine-rendering-001",
+    "files": [
+      "Client/App.UnitTest/ClusterDeprecatedPropertyTest.cpp",
+      "Client/App.UnitTest/CylinderHandleAdornmentTest.cpp",
+      "Client/App.UnitTest/LightingTests.cpp",
+      "Client/App.UnitTest/MaterialVariantTests.cpp",
+      "Client/App.UnitTest/PBRDecalTests.cpp",
+      "Client/App.UnitTest/SequencesTest.cpp",
+      "Client/App.UnitTest/SpatialRegionTest.cpp",
+      "Client/App.UnitTest/SurfaceAppearanceTests.cpp",
+      "Client/App.UnitTest/TerrainDetailTests.cpp",
+      "Client/App.UnitTest/v8datamodel/MaterialServiceTests.cpp",
+      "Client/App/voxel/tests/VoxelCellUtilTest.cpp",
+      "Client/App/voxel2/tests/BoxTest.cpp",
+      "Client/App/voxel2/tests/GridTest.cpp",
+      "Client/App/voxel2/tests/RaycastTest.cpp",
+      "Client/App/voxel2/tests/VoxelizerTest.cpp",
+      "Client/Image/tests/src/GImageTest.cpp",
+      "Client/Image/tests/src/GImageTests.cpp",
+      "Client/Rendering/GfxBase/tests/FrameRateManagerUnitTest.cpp",
+      "Client/Rendering/GfxBase/tests/WindowAverageUnitTest.cpp",
+      "Client/Rendering/GfxRender/tests/BchEncoderTests.cpp",
+      "Client/Rendering/GfxRender/tests/BuddyAllocatorTest.cpp",
+      "Client/Rendering/GfxRender/tests/CoordinateFrameHashTests.cpp",
+      "Client/Rendering/GfxRender/tests/DynamicGeometryManagerTests.cpp",
+      "Client/Rendering/GfxRender/tests/DynamicGeometryManagerTranscodePerformance.cpp",
+      "Client/Rendering/GfxRender/tests/ImageTest.cpp",
+      "Client/Rendering/GfxRender/tests/PoolAllocatorTest.cpp",
+      "Client/Rendering/GfxRender/tests/TextureManagerTests.cpp",
+      "Client/Transcoders/TextureTranscoder/tests/TextureTranscoder.test.cpp"
+    ]
+  },
+  {
+    "owners": [
+      "@GameEngine/game-engine-rendering",
+      "@GameEngine/game-engine-studio-optional-all"
+    ],
+    "batch_id": "game-engine-rendering-001",
+    "files": [
+      "Client/RobloxStudio/Features/DataModelEditing/LightTechUpdate/tests/LightTechUpdate.test.cpp"
+    ]
+  },
+  {
+    "owners": [
+      "@GameEngine/game-engine-repo-structure-reviewers"
+    ],
+    "batch_id": "game-engine-repo-structure-reviewers-001",
+    "files": [
+      "Client/App.UnitTest/InternalMessagingServiceVerifierTest.cpp",
+      "Client/Testing/RotestSelfTest/src/TestAllChecksThatPrintValues.cpp",
+      "Client/Testing/RotestSelfTest/src/TestAssertionFailed.cpp",
+      "Client/Testing/RotestSelfTest/src/TestCrashOnExit.cpp",
+      "Client/Testing/RotestSelfTest/src/TestCrashOutsideOfTest.cpp",
+      "Client/Testing/RotestSelfTest/src/TestFailAndCrashOnExit.cpp",
+      "Client/Testing/RotestSelfTest/src/TestFailedCheckLines.cpp",
+      "Client/Testing/RotestSelfTest/src/TestFlakyRerun.cpp",
+      "Client/Testing/RotestSelfTest/src/TestHardening.cpp",
+      "Client/Testing/RotestSelfTest/src/TestMultipleSuccesses.cpp",
+      "Client/Testing/RotestSelfTest/src/TestMultiprocessing.cpp",
+      "Client/Testing/RotestSelfTest/src/TestRecoverableErrors.cpp",
+      "Client/Testing/RotestSelfTest/src/TestRobloxTest.cpp",
+      "Client/Testing/RotestSelfTest/src/TestTimeout.cpp",
+      "Client/Testing/RotestSelfTest/src/TestTortureMode.cpp",
+      "Client/Testing/RotestSelfTest/src/TestUnicode.cpp",
+      "Client/Testing/RotestSelfTest/src/TestUnrecoverableErrors.cpp"
+    ]
+  },
+  {
+    "owners": [
+      "@GameEngine/game-engine-security"
+    ],
+    "batch_id": "game-engine-security-001",
+    "files": [
+      "Client/App.UnitTest/MD5.cpp",
+      "Client/Network/tests/NetworkSecurity.cpp"
+    ]
+  },
+  {
+    "owners": [
+      "@GameEngine/game-engine-security-anticheat"
+    ],
+    "batch_id": "game-engine-security-anticheat-001",
+    "files": [
+      "Client/App.UnitTest/BanTests.cpp",
+      "Client/GameSecurity/tests/AppQoSTest.cpp",
+      "Client/GameSecurity/tests/AsmTest.cpp",
+      "Client/GameSecurity/tests/DigitalSignatureTest.cpp",
+      "Client/GameSecurity/tests/EncryptionStreams.cpp",
+      "Client/GameSecurity/tests/GameSecurity.UnitTest.cpp",
+      "Client/GameSecurity/tests/KeyRingTest.cpp",
+      "Client/GameSecurity/tests/LuauSecurityTest.cpp",
+      "Client/GameSecurity/tests/SPS/DllBuilder.cpp",
+      "Client/GameSecurity/tests/SPS/FunctionalTest.cpp",
+      "Client/GameSecurity/tests/SPS/MdtCheckFunctions.cpp",
+      "Client/GameSecurity/tests/SPS/MetadataTests.cpp",
+      "Client/GameSecurity/tests/SPS/SpsEncryptionTest.cpp",
+      "Client/GameSecurity/tests/SPS/SpsTestSuite.cpp",
+      "Client/GameSecurity/tests/ScanRuleEngines.cpp",
+      "Client/GameSecurity/tests/include/GameSecurity.UnitTest.h",
+      "Client/RCCService/RCCSecurity/tests/AndroidAttestation.cpp",
+      "Client/RCCService/RCCSecurity/tests/Basic.cpp",
+      "Client/RCCService/RCCSecurity/tests/HashCollisionTest.cpp",
+      "Client/RCCService/RCCSecurity/tests/SVIDManagerTest.cpp",
+      "Client/RCCService/RCCSecurity/tests/ServerSecurityTestFixture.cpp"
+    ]
+  },
+  {
+    "owners": [
+      "@GameEngine/game-engine-security-threatmgmt"
+    ],
+    "batch_id": "game-engine-security-threatmgmt-001",
+    "files": [
+      "Client/Core/tests/IsolatedAllocatorTest.cpp",
+      "Client/Network/fuzz/include/FuzzMacroShim.h",
+      "Client/Network/tests/NetworkFilterTest.cpp"
+    ]
+  },
+  {
+    "owners": [
+      "@GameEngine/game-engine-sharing"
+    ],
+    "batch_id": "game-engine-sharing-001",
+    "files": [
+      "Client/App.UnitTest/CaptureServicePermissionThrottleTest.cpp"
+    ]
+  },
+  {
+    "owners": [
+      "@GameEngine/game-engine-social"
+    ],
+    "batch_id": "game-engine-social-001",
+    "files": [
+      "Client/App.UnitTest/FriendServiceTest.cpp",
+      "Client/App.UnitTest/UserServiceTest.cpp"
+    ]
+  },
+  {
+    "owners": [
+      "@GameEngine/game-engine-streaming"
+    ],
+    "batch_id": "game-engine-streaming-001",
+    "files": [
+      "Client/Network/tests/Streaming/ModelStreamingV2Test.cpp",
+      "Client/Network/tests/Streaming/RegionIteratorTest.cpp",
+      "Client/Network/tests/Streaming/ReplicatorGcJobV2Test.cpp",
+      "Client/Network/tests/Streaming/ReplicatorStreamJobV2Test.cpp",
+      "Client/Network/tests/Streaming/StreamItemInfoRadiusTest.cpp",
+      "Client/Network/tests/Streaming/StreamRegionTest.cpp",
+      "Client/Network/tests/Streaming/StreamingIntegrityV2Test.cpp",
+      "Client/Network/tests/Streaming/StreamingMrdTest.cpp",
+      "Client/Network/tests/Streaming/StreamingSpatialQueryTests.cpp",
+      "Client/Network/tests/Streaming/TunablePerformanceTest.cpp",
+      "Client/NetworkBase/tests/NetworkObjectsTest/GroupTest.cpp"
+    ]
+  },
+  {
+    "owners": [
+      "@GameEngine/game-engine-studio-ai-coding",
+      "@GameEngine/game-engine-studio-optional-all"
+    ],
+    "batch_id": "game-engine-studio-ai-coding-001",
+    "files": [
+      "Client/RobloxStudio/Features/Scripting/GenerativeAI/tests/AskAssistantFocusAction.test.cpp",
+      "Client/RobloxStudio/Features/Scripting/GenerativeAI/tests/AssistantApplication.test.cpp",
+      "Client/RobloxStudio/Features/Scripting/GenerativeAI/tests/AssistantPluginLoader.test.cpp",
+      "Client/RobloxStudio/Features/Scripting/GenerativeAI/tests/ConversationalAIActionRegister.test.cpp",
+      "Client/RobloxStudio/Features/Scripting/GenerativeAI/tests/StreamingMessageHandler.test.cpp"
+    ]
+  },
+  {
+    "owners": [
+      "@GameEngine/game-engine-studio-builder-tools"
+    ],
+    "batch_id": "game-engine-studio-builder-tools-001",
+    "files": [
+      "Client/App.UnitTest/ClickDetectorTest.cpp",
+      "Client/App.UnitTest/EventGrabbingTest.cpp",
+      "Client/App.UnitTest/ExhaustiveModelScaleTest.cpp",
+      "Client/App.UnitTest/ModelScaleCoreTest.cpp",
+      "Client/App.UnitTest/OptionalCoordinateFrameTest.cpp",
+      "Client/App.UnitTest/SelectionTest.cpp",
+      "Client/App.UnitTest/ToolTest.cpp",
+      "Client/App/manipulation/tests/ChainedLuaFunctionListTest.cpp",
+      "Client/App/manipulation/tests/CursorProjectorsTest.cpp",
+      "Client/App/manipulation/tests/DragDetectorsTest.cpp",
+      "Client/App/manipulation/tests/DragRespondersTest.cpp",
+      "Client/App/manipulation/tests/DragStartModelStateTest.cpp",
+      "Client/App/manipulation/tests/MouseCommandDragDetectorSupportTest.cpp",
+      "Client/App/manipulation/tests/uiManipulation/DragStartUIStateTest.cpp",
+      "Client/App/manipulation/tests/uiManipulation/UICursorProjectorsTest.cpp",
+      "Client/App/manipulation/tests/uiManipulation/UIDragDetectorServiceTest.cpp",
+      "Client/App/manipulation/tests/uiManipulation/UIDragDetectorsTest.cpp",
+      "Client/App/manipulation/tests/uiManipulation/UIDragRespondersTest.cpp"
+    ]
+  },
+  {
+    "owners": [
+      "@GameEngine/game-engine-studio-builder-tools",
+      "@GameEngine/game-engine-studio-optional-all"
+    ],
+    "batch_id": "game-engine-studio-builder-tools-001",
+    "files": [
+      "Client/RobloxStudio/Features/InstancePicker/tests/InstancePicker.test.cpp",
+      "Client/RobloxStudio/Features/Modeling/tests/MaterialGenerationService.test.cpp",
+      "Client/RobloxStudio/Features/Modeling/tests/SelectionHighlightManager.test.cpp",
+      "Client/RobloxStudio/Features/Modeling/tests/TextureGenerationService.test.cpp",
+      "Client/RobloxStudio/Features/Modeling/tests/TextureGenerationUnwrappingRequest.test.cpp",
+      "Client/RobloxStudio/Features/Visualization/tests/ViewportVisualizationContextProvider.test.cpp"
+    ]
+  },
+  {
+    "owners": [
+      "@GameEngine/game-engine-studio-builder-tools",
+      "@GameEngine/game-engine-studio-optional-all",
+      "@GameEngine/studio-platform"
+    ],
+    "batch_id": "game-engine-studio-builder-tools-001",
+    "files": [
+      "Client/RobloxStudio/Features/DataModelEditing/ExplorerFiltering/tests/ExplorerFilteringCompleter.test.cpp",
+      "Client/RobloxStudio/Features/DataModelEditing/ExplorerFiltering/tests/ExplorerFilteringFixture.h",
+      "Client/RobloxStudio/Features/DataModelEditing/ExplorerFiltering/tests/ExplorerFilteringInstances.test.cpp",
+      "Client/RobloxStudio/Features/DataModelEditing/ExplorerFiltering/tests/ExplorerFilteringLuaInterface.test.cpp",
+      "Client/RobloxStudio/Features/DataModelEditing/ExplorerFiltering/tests/ExplorerFilteringParsers.test.cpp"
+    ]
+  },
+  {
+    "owners": [
+      "@GameEngine/game-engine-studio-debugger",
+      "@GameEngine/game-engine-studio-optional-all"
+    ],
+    "batch_id": "game-engine-studio-debugger-001",
+    "files": [
+      "Client/App.UnitTest/VariantToStringTest.cpp",
+      "Client/RobloxStudio.UnitTest/Features/OutputWidget/FindAndFilterTest.cpp",
+      "Client/RobloxStudio.UnitTest/Features/OutputWidget/LogServiceUtilsTest.cpp",
+      "Client/RobloxStudio.UnitTest/Features/OutputWidget/OutputModelTest.cpp",
+      "Client/RobloxStudio.UnitTest/Features/QuickOpen/InstancesQuickOpenProviderWorkerTest.cpp",
+      "Client/RobloxStudio.UnitTest/Features/QuickOpen/QuickOpenFuzzySearchTest.cpp",
+      "Client/RobloxStudio/Features/Debugger/DebuggerUI/tests/DebuggerAstUtilTest.cpp",
+      "Client/RobloxStudio/Features/Debugger/DebuggerUI/tests/DebuggerInitTrackerTest.cpp",
+      "Client/RobloxStudio/Features/Debugger/DebuggerUI/tests/DebuggerUIServiceTest.cpp",
+      "Client/RobloxStudio/Features/Debugger/DebuggerUI/tests/DebuggerUIUtilities.test.cpp",
+      "Client/RobloxStudio/Features/Debugger/DebuggerUI/tests/ExceptionPopup.test.cpp",
+      "Client/RobloxStudio/Features/Debugger/DebuggerUI/tests/MetaBreakpointRemoteSettingTrackerTest.cpp",
+      "Client/RobloxStudio/Features/Debugger/DebuggerUI/tests/RbxTransportConnectionHandlerTest.cpp",
+      "Client/RobloxStudio/Features/Debugger/DebuggerUI/tests/RemoteDebuggerConnectionManagerTest.cpp",
+      "Client/RobloxStudio/Features/Debugger/DebuggerUI/tests/RemoteDebuggerNetworkHandlerTest.cpp",
+      "Client/RobloxStudio/Features/Debugger/DebuggerUI/tests/RunToCursorHandlerTest.cpp",
+      "Client/RobloxStudio/Features/Debugger/DebuggerUI/tests/SaveAndRestoreDebuggerUtilTest.cpp",
+      "Client/RobloxStudio/Features/Debugger/DebuggerUI/tests/ScriptActionEventHandlerTest.cpp",
+      "Client/RobloxStudio/Features/Debugger/DebuggerUI/tests/XmlUtilFixture.cpp",
+      "Client/RobloxStudio/Features/Debugger/DebuggerUI/tests/XmlUtilTest.cpp",
+      "Client/RobloxStudio/Features/Debugger/DebuggerV2/tests/BreakpointManagerTest.cpp",
+      "Client/RobloxStudio/Features/Debugger/DebuggerV2/tests/ConnectionManagerFixture.cpp",
+      "Client/RobloxStudio/Features/Debugger/DebuggerV2/tests/ConnectionManagerTest.cpp",
+      "Client/RobloxStudio/Features/Debugger/DebuggerV2/tests/ConnectionTest.cpp",
+      "Client/RobloxStudio/Features/Debugger/DebuggerV2/tests/CoreScriptDebuggingManagerTest.cpp",
+      "Client/RobloxStudio/Features/Debugger/DebuggerV2/tests/CrossDMScriptChangeListenerTest.cpp",
+      "Client/RobloxStudio/Features/Debugger/DebuggerV2/tests/DAPClientTest.cpp",
+      "Client/RobloxStudio/Features/Debugger/DebuggerV2/tests/EventListener.cpp",
+      "Client/RobloxStudio/Features/Debugger/DebuggerV2/tests/MetaBreakpointContextTest.cpp",
+      "Client/RobloxStudio/Features/Debugger/DebuggerV2/tests/MetaBreakpointManagerTest.cpp",
+      "Client/RobloxStudio/Features/Debugger/DebuggerV2/tests/MetaBreakpointTest.cpp",
+      "Client/RobloxStudio/Features/Debugger/DebuggerV2/tests/ScriptCloneWatcherFixture.cpp",
+      "Client/RobloxStudio/Features/Debugger/DebuggerV2/tests/ScriptCloneWatcherHelperTest.cpp",
+      "Client/RobloxStudio/Features/Debugger/DebuggerV2/tests/ScriptCloneWatcherTest.cpp",
+      "Client/RobloxStudio/Features/Debugger/StudioDebugger/tests/DebugContextProvider.test.cpp",
+      "Client/RobloxStudio/Features/Debugger/StudioDebugger/tests/DebuggerHostAppServices.test.cpp",
+      "Client/RobloxStudio/Features/Debugger/StudioDebugger/tests/DebuggerStandaloneDMListener.test.cpp"
+    ]
+  },
+  {
+    "owners": [
+      "@GameEngine/game-engine-studio-emulation",
+      "@GameEngine/game-engine-studio-optional-all"
+    ],
+    "batch_id": "game-engine-studio-emulation-001",
+    "files": [
+      "Client/RobloxStudio/Features/DeveloperTools/tests/EmulatorKeyTracker.test.cpp",
+      "Client/RobloxStudio/Features/DeveloperTools/tests/GamepadEmulator.test.cpp",
+      "Client/RobloxStudio/Features/DeveloperTools/tests/GamepadMapping.test.cpp",
+      "Client/RobloxStudio/Features/DeveloperTools/tests/KeyboardShortcutUtil.test.cpp",
+      "Client/RobloxStudio/Features/DeveloperTools/tests/StudioDeviceEmulator.test.cpp",
+      "Client/RobloxStudio/Features/DeveloperTools/tests/TouchEmulator.test.cpp",
+      "Client/RobloxStudio/Features/DeveloperTools/tests/VREmulator.test.cpp"
+    ]
+  },
+  {
+    "owners": [
+      "@GameEngine/game-engine-studio-file-lock",
+      "@GameEngine/game-engine-studio-optional-all"
+    ],
+    "batch_id": "game-engine-studio-file-lock-001",
+    "files": [
+      "Client/RobloxStudio/Platform/PlaceManagement/PlaceSessionConfiguration/tests/PlaceSessionConfiguration.test.cpp",
+      "Client/RobloxStudio/Platform/PlaceManagement/PlaceSessionContext/tests/PlaceSessionContext.test.cpp",
+      "Client/RobloxStudio/Platform/PlaceManagement/tests/ClientServerTestPlaceOpenResultWatcher.test.cpp",
+      "Client/RobloxStudio/Platform/PlaceManagement/tests/DialogImageManager.test.cpp",
+      "Client/RobloxStudio/Platform/PlaceManagement/tests/DownloadPlaceCopyAction.test.cpp",
+      "Client/RobloxStudio/Platform/PlaceManagement/tests/PlaceContextProvider.test.cpp",
+      "Client/RobloxStudio/Platform/PlaceManagement/tests/PlaceHeartbeats.test.cpp",
+      "Client/RobloxStudio/Platform/PlaceManagement/tests/PlaceManagement.test.cpp",
+      "Client/RobloxStudio/Platform/PlaceManagement/tests/PlaceOpenInstanceCountTelemetry.test.cpp",
+      "Client/RobloxStudio/Platform/PlaceManagement/tests/PlaceSessionError.test.cpp",
+      "Client/RobloxStudio/Platform/PlaceManagement/tests/PlaceSessionStateTelemetry.test.cpp",
+      "Client/RobloxStudio/Platform/PlaceManagement/tests/PlayTestSessionGuidSetter.test.cpp",
+      "Client/RobloxStudio/Platform/PlaceManagement/tests/SavePlaceDialogManager.test.cpp",
+      "Client/RobloxStudio/Platform/PluginRuntime/PluginWidgets/tests/PluginQWidgetRelay.test.cpp",
+      "Client/RobloxStudio/Platform/PluginRuntime/PluginWidgets/tests/PluginQWidgetWindowOrderingObserver.test.cpp",
+      "Client/RobloxStudio/Platform/PluginRuntime/Plugins/tests/PluginActionRelay.test.cpp",
+      "Client/RobloxStudio/Platform/PluginRuntime/Plugins/tests/PluginActors.test.cpp",
+      "Client/RobloxStudio/Platform/RobloxApplication/tests/CommandLineArguments.test.cpp"
+    ]
+  },
+  {
+    "owners": [
+      "@GameEngine/game-engine-studio-general"
+    ],
+    "batch_id": "game-engine-studio-general-001",
+    "files": [
+      "Client/App.UnitTest/InternalPermissionTest.cpp"
+    ]
+  },
+  {
+    "owners": [
+      "@GameEngine/game-engine-studio-general",
+      "@GameEngine/game-engine-studio-optional-all"
+    ],
+    "batch_id": "game-engine-studio-general-001",
+    "files": [
+      "Client/RobloxStudio.UnitTest/ApiFriendsUrlTest.cpp",
+      "Client/RobloxStudio.UnitTest/ApiTeamCreateUrlTest.cpp",
+      "Client/RobloxStudio.UnitTest/ApiUniversesUrlTest.cpp",
+      "Client/RobloxStudio.UnitTest/ApiUploadUrlTest.cpp",
+      "Client/RobloxStudio.UnitTest/ApiUsersUrlTest.cpp",
+      "Client/RobloxStudio.UnitTest/AssetFetchUrlTest.cpp",
+      "Client/RobloxStudio.UnitTest/AuthenticationUrlTest.cpp",
+      "Client/RobloxStudio.UnitTest/AvatarImportServiceTest.cpp",
+      "Client/RobloxStudio.UnitTest/ChatServiceTest.cpp",
+      "Client/RobloxStudio.UnitTest/CommandLineArgumentsTest.cpp",
+      "Client/RobloxStudio.UnitTest/ExecutableConfigurationUrlTest.cpp",
+      "Client/RobloxStudio.UnitTest/FaceAnimation/FaceAnimationTests.cpp",
+      "Client/RobloxStudio.UnitTest/FileSync/DelayedTaskQueueTest.cpp",
+      "Client/RobloxStudio.UnitTest/FileSync/FileSyncServiceTest.cpp",
+      "Client/RobloxStudio.UnitTest/FileSync/FileSyncServiceTestActions.cpp",
+      "Client/RobloxStudio.UnitTest/FileSync/FileSyncServiceTestUtils.cpp",
+      "Client/RobloxStudio.UnitTest/FuturesResolverTest.cpp",
+      "Client/RobloxStudio.UnitTest/GizmoRaycastTest.cpp",
+      "Client/RobloxStudio.UnitTest/GuiTextTest.cpp",
+      "Client/RobloxStudio.UnitTest/PermissionsServiceTest.cpp",
+      "Client/RobloxStudio.UnitTest/PluginGuiTest.cpp",
+      "Client/RobloxStudio.UnitTest/PluginKeyboardNavTest.cpp",
+      "Client/RobloxStudio.UnitTest/RobloxStudio.UnitTest.cpp",
+      "Client/RobloxStudio.UnitTest/SignalRUrlTest.cpp",
+      "Client/RobloxStudio.UnitTest/StudioResourceIdTest.cpp",
+      "Client/RobloxStudio.UnitTest/TestHelpers/include/TestHelpers/EventLoopTest.h",
+      "Client/RobloxStudio.UnitTest/ThumbnailUrlTest.cpp",
+      "Client/RobloxStudio.UnitTest/Utilities/HSRPublishTest.cpp",
+      "Client/RobloxStudio.UnitTest/VoiceChatServiceTest.cpp",
+      "Client/RobloxStudio/Features/AssetExport/tests/AssetExportController.test.cpp",
+      "Client/RobloxStudio/Features/CollaborationPresence/tests/CollaboratorLSPConnections.test.cpp",
+      "Client/RobloxStudio/Features/CollaborationPresence/tests/PresenceManager.test.cpp",
+      "Client/RobloxStudio/Features/DataModelPatchPreloader/tests/DataModelPatchPreloader.test.cpp",
+      "Client/RobloxStudio/Features/DataModelSaver/tests/DataModelAutoSaverTelemetry.test.cpp",
+      "Client/RobloxStudio/Features/DataModelSaver/tests/DataModelLocalFileSaveUtilities.test.cpp",
+      "Client/RobloxStudio/Features/DataModelSaver/tests/DataModelSaver.test.cpp",
+      "Client/RobloxStudio/Features/MiscUI/tests/AboutStudioDialog.test.cpp",
+      "Client/RobloxStudio/Features/OrientationIndicator/tests/OrientationIndicatorActionController.test.cpp",
+      "Client/RobloxStudio/Features/OrientationIndicator/tests/OrientationIndicatorContextProvider.test.cpp",
+      "Client/RobloxStudio/Features/PlayTestModes/tests/PlayTestModeSettingContextProvider.test.cpp"
+    ]
+  },
+  {
+    "owners": [
+      "@GameEngine/game-engine-studio-general",
+      "@GameEngine/game-engine-studio-optional-all"
+    ],
+    "batch_id": "game-engine-studio-general-002",
+    "files": [
+      "Client/RobloxStudio/Features/PlayTestModes/tests/PlayTestModesController.test.cpp",
+      "Client/RobloxStudio/Features/PlayTestModes/tests/PlayTestModesPlaceListener.test.cpp",
+      "Client/RobloxStudio/Features/PlayTestModes/tests/PluginConnectionSetupHelper.test.cpp",
+      "Client/RobloxStudio/Features/PluginChangeWatcher/tests/PluginChangeWatcher.test.cpp",
+      "Client/RobloxStudio/Features/PluginChangeWatcher/tests/RobloxFileWatcher.test.cpp",
+      "Client/RobloxStudio/Features/Safety/tests/Safety.UnitTest.cpp",
+      "Client/RobloxStudio/Features/SelectAll/tests/SelectAll.test.cpp",
+      "Client/RobloxStudio/Features/StartPageBridge/tests/StartPageBridge.test.cpp",
+      "Client/RobloxStudio/Features/StudioScreenCapture/tests/StudioCaptureService.test.cpp",
+      "Client/RobloxStudio/Features/StudioScreenCapture/tests/StudioScreenshotCapture.test.cpp",
+      "Client/RobloxStudio/Features/StudioTestService/tests/PlayTestExecutor.test.cpp",
+      "Client/RobloxStudio/Features/StudioTestService/tests/StudioTestService.test.cpp"
+    ]
+  },
+  {
+    "owners": [
+      "@GameEngine/game-engine-studio-optional-all",
+      "@GameEngine/game-engine-studio-packages"
+    ],
+    "batch_id": "game-engine-studio-optional-all-001",
+    "files": [
+      "Client/RobloxStudio/Features/Packages/tests/MassUpdateModel.test.cpp",
+      "Client/RobloxStudio/Features/Packages/tests/PackageActions.test.cpp",
+      "Client/RobloxStudio/Features/Packages/tests/PackageManager.test.cpp",
+      "Client/RobloxStudio/Features/Packages/tests/PackageSwap.test.cpp",
+      "Client/RobloxStudio/Features/Packages/tests/PackageUtilities.test.cpp",
+      "Client/RobloxStudio/Features/Packages/tests/PublishPackageErrorHelper.test.cpp",
+      "Client/RobloxStudio/Features/Packages/tests/StudioPackageManager.test.cpp",
+      "Client/RobloxStudio/Features/Scripting/AIDiffMessage/tests/AIDiffMessageDispatcher.test.cpp",
+      "Client/RobloxStudio/Features/Scripting/AIDiffMessage/tests/AIDiffMessageJSON.test.cpp",
+      "Client/RobloxStudio/Features/Scripting/AIDiffMessage/tests/AIDiffMessageModel.test.cpp",
+      "Client/RobloxStudio/Features/Scripting/AIDiffMessage/tests/ConvoAIRequest.test.cpp",
+      "Client/RobloxStudio/Features/Scripting/AIDiffMessage/tests/PackageVariants.test.cpp",
+      "Client/RobloxStudio/Features/Scripting/AIDiffMessage/tests/ScriptVariants.test.cpp",
+      "Client/TeamCreateShared/DmDiff/tests/CompareTestUtils.cpp",
+      "Client/TeamCreateShared/DmDiff/tests/DiffPatching.test.cpp",
+      "Client/TeamCreateShared/DmDiff/tests/DmDiff.UnitTest.cpp",
+      "Client/TeamCreateShared/DmDiff/tests/HistoryIdPath.test.cpp",
+      "Client/TeamCreateShared/DmDiff/tests/InstanceDiff.test.cpp",
+      "Client/TeamCreateShared/DmDiff/tests/PropertyDependency.test.cpp",
+      "Client/TeamCreateShared/DmDiff/tests/PropertyDiff.test.cpp",
+      "Client/TeamCreateShared/DmDiff/tests/TreeDiff.test.cpp",
+      "Client/TeamCreateShared/DmDiff/tests/TreePath.test.cpp",
+      "Client/TeamCreateShared/DmDiff/tests/VariantEquality.test.cpp"
+    ]
+  },
+  {
+    "owners": [
+      "@GameEngine/game-engine-studio-optional-all",
+      "@GameEngine/game-engine-studio-packages",
+      "@GameEngine/studio-collaboration"
+    ],
+    "batch_id": "game-engine-studio-optional-all-001",
+    "files": [
+      "Client/RobloxStudio/Features/Publishing/tests/AssetPrivacyPermissionsManager.test.cpp",
+      "Client/RobloxStudio/Features/Publishing/tests/PlacePublishMetrics.test.cpp",
+      "Client/RobloxStudio/Features/Publishing/tests/PlacePublishServiceListener.test.cpp",
+      "Client/RobloxStudio/Features/Publishing/tests/PublishToRobloxAction.test.cpp",
+      "Client/RobloxStudio/Features/Publishing/tests/SaveToRobloxWithNotesAction.test.cpp",
+      "Client/RobloxStudio/Features/Publishing/tests/StudioAssetService.test.cpp",
+      "Client/RobloxStudio/Features/Publishing/tests/StudioPublishService.test.cpp"
+    ]
+  },
+  {
+    "owners": [
+      "@GameEngine/game-engine-studio-optional-all",
+      "@GameEngine/game-engine-studio-performance"
+    ],
+    "batch_id": "game-engine-studio-optional-all-001",
+    "files": [
+      "Client/RobloxStudio/Features/PerformanceTools/tests/MicroprofilerToggleAction.test.cpp",
+      "Client/RobloxStudio/Features/PerformanceTools/tests/PerformanceToolsBridge.test.cpp",
+      "Client/RobloxStudio/Features/PerformanceTools/tests/PerformanceToolsLayerRegister.test.cpp"
+    ]
+  },
+  {
+    "owners": [
+      "@GameEngine/game-engine-studio-optional-all",
+      "@GameEngine/game-engine-studio-platform-ribbon"
+    ],
+    "batch_id": "game-engine-studio-optional-all-001",
+    "files": [
+      "Client/RobloxStudio/Features/RibbonConfiguration/tests/RibbonFileSystemHelper.test.cpp"
+    ]
+  },
+  {
+    "owners": [
+      "@GameEngine/game-engine-studio-optional-all",
+      "@GameEngine/game-engine-studio-plugins"
+    ],
+    "batch_id": "game-engine-studio-optional-all-001",
+    "files": [
+      "Client/RobloxStudio/Features/PluginErrorReporting/tests/PluginErrorReporting.test.cpp",
+      "Client/RobloxStudio/Features/PluginSupport/tests/PluginApiHost.test.cpp",
+      "Client/RobloxStudio/Features/PluginSupport/tests/StudioSdkService.test.cpp",
+      "Client/RobloxStudio/Features/PluginSupport/tests/StudioUri.test.cpp",
+      "Client/RobloxStudio/Platform/PluginLoading/PluginLoading/tests/BulkPluginAssetDetailsFetcher.test.cpp",
+      "Client/RobloxStudio/Platform/PluginLoading/PluginLoading/tests/DataModelPluginLoader.test.cpp",
+      "Client/RobloxStudio/Platform/PluginLoading/PluginLoading/tests/Integration/DebuggerFixture.cpp",
+      "Client/RobloxStudio/Platform/PluginLoading/PluginLoading/tests/Integration/DebuggerTestUtilities.cpp",
+      "Client/RobloxStudio/Platform/PluginLoading/PluginLoading/tests/Integration/PluginLoadingDebuggerIntegration.test.cpp",
+      "Client/RobloxStudio/Platform/PluginLoading/PluginLoading/tests/Integration/PluginLoadingUIElementsIntegration.test.cpp",
+      "Client/RobloxStudio/Platform/PluginLoading/PluginLoading/tests/NonBuiltinPluginDisabler.test.cpp",
+      "Client/RobloxStudio/Platform/PluginLoading/PluginLoading/tests/PluginDirectoryFixture.cpp",
+      "Client/RobloxStudio/Platform/PluginLoading/PluginLoading/tests/PluginFileController.test.cpp",
+      "Client/RobloxStudio/Platform/PluginLoading/PluginLoading/tests/PluginInstancesSourceFile.LazyLoading.test.cpp",
+      "Client/RobloxStudio/Platform/PluginLoading/PluginLoading/tests/PluginInstancesSourceFile.test.cpp",
+      "Client/RobloxStudio/Platform/PluginLoading/PluginLoading/tests/PluginLoadUtils.test.cpp",
+      "Client/RobloxStudio/Platform/PluginLoading/PluginLoading/tests/PluginLoaderTest.test.cpp",
+      "Client/RobloxStudio/Platform/PluginLoading/PluginLoading/tests/PluginLoadingRequestHelper.cpp",
+      "Client/RobloxStudio/Platform/PluginLoading/PluginLoading/tests/PluginMetadataStore.test.cpp",
+      "Client/RobloxStudio/Platform/PluginLoading/PluginLoading/tests/PluginPermissionsFetcher.test.cpp",
+      "Client/RobloxStudio/Platform/PluginLoading/PluginLoading/tests/PluginVersionDetailsFetcher.test.cpp",
+      "Client/RobloxStudio/Platform/PluginLoading/PluginLoading/tests/UserPluginsFetcher.test.cpp",
+      "Client/RobloxStudio/Platform/PluginLoading/PluginLoading/tests/UserPluginsModel.test.cpp",
+      "Client/RobloxStudio/Platform/PluginLoading/PluginLoading/tests/UserPluginsModelFixture.cpp",
+      "Client/RobloxStudio/Platform/PluginLoading/PluginOTA/tests/PluginOTAController.test.cpp",
+      "Client/RobloxStudio/Platform/PluginLoading/PluginOTA/tests/PluginOTAData.test.cpp",
+      "Client/RobloxStudio/Platform/PluginLoading/PluginOTA/tests/PluginOTADependencies.test.cpp",
+      "Client/RobloxStudio/Platform/PluginLoading/PluginOTA/tests/PluginOTADownloader.test.cpp",
+      "Client/RobloxStudio/Platform/PluginLoading/PluginOTA/tests/PluginOTAFileStore.test.cpp",
+      "Client/RobloxStudio/Platform/PluginLoading/PluginOTA/tests/PluginOTAInitialization.test.cpp",
+      "Client/RobloxStudio/Platform/PluginLoading/PluginOTA/tests/PluginOTAInstaller.test.cpp",
+      "Client/RobloxStudio/Platform/PluginLoading/PluginOTA/tests/PluginOTAManager.test.cpp",
+      "Client/RobloxStudio/Platform/PluginLoading/PluginPathUtils/tests/PluginPathUtils.test.cpp",
+      "Client/RobloxStudio/Platform/PluginLoading/PluginPathUtils/tests/PluginReference.test.cpp",
+      "Client/RobloxStudio/Platform/PluginLoading/RunnablePluginsSource/tests/RunnablePluginsProvider.test.cpp"
+    ]
+  },
+  {
+    "owners": [
+      "@GameEngine/game-engine-studio-optional-all",
+      "@GameEngine/game-engine-studio-scripteditor"
+    ],
+    "batch_id": "game-engine-studio-optional-all-001",
+    "files": [
+      "Client/RobloxStudio/Features/DataModelANRListener/tests/DataModelANRListener.test.cpp",
+      "Client/RobloxStudio/Features/DiffAndMerge/Diff/tests/DiffProcessor.test.cpp",
+      "Client/RobloxStudio/Features/DiffAndMerge/Diff/tests/DiffTool.test.cpp",
+      "Client/RobloxStudio/Features/DiffAndMerge/Diff/tests/DiffTreeModel.test.cpp",
+      "Client/RobloxStudio/Features/DiffAndMerge/Diff/tests/RobloxScriptDiffDoc.test.cpp",
+      "Client/RobloxStudio/Features/DiffAndMerge/Merge/tests/Merge.test.cpp",
+      "Client/RobloxStudio/Features/Scripting/FindDialog/tests/EmbeddedFindReplaceWidget.test.cpp",
+      "Client/RobloxStudio/Features/Scripting/FindReplace/FindReplaceComponents/tests/FindReplaceDataModelSearcher.test.cpp",
+      "Client/RobloxStudio/Features/Scripting/GenerativeAIStudio/tests/StudioScriptDiffAndCommit.test.cpp",
+      "Client/RobloxStudio/Features/Scripting/LSP/tests/JSONMarshalling.test.cpp",
+      "Client/RobloxStudio/Features/Scripting/LSP/tests/LSPCachedRequestAccumulator.test.cpp",
+      "Client/RobloxStudio/Features/Scripting/LSP/tests/LSPRequestAccumulator.test.cpp",
+      "Client/RobloxStudio/Features/Scripting/LSP/tests/LSPRequestCache.test.cpp",
+      "Client/RobloxStudio/Features/Scripting/LSP/tests/LSPRequestMerger.test.cpp",
+      "Client/RobloxStudio/Features/Scripting/LSP/tests/TextDocument.test.cpp",
+      "Client/RobloxStudio/Features/Scripting/LSP/tests/TextUTF8Examination.test.cpp",
+      "Client/RobloxStudio/Features/Scripting/LSPServerAdapter/tests/LSPFileSyncService.test.cpp",
+      "Client/RobloxStudio/Features/Scripting/LinkedSourceMigrator/tests/LinkedSourceMigrator.test.cpp",
+      "Client/RobloxStudio/Features/Scripting/LuauLSPServer/tests/APITranslationLayer.test.cpp",
+      "Client/RobloxStudio/Features/Scripting/LuauLSPServer/tests/AutocompleteFixture.h",
+      "Client/RobloxStudio/Features/Scripting/LuauLSPServer/tests/Color3Locator.test.cpp",
+      "Client/RobloxStudio/Features/Scripting/LuauLSPServer/tests/GetCommentAboveFunctionFormatted.test.cpp",
+      "Client/RobloxStudio/Features/Scripting/LuauLSPServer/tests/GetDeclaration.test.cpp",
+      "Client/RobloxStudio/Features/Scripting/LuauLSPServer/tests/GetDocumentSymbols.test.cpp",
+      "Client/RobloxStudio/Features/Scripting/LuauLSPServer/tests/GetHoverType.test.cpp",
+      "Client/RobloxStudio/Features/Scripting/LuauLSPServer/tests/GetReferences.test.cpp",
+      "Client/RobloxStudio/Features/Scripting/LuauLSPServer/tests/LSPLiveScriptingDMReceiver.test.cpp",
+      "Client/RobloxStudio/Features/Scripting/LuauLSPServer/tests/LSPServiceApi.test.cpp",
+      "Client/RobloxStudio/Features/Scripting/LuauLSPServer/tests/LSPServiceLiveEditing.test.cpp",
+      "Client/RobloxStudio/Features/Scripting/LuauLSPServer/tests/LiveScriptingDMClient.test.cpp",
+      "Client/RobloxStudio/Features/Scripting/LuauLSPServer/tests/LuauAutocomplete.test.cpp",
+      "Client/RobloxStudio/Features/Scripting/LuauLSPServer/tests/LuauDocContentGetter.test.cpp",
+      "Client/RobloxStudio/Features/Scripting/LuauLSPServer/tests/LuauDocContentGetterWithSource.test.cpp",
+      "Client/RobloxStudio/Features/Scripting/LuauLSPServer/tests/LuauExtraSelections.test.cpp",
+      "Client/RobloxStudio/Features/Scripting/LuauLSPServer/tests/LuauLSPServer.test.cpp",
+      "Client/RobloxStudio/Features/Scripting/LuauLSPServer/tests/LuauScriptAnalyzer.test.cpp",
+      "Client/RobloxStudio/Features/Scripting/LuauLSPServer/tests/LuauScriptDataStore.test.cpp",
+      "Client/RobloxStudio/Features/Scripting/LuauLSPServer/tests/LuauScriptFolds.test.cpp",
+      "Client/RobloxStudio/Features/Scripting/LuauLSPServer/tests/LuauScriptFormatter.test.cpp",
+      "Client/RobloxStudio/Features/Scripting/LuauLSPServer/tests/LuauScriptLexMap.test.cpp"
+    ]
+  },
+  {
+    "owners": [
+      "@GameEngine/game-engine-studio-optional-all",
+      "@GameEngine/game-engine-studio-scripteditor"
+    ],
+    "batch_id": "game-engine-studio-optional-all-002",
+    "files": [
+      "Client/RobloxStudio/Features/Scripting/LuauLSPServer/tests/MLAutocomplete.test.cpp",
+      "Client/RobloxStudio/Features/Scripting/LuauLSPServer/tests/MLContextFilter.test.cpp",
+      "Client/RobloxStudio/Features/Scripting/LuauLSPServer/tests/ModulesAsyncFixture.h",
+      "Client/RobloxStudio/Features/Scripting/LuauLSPServer/tests/NewClientRouting.test.cpp",
+      "Client/RobloxStudio/Features/Scripting/LuauLSPServer/tests/NewServerRoundtrip.test.cpp",
+      "Client/RobloxStudio/Features/Scripting/LuauLSPServer/tests/NewServerRouting.test.cpp",
+      "Client/RobloxStudio/Features/Scripting/LuauLSPServer/tests/ReadScript.test.cpp",
+      "Client/RobloxStudio/Features/Scripting/LuauLSPServer/tests/ScriptDocument.test.cpp",
+      "Client/RobloxStudio/Features/Scripting/LuauLSPServer/tests/SignatureHelp.test.cpp",
+      "Client/RobloxStudio/Features/Scripting/LuauLSPServer/tests/SnippetService.test.cpp",
+      "Client/RobloxStudio/Features/Scripting/ScriptEditor/tests/ActionTooltipView.test.cpp",
+      "Client/RobloxStudio/Features/Scripting/ScriptEditor/tests/AutocompleteScoring.test.cpp",
+      "Client/RobloxStudio/Features/Scripting/ScriptEditor/tests/AutocompleteUpdater.test.cpp",
+      "Client/RobloxStudio/Features/Scripting/ScriptEditor/tests/CharacterTypes.test.cpp",
+      "Client/RobloxStudio/Features/Scripting/ScriptEditor/tests/CompletionPerformanceMonitorImpl.test.cpp",
+      "Client/RobloxStudio/Features/Scripting/ScriptEditor/tests/FuzzyWeightCache.test.cpp",
+      "Client/RobloxStudio/Features/Scripting/ScriptEditor/tests/IndentationRulerDrawing.test.cpp",
+      "Client/RobloxStudio/Features/Scripting/ScriptEditor/tests/IndentationRulers.test.cpp",
+      "Client/RobloxStudio/Features/Scripting/ScriptEditor/tests/LSPClientSettings.test.cpp",
+      "Client/RobloxStudio/Features/Scripting/ScriptEditor/tests/LiveEditingAutocompleteUpdater.test.cpp",
+      "Client/RobloxStudio/Features/Scripting/ScriptEditor/tests/LiveEditingQtClient.test.cpp",
+      "Client/RobloxStudio/Features/Scripting/ScriptEditor/tests/MLAutocompleteTelemetry.test.cpp",
+      "Client/RobloxStudio/Features/Scripting/ScriptEditor/tests/MLCodeAssistanceController.test.cpp",
+      "Client/RobloxStudio/Features/Scripting/ScriptEditor/tests/MLCodeQtLanguageClient.test.cpp",
+      "Client/RobloxStudio/Features/Scripting/ScriptEditor/tests/MLCodeRequestContext.test.cpp",
+      "Client/RobloxStudio/Features/Scripting/ScriptEditor/tests/MLCodeTelemetryReporter.test.cpp",
+      "Client/RobloxStudio/Features/Scripting/ScriptEditor/tests/MultiCursorMimeData.test.cpp",
+      "Client/RobloxStudio/Features/Scripting/ScriptEditor/tests/NewQtLanguageClient.test.cpp",
+      "Client/RobloxStudio/Features/Scripting/ScriptEditor/tests/RecentlyOpenedScripts.test.cpp",
+      "Client/RobloxStudio/Features/Scripting/ScriptEditor/tests/ScriptBlockFormats.test.cpp",
+      "Client/RobloxStudio/Features/Scripting/ScriptEditor/tests/ScriptEditor.test.cpp",
+      "Client/RobloxStudio/Features/Scripting/ScriptEditor/tests/ScriptEditorUndoStack.test.cpp",
+      "Client/RobloxStudio/Features/Scripting/ScriptEditor/tests/ScriptEditorUtil.test.cpp",
+      "Client/RobloxStudio/Features/Scripting/ScriptEditor/tests/ScriptExtraSelections.test.cpp",
+      "Client/RobloxStudio/Features/Scripting/ScriptEditor/tests/ScriptFunctionFilterTest.cpp",
+      "Client/RobloxStudio/Features/Scripting/ScriptEditor/tests/ScriptHighlighter.test.cpp",
+      "Client/RobloxStudio/Features/Scripting/ScriptEditor/tests/ScriptingManager.test.cpp",
+      "Client/RobloxStudio/Features/Scripting/ScriptEditor/tests/ScriptingProductivityTelemetry.test.cpp",
+      "Client/RobloxStudio/Features/Scripting/ScriptEditor/tests/SnippetManager.test.cpp",
+      "Client/RobloxStudio/Features/Scripting/ScriptEditor/tests/SnippetParser.test.cpp"
+    ]
+  },
+  {
+    "owners": [
+      "@GameEngine/game-engine-studio-optional-all",
+      "@GameEngine/game-engine-studio-scripteditor"
+    ],
+    "batch_id": "game-engine-studio-optional-all-003",
+    "files": [
+      "Client/RobloxStudio/Features/Scripting/ScriptEditor/tests/StringUtils.test.cpp",
+      "Client/RobloxStudio/Features/Scripting/ScriptEditor/tests/WindowChangedMonitor.test.cpp",
+      "Client/RobloxStudio/Features/Scripting/ScriptingCommandLine/tests/RunScriptLaunchTaskHandler.test.cpp",
+      "Client/RobloxStudio/Features/Scripting/StudioCommandBar/tests/CommandBar.test.cpp",
+      "Client/RobloxStudio/Features/Scripting/StudioCommandBar/tests/DEPRECATED_CommandBar.test.cpp",
+      "Client/RobloxStudio/Features/Scripting/tests/ScriptTitler.test.cpp",
+      "Client/RobloxStudio/Features/StudioScripting/tests/CodeAssist.test.cpp",
+      "Client/RobloxStudio/Features/StudioScripting/tests/LanguageSettingFetcher.test.cpp",
+      "Client/RobloxStudio/Features/StudioScripting/tests/OpenScriptLaunchTaskHandler.test.cpp",
+      "Client/RobloxStudio/Features/StudioScripting/tests/ScriptCloneTracker.test.cpp",
+      "Client/RobloxStudio/Features/StudioScripting/tests/ScriptEditorBridge.test.cpp",
+      "Client/RobloxStudio/Features/StudioScripting/tests/ScriptEditorContextProvider.test.cpp",
+      "Client/RobloxStudio/Features/StudioScripting/tests/ScriptEditorContextProviderBridge.test.cpp",
+      "Client/RobloxStudio/Features/StudioScripting/tests/ScriptingHostAppServices.test.cpp",
+      "Client/RobloxStudio/Features/StudioScripting/tests/ScriptingPerfLog.test.cpp",
+      "Client/RobloxStudio/Features/StudioScripting/tests/StudioConversationalAIService.test.cpp",
+      "Client/RobloxStudio/Platform/CommandFramework/tests/CmdArgSchema.test.cpp",
+      "Client/RobloxStudio/Platform/CommandFramework/tests/StudioCmdBase.test.cpp",
+      "Client/RobloxStudio/Platform/CommandFramework/tests/StudioCmdExecQueue.test.cpp",
+      "Client/RobloxStudio/Platform/CommandFramework/tests/StudioCmdMgrBase.test.cpp",
+      "Client/RobloxStudio/Platform/CommandFramework/tests/StudioCmdService.test.cpp",
+      "Client/RobloxStudio/Platform/CommandFramework/tests/StudioNamedViewCommands.test.cpp",
+      "Client/RobloxStudio/Platform/NativeDialogManager/tests/NativeDialogManagerTest.cpp",
+      "Client/RobloxStudio/Platform/PluginHangMonitor/tests/PluginHangMonitor.test.cpp",
+      "Client/RobloxStudio/Platform/ScriptingBase/tests/LuaSourceBufferBasic.test.cpp",
+      "Client/RobloxStudio/Platform/ScriptingBase/tests/TemporaryScriptService.test.cpp",
+      "Client/TeamCreateShared/LiveEditing/tests/AnyUndo.test.cpp",
+      "Client/TeamCreateShared/LiveEditing/tests/ApplyOperation.test.cpp",
+      "Client/TeamCreateShared/LiveEditing/tests/JupiterEndpoint.test.cpp",
+      "Client/TeamCreateShared/LiveEditing/tests/JupiterOperationSerialization.test.cpp",
+      "Client/TeamCreateShared/LiveEditing/tests/JupiterServer.test.cpp",
+      "Client/TeamCreateShared/LiveEditing/tests/Transforms.test.cpp",
+      "Client/TeamCreateShared/LiveScriptingServices/include/LiveScriptingServices/LiveScriptingFixtureBase.h",
+      "Client/TeamCreateShared/LiveScriptingServices/tests/LiveScriptingService.test.cpp",
+      "Client/TeamCreateShared/LiveScriptingServices/tests/RemoteCursorService.test.cpp",
+      "Client/TeamCreateShared/ScriptCommitServices/tests/ScriptCommitService.test.cpp"
+    ]
+  },
+  {
+    "owners": [
+      "@GameEngine/game-engine-studio-optional-all",
+      "@GameEngine/game-engine-ui-subsystem"
+    ],
+    "batch_id": "game-engine-studio-optional-all-001",
+    "files": [
+      "Client/RobloxStudio/Features/FontSelection/tests/FontFetcher.test.cpp",
+      "Client/RobloxStudio/Features/StudioStyling/tests/StylingSavePublishEvent.test.cpp"
+    ]
+  },
+  {
+    "owners": [
+      "@GameEngine/game-engine-studio-optional-all",
+      "@GameEngine/luau-toolchain"
+    ],
+    "batch_id": "game-engine-studio-optional-all-001",
+    "files": [
+      "Client/RobloxStudio/Features/FileSync/LiveSync/tests/BaseFileSyncDiscAction.test.cpp",
+      "Client/RobloxStudio/Features/FileSync/LiveSync/tests/BaseScriptSyncActionTests.test.cpp",
+      "Client/RobloxStudio/Features/FileSync/LiveSync/tests/BaseStartSyncAction.test.cpp",
+      "Client/RobloxStudio/Features/FileSync/LiveSync/tests/BaseStartSyncActionDialogs.test.cpp",
+      "Client/RobloxStudio/Features/FileSync/LiveSync/tests/BaseStartSyncToFileAction.test.cpp",
+      "Client/RobloxStudio/Features/FileSync/LiveSync/tests/BaseStartSyncToFileActionDialogs.test.cpp",
+      "Client/RobloxStudio/Features/FileSync/LiveSync/tests/FileSyncIOInterface.test.cpp",
+      "Client/RobloxStudio/Features/FileSync/LiveSync/tests/FileSyncManager_M2.test.cpp",
+      "Client/RobloxStudio/Features/FileSync/LiveSync/tests/FileSyncTestHelpers.cpp",
+      "Client/RobloxStudio/Features/FileSync/LiveSync/tests/FileSyncerIOHandler.test.cpp",
+      "Client/RobloxStudio/Features/FileSync/LiveSync/tests/FileSyncer_M2.test.cpp",
+      "Client/RobloxStudio/Features/FileSync/LiveSync/tests/FileSyncer_M3.test.cpp",
+      "Client/RobloxStudio/Features/FileSync/LiveSync/tests/InstanceFileSyncService.test.cpp",
+      "Client/RobloxStudio/Features/FileSync/LiveSync/tests/OpenInExternalEditorAction.test.cpp",
+      "Client/RobloxStudio/Features/FileSync/LiveSync/tests/PersistenceHelper.test.cpp",
+      "Client/RobloxStudio/Features/FileSync/LiveSync/tests/ResumeScriptSyncAction.test.cpp",
+      "Client/RobloxStudio/Features/FileSync/LiveSync/tests/SelectSyncingRootAction.test.cpp",
+      "Client/RobloxStudio/Features/FileSync/LiveSync/tests/ShowInFolderAction.test.cpp",
+      "Client/RobloxStudio/Features/FileSync/LiveSync/tests/StartScriptSyncAction.test.cpp",
+      "Client/RobloxStudio/Features/FileSync/LiveSync/tests/StartSyncAction.test.cpp",
+      "Client/RobloxStudio/Features/FileSync/LiveSync/tests/StartSyncSelectedInstancesToAction.test.cpp",
+      "Client/RobloxStudio/Features/FileSync/LiveSync/tests/StartSyncSelectedInstancesToActionDialogs.test.cpp",
+      "Client/RobloxStudio/Features/FileSync/LiveSync/tests/StartSyncToDirectoryAction.test.cpp",
+      "Client/RobloxStudio/Features/FileSync/LiveSync/tests/StopScriptSyncAction.test.cpp",
+      "Client/RobloxStudio/Features/FileSync/LiveSync/tests/SyncTree.test.cpp",
+      "Client/TeamCreateShared/FileSync/FileSyncReplicationService/tests/FileSyncReplicationService.test.cpp"
+    ]
+  },
+  {
+    "owners": [
+      "@GameEngine/game-engine-studio-optional-all",
+      "@GameEngine/release-engineering",
+      "@GameEngine/studio-platform-systems"
+    ],
+    "batch_id": "game-engine-studio-optional-all-001",
+    "files": [
+      "Client/RobloxStudio/Platform/Updates/UpdateBase/tests/UpdateUrl.test.cpp"
+    ]
+  },
+  {
+    "owners": [
+      "@GameEngine/game-engine-studio-optional-all",
+      "@GameEngine/studio-collaboration"
+    ],
+    "batch_id": "game-engine-studio-optional-all-001",
+    "files": [
+      "Client/RobloxStudio/Features/Collaboration/tests/ActivityHistoryEventManager.test.cpp",
+      "Client/RobloxStudio/Features/Collaboration/tests/CloudEditConnectionModel.test.cpp",
+      "Client/RobloxStudio/Features/Collaboration/tests/CloudEditController.test.cpp",
+      "Client/RobloxStudio/Features/Collaboration/tests/CollaborationIxpContextProvider.test.cpp",
+      "Client/RobloxStudio/Features/Collaboration/tests/ConnectionIndicatorDialog.test.cpp",
+      "Client/RobloxStudio/Features/Collaboration/tests/ShouldRenameFriendsToConnections.test.cpp",
+      "Client/RobloxStudio/Features/Collaboration/tests/TeamCreateActivePlayersDialog.test.cpp",
+      "Client/RobloxStudio/Features/Collaboration/tests/TeamCreateConnectionIndicator.test.cpp",
+      "Client/RobloxStudio/Features/Collaboration/tests/TeamCreateConnectionMonitor.test.cpp",
+      "Client/RobloxStudio/Features/Collaboration/tests/TeamCreateData.test.cpp",
+      "Client/RobloxStudio/Features/Collaboration/tests/TeamCreateReconnectPopupMessageBox.test.cpp",
+      "Client/RobloxStudio/Features/Collaboration/tests/TeamCreateSaver.test.cpp",
+      "Client/RobloxStudio/Features/Collaboration/tests/TeamCreateTeamTestDisconnectionHandler.test.cpp",
+      "Client/RobloxStudio/Features/Collaboration/tests/TeamTestDisconnectManager.test.cpp",
+      "Client/RobloxStudio/Features/Collaboration/tests/TeamTestStartAction.test.cpp",
+      "Client/RobloxStudio/Features/Collaboration/tests/TeamTestTraceForwarder.test.cpp",
+      "Client/RobloxStudio/Features/Collaboration/tests/ViewInstanceAnnotationLaunchTaskHandler.test.cpp",
+      "Client/RobloxStudio/Features/PlaceVersionHistory/tests/PlaceVersionHistoryBridge.test.cpp",
+      "Client/RobloxStudio/Platform/FileWatcherV2/tests/OSXNativeWatcher.test.cpp",
+      "Client/RobloxStudio/Platform/FileWatcherV2/tests/WinNativeWatcher.test.cpp",
+      "Client/TeamCreateShared/ActivityHistoryEventService/tests/ActivityHistoryEventService.test.cpp",
+      "Client/TeamCreateShared/ChangeHistoryStreamingService/tests/ChangeHistoryStreamingService.test.cpp",
+      "Client/TeamCreateShared/CreationDBService/tests/CreationDBServiceImpl.test.cpp",
+      "Client/TeamCreateShared/PlaceUploads/tests/DataModelSerializeTest.cpp",
+      "Client/TeamCreateShared/PlaceUploads/tests/PlaceUploadTest.cpp",
+      "Client/TeamCreateShared/PlaceUploads/tests/PlaceUploads.UnitTest.cpp",
+      "Client/TeamCreateShared/PlaceUploads/tests/TeamCreatePublishService.test.cpp"
+    ]
+  },
+  {
+    "owners": [
+      "@GameEngine/game-engine-studio-optional-all",
+      "@GameEngine/studio-observability"
+    ],
+    "batch_id": "game-engine-studio-optional-all-001",
+    "files": [
+      "Client/RobloxStudio/Platform/Diagnostics/tests/AtomicPointerStaging.test.cpp",
+      "Client/RobloxStudio/Platform/Diagnostics/tests/DiskInfo.test.cpp",
+      "Client/RobloxStudio/Platform/Diagnostics/tests/EventAndCounterTelemetryBundle.test.cpp",
+      "Client/RobloxStudio/Platform/Diagnostics/tests/FeatureActivityTracker.test.cpp",
+      "Client/RobloxStudio/Platform/Diagnostics/tests/LockFreeMutexRegistry.test.cpp",
+      "Client/RobloxStudio/Platform/Diagnostics/tests/LongProcess.test.cpp",
+      "Client/RobloxStudio/Platform/Diagnostics/tests/MetricWrappers.test.cpp",
+      "Client/RobloxStudio/Platform/Diagnostics/tests/NetworkTelemetry.test.cpp",
+      "Client/RobloxStudio/Platform/Diagnostics/tests/SleepStateTracker.test.cpp",
+      "Client/RobloxStudio/Platform/Diagnostics/tests/StudioPerformanceMeasurements.test.cpp",
+      "Client/RobloxStudio/Platform/Diagnostics/tests/TeamCreateAnalytics.test.cpp",
+      "Client/RobloxStudio/Platform/Diagnostics/tests/UserActivityTracker.test.cpp",
+      "Client/RobloxStudio/Platform/Diagnostics/tests/UserHeartbeats.test.cpp",
+      "Client/RobloxStudio/Platform/Diagnostics/tests/UserHeartbeatsApiHelper.test.cpp"
+    ]
+  },
+  {
+    "owners": [
+      "@GameEngine/game-engine-studio-optional-all",
+      "@GameEngine/studio-platform"
+    ],
+    "batch_id": "game-engine-studio-optional-all-001",
+    "files": [
+      "Client/RobloxStudio.UnitTest/Features/Notifications/InfoBarManagerTest.cpp",
+      "Client/RobloxStudio/Features/AssetAccess/tests/AssetAccessDataModelObserver.test.cpp",
+      "Client/RobloxStudio/Features/AssetAccess/tests/AssetAccessPasteHook.test.cpp",
+      "Client/RobloxStudio/Features/DataModelEditing/InsertObject/tests/IncrementNames.test.cpp",
+      "Client/RobloxStudio/Features/DataModelEditing/InsertObject/tests/InsertObjectDataModelController.test.cpp",
+      "Client/RobloxStudio/Features/DataModelEditing/InsertObject/tests/InsertObjectModel.test.cpp",
+      "Client/RobloxStudio/Features/DataModelEditing/InstanceClipboard/tests/InstanceClipboardReader.test.cpp",
+      "Client/RobloxStudio/Features/DataModelEditing/InstanceClipboard/tests/InstancePasteHooks.test.cpp",
+      "Client/RobloxStudio/Features/DataModelEditing/InstanceClipboard/tests/InstancePaster.test.cpp",
+      "Client/RobloxStudio/Features/StartPage/tests/FileMenuRecentsUpdater.test.cpp",
+      "Client/RobloxStudio/Features/StartPage/tests/MRULocalFileStore.test.cpp",
+      "Client/RobloxStudio/Features/StartPage/tests/RobloxApiGame.test.cpp",
+      "Client/RobloxStudio/Features/SuperExamples/AsyncComponentExamples/tests/AsyncComponentBasics.test.cpp",
+      "Client/RobloxStudio/Features/SuperExamples/AsyncComponentExamples/tests/ThreadAffinityExamples.test.cpp",
+      "Client/RobloxStudio/Features/SuperExamples/BasicComponentTemplate/tests/BasicComponent.test.cpp",
+      "Client/RobloxStudio/Features/SuperExamples/ComponentWithMockExample/tests/SomeComponentWithMock.test.cpp",
+      "Client/RobloxStudio/Platform/UIComponents/tests/Callout.test.cpp",
+      "Client/RobloxStudio/Platform/UIComponents/tests/CalloutController.test.cpp",
+      "Client/RobloxStudio/Platform/UIComponents/tests/CalloutDefinition.test.cpp"
+    ]
+  },
+  {
+    "owners": [
+      "@GameEngine/game-engine-studio-optional-all",
+      "@GameEngine/studio-platform-systems"
+    ],
+    "batch_id": "game-engine-studio-optional-all-001",
+    "files": [
+      "Client/RobloxStudio.UnitTest/Platform/AppInfrastructure/FastFlagUtilitiesTest.cpp",
+      "Client/RobloxStudio.UnitTest/Platform/AppInfrastructure/Network/StudioHttpRequestTest.cpp",
+      "Client/RobloxStudio.UnitTest/Platform/Translation/LocalizationTest.cpp",
+      "Client/RobloxStudio/Features/DataModelEditing/PropertiesWidget/tests/PropertiesTelemetry.test.cpp",
+      "Client/RobloxStudio/Features/DataModelEditing/PropertiesWidget/tests/PropertyItemFactory.test.cpp",
+      "Client/RobloxStudio/Features/DataModelEditing/PropertiesWidget/tests/PropertyItemUtilities.test.cpp",
+      "Client/RobloxStudio/Integration/MockPluginLoading/tests/MockPluginLoading.test.cpp",
+      "Client/RobloxStudio/Platform/ActionComponents/tests/ActionComponents.UnitTest.cpp",
+      "Client/RobloxStudio/Platform/ActionComponents/tests/AnchorAction.test.cpp",
+      "Client/RobloxStudio/Platform/ActionComponents/tests/AnchorToolAction.test.cpp",
+      "Client/RobloxStudio/Platform/ActionComponents/tests/LockAction.test.cpp",
+      "Client/RobloxStudio/Platform/ActionComponents/tests/LockToolAction.test.cpp",
+      "Client/RobloxStudio/Platform/ActionComponents/tests/MouseCommandContextProvider.test.cpp",
+      "Client/RobloxStudio/Platform/Actions/tests/ActionManager.test.cpp",
+      "Client/RobloxStudio/Platform/Actions/tests/BaseAction.test.cpp",
+      "Client/RobloxStudio/Platform/Actions/tests/BaseAsyncAction.test.cpp",
+      "Client/RobloxStudio/Platform/Actions/tests/BaseUiAction.test.cpp",
+      "Client/RobloxStudio/Platform/Actions/tests/Builtins.test.cpp",
+      "Client/RobloxStudio/Platform/Actions/tests/BuiltinsRibbonFlags.test.cpp",
+      "Client/RobloxStudio/Platform/Actions/tests/Register.test.cpp",
+      "Client/RobloxStudio/Platform/Actions/tests/ShortcutDisambiguator.test.cpp",
+      "Client/RobloxStudio/Platform/Actions/tests/Utils.test.cpp",
+      "Client/RobloxStudio/Platform/AutoSaveFolder/tests/AutoSaveFolder.test.cpp",
+      "Client/RobloxStudio/Platform/Base/DEPRECATED_ScopedFunctor/tests/DEPRECATED_ScopedFunctor.test.cpp",
+      "Client/RobloxStudio/Platform/Base/Messages/tests/Message.test.cpp",
+      "Client/RobloxStudio/Platform/Base/Messages/tests/MessageReceiverWithTaskRunner.test.cpp",
+      "Client/RobloxStudio/Platform/Base/Messages/tests/MessageSenderGroup.test.cpp",
+      "Client/RobloxStudio/Platform/Base/Messages/tests/MessageSenderReceiver.test.cpp",
+      "Client/RobloxStudio/Platform/Base/QtApp/tests/QtDMConnection.test.cpp",
+      "Client/RobloxStudio/Platform/Base/QtBase/tests/OwningQPointer.test.cpp",
+      "Client/RobloxStudio/Platform/Base/QtBase/tests/QtConverters.test.cpp",
+      "Client/RobloxStudio/Platform/Base/QtBase/tests/QtSafeFormatFormatters.test.cpp",
+      "Client/RobloxStudio/Platform/Base/QtUI/tests/OpenMenu.test.cpp",
+      "Client/RobloxStudio/Platform/Base/QtUI/tests/QtFiberConnection.test.cpp",
+      "Client/RobloxStudio/Platform/Base/QtUI/tests/Theme.test.cpp",
+      "Client/RobloxStudio/Platform/Base/QtUI/tests/WithUiContext.test.cpp",
+      "Client/RobloxStudio/Platform/Base/StudioBase/tests/FileSystem.test.cpp",
+      "Client/RobloxStudio/Platform/Base/StudioBase/tests/FindExecutablePath.test.cpp",
+      "Client/RobloxStudio/Platform/Base/StudioBase/tests/Installation.test.cpp",
+      "Client/RobloxStudio/Platform/CancellableDialogManager/tests/CancellableDialogManager.test.cpp"
+    ]
+  },
+  {
+    "owners": [
+      "@GameEngine/game-engine-studio-optional-all",
+      "@GameEngine/studio-platform-systems"
+    ],
+    "batch_id": "game-engine-studio-optional-all-002",
+    "files": [
+      "Client/RobloxStudio/Platform/Clipboard/tests/ClipboardContextProvider.test.cpp",
+      "Client/RobloxStudio/Platform/Commands/tests/CommandMetadata.test.cpp",
+      "Client/RobloxStudio/Platform/Commands/tests/CommandWrapper.test.cpp",
+      "Client/RobloxStudio/Platform/Commands/tests/ComponentSignals.test.cpp",
+      "Client/RobloxStudio/Platform/Commands/tests/CppToReflectionConverter.test.cpp",
+      "Client/RobloxStudio/Platform/Commands/tests/MethodExecutor.test.cpp",
+      "Client/RobloxStudio/Platform/Commands/tests/ReflectionToCppConverter.test.cpp",
+      "Client/RobloxStudio/Platform/Component/DMAsyncComponent/tests/DMAsyncComponent.test.cpp",
+      "Client/RobloxStudio/Platform/Configurations/BackendConfig/tests/BackendConfigBackgroundUpdater.test.cpp",
+      "Client/RobloxStudio/Platform/Configurations/BackendConfig/tests/BackendConfigCacheManager.test.cpp",
+      "Client/RobloxStudio/Platform/Configurations/BackendConfig/tests/BackendConfigFetcher.test.cpp",
+      "Client/RobloxStudio/Platform/Configurations/BackendConfig/tests/BackendConfigManager.test.cpp",
+      "Client/RobloxStudio/Platform/Configurations/BackendConfig/tests/LocalBackupFileUtilities.test.cpp",
+      "Client/RobloxStudio/Platform/Configurations/BuildConfig/tests/BuildConfigUtilities.test.cpp",
+      "Client/RobloxStudio/Platform/Configurations/TeamTestSetting/tests/TeamTestModeChecker.test.cpp",
+      "Client/RobloxStudio/Platform/Context/tests/ContextController.test.cpp",
+      "Client/RobloxStudio/Platform/Context/tests/Utils.test.cpp",
+      "Client/RobloxStudio/Platform/DataModelActions/tests/BaseDataModelAction.test.cpp",
+      "Client/RobloxStudio/Platform/DataModelListenerBridge/tests/DataModelListenerBridge.test.cpp",
+      "Client/RobloxStudio/Platform/DataModelManagement/DataModelProvider/tests/DataModelProvider.test.cpp",
+      "Client/RobloxStudio/Platform/DataModelManagement/DmLuaFlagOverrides/tests/AssetDmLuaFlagOverrides.test.cpp",
+      "Client/RobloxStudio/Platform/DataModelManagement/DmLuaFlagOverrides/tests/StandaloneDmLuaFlagOverrides.test.cpp",
+      "Client/RobloxStudio/Platform/DataModelManagement/tests/AssetDataModelManager.test.cpp",
+      "Client/RobloxStudio/Platform/DataModelManagement/tests/CancellableResultWaiter.test.cpp",
+      "Client/RobloxStudio/Platform/DataModelManagement/tests/DataModelCreator.test.cpp",
+      "Client/RobloxStudio/Platform/DataModelManagement/tests/DataModelLoader.test.cpp",
+      "Client/RobloxStudio/Platform/DataModelManagement/tests/DataModelLoadingUtilities.test.cpp",
+      "Client/RobloxStudio/Platform/DataModelManagement/tests/DataModelLoadingWaiter.test.cpp",
+      "Client/RobloxStudio/Platform/DataModelManagement/tests/DataModelManagement.test.cpp",
+      "Client/RobloxStudio/Platform/DataModelManagement/tests/DataModelManagementUtilities.test.cpp",
+      "Client/RobloxStudio/Platform/DataModelManagement/tests/DataModelMultiplexer.test.cpp",
+      "Client/RobloxStudio/Platform/DataModelManagement/tests/DataModelProperties.test.cpp",
+      "Client/RobloxStudio/Platform/DataModelManagement/tests/DataModelTypeTester.test.cpp",
+      "Client/RobloxStudio/Platform/DataModelManagement/tests/GameStateContextsProvider.test.cpp",
+      "Client/RobloxStudio/Platform/DataModelManagement/tests/PlaceSessionDataModelListener.test.cpp",
+      "Client/RobloxStudio/Platform/DataModelManagement/tests/PlayTestContextProvider.test.cpp",
+      "Client/RobloxStudio/Platform/DataModelManagement/tests/RunServiceMonitor.test.cpp",
+      "Client/RobloxStudio/Platform/DataModelManagement/tests/UtilitiesFromIAssetDataModelManager.test.cpp",
+      "Client/RobloxStudio/Platform/DataModelProxy/tests/Attribute.test.cpp",
+      "Client/RobloxStudio/Platform/DataModelProxy/tests/DataModelPropertyProxy.test.cpp"
+    ]
+  },
+  {
+    "owners": [
+      "@GameEngine/game-engine-studio-optional-all",
+      "@GameEngine/studio-platform-systems"
+    ],
+    "batch_id": "game-engine-studio-optional-all-003",
+    "files": [
+      "Client/RobloxStudio/Platform/DataModelProxy/tests/DataModelProxy.test.cpp",
+      "Client/RobloxStudio/Platform/DataModelProxy/tests/DataModelProxyMessageSenderGroup.test.cpp",
+      "Client/RobloxStudio/Platform/DataModelProxy/tests/InstanceRelationship.test.cpp",
+      "Client/RobloxStudio/Platform/DataModelProxy/tests/Property.test.cpp",
+      "Client/RobloxStudio/Platform/DataModelProxy/tests/Selection.test.cpp",
+      "Client/RobloxStudio/Platform/DataModelProxy/tests/WithDataModelContext.test.cpp",
+      "Client/RobloxStudio/Platform/Documents/tests/DocumentContextProvider.test.cpp",
+      "Client/RobloxStudio/Platform/Extensibility/tests/ActionUpdateInfoConverter.test.cpp",
+      "Client/RobloxStudio/Platform/Extensibility/tests/DataModelQIconProvider.test.cpp",
+      "Client/RobloxStudio/Platform/Extensibility/tests/PanelsManager.test.cpp",
+      "Client/RobloxStudio/Platform/Extensibility/tests/PluginQActionObserver.test.cpp",
+      "Client/RobloxStudio/Platform/Extensibility/tests/SettingStateBuilder.test.cpp",
+      "Client/RobloxStudio/Platform/Extensibility/tests/SettingStateConverter.test.cpp",
+      "Client/RobloxStudio/Platform/Extensibility/tests/SpotlightManager.test.cpp",
+      "Client/RobloxStudio/Platform/Extensibility/tests/ToolsManager.test.cpp",
+      "Client/RobloxStudio/Platform/Extensibility/tests/WidgetRegistrationConverter.test.cpp",
+      "Client/RobloxStudio/Platform/FlagOverrides/tests/OverrideFlags.test.cpp",
+      "Client/RobloxStudio/Platform/LaunchConfiguration/tests/ApplicationConfig.test.cpp",
+      "Client/RobloxStudio/Platform/LaunchConfiguration/tests/ArgumentParser.test.cpp",
+      "Client/RobloxStudio/Platform/LaunchConfiguration/tests/ArgumentParserWindows.test.cpp",
+      "Client/RobloxStudio/Platform/LaunchConfiguration/tests/LaunchAuthConfig.test.cpp",
+      "Client/RobloxStudio/Platform/LaunchConfiguration/tests/LaunchIntent.test.cpp",
+      "Client/RobloxStudio/Platform/LaunchConfiguration/tests/LaunchTrackingInfo.test.cpp",
+      "Client/RobloxStudio/Platform/MultiProcess/tests/ChildProcessContextProvider.test.cpp",
+      "Client/RobloxStudio/Platform/NotificationService/SignalRNotification/tests/RealtimeNotifier.test.cpp",
+      "Client/RobloxStudio/Platform/NotificationService/SignalRNotification/tests/SignalREventSubscriber.test.cpp",
+      "Client/RobloxStudio/Platform/NotificationService/SignalRNotification/tests/SubscriptionScheduler.test.cpp",
+      "Client/RobloxStudio/Platform/NotificationService/tests/NotificationService.test.cpp",
+      "Client/RobloxStudio/Platform/NotificationService/tests/TwoWayCommunicator.test.cpp",
+      "Client/RobloxStudio/Platform/NotificationService/tests/UIThreadNotifier.test.cpp",
+      "Client/RobloxStudio/Platform/PolicyContext/tests/PolicyContext.test.cpp",
+      "Client/RobloxStudio/Platform/PolicyContext/tests/PolicyUtilities.test.cpp",
+      "Client/RobloxStudio/Platform/ProcessManagement/ProcessLaunchArgHelper/tests/ProcessLaunchArgHelper.test.cpp",
+      "Client/RobloxStudio/Platform/ProjectConfig/tests/ProjectConfig.test.cpp",
+      "Client/RobloxStudio/Platform/QtKeyValueStorage/tests/QtKeyValueStorage.test.cpp",
+      "Client/RobloxStudio/Platform/RESTRICTED_BusyState/tests/BusyContextProvider.test.cpp",
+      "Client/RobloxStudio/Platform/ReflectionMetadata/tests/DocumentationParsing.test.cpp",
+      "Client/RobloxStudio/Platform/ReflectionMetadata/tests/UIVisibility.test.cpp",
+      "Client/RobloxStudio/Platform/Rendering/tests/HighFrequencyBenchmarkMeasurement.test.cpp",
+      "Client/RobloxStudio/Platform/Rendering/tests/Renderer.test.cpp"
+    ]
+  },
+  {
+    "owners": [
+      "@GameEngine/game-engine-studio-optional-all",
+      "@GameEngine/studio-platform-systems"
+    ],
+    "batch_id": "game-engine-studio-optional-all-004",
+    "files": [
+      "Client/RobloxStudio/Platform/Selection/tests/SelectionContextProvider.test.cpp",
+      "Client/RobloxStudio/Platform/SessionManagement/CookieManager/tests/CookieManager.test.cpp",
+      "Client/RobloxStudio/Platform/SessionTracker/tests/SessionUtilsTest.cpp",
+      "Client/RobloxStudio/Platform/Settings/tests/BetaFeatures.test.cpp",
+      "Client/RobloxStudio/Platform/Settings/tests/KeySequenceListDisplay.test.cpp",
+      "Client/RobloxStudio/Platform/Settings/tests/TestModeModifiedScriptSavePreferenceController.test.cpp",
+      "Client/RobloxStudio/Platform/SharedMemory/tests/MockSharedMemory.test.cpp",
+      "Client/RobloxStudio/Platform/SharedMemory/tests/ReadWriteLock.test.cpp",
+      "Client/RobloxStudio/Platform/SharedMemory/tests/SharedMemory.test.cpp",
+      "Client/RobloxStudio/Platform/SharedMemory/tests/SharedMemoryUtilities.test.cpp",
+      "Client/RobloxStudio/Platform/SharedMemoryManager/tests/SharedMemoryManager.test.cpp",
+      "Client/RobloxStudio/Platform/ShutdownManagement/tests/ShutdownManagement.test.cpp",
+      "Client/RobloxStudio/Platform/SoundManagement/tests/DataModelSoundManager.test.cpp",
+      "Client/RobloxStudio/Platform/SoundManagement/tests/SoundJobManager.test.cpp",
+      "Client/RobloxStudio/Platform/SoundManagement/tests/SoundJobStudio.test.cpp",
+      "Client/RobloxStudio/Platform/StandaloneDataModelLifeCycle/tests/StandaloneScopeController.test.cpp",
+      "Client/RobloxStudio/Platform/StateMachine/tests/StateMachine.test.cpp",
+      "Client/RobloxStudio/Platform/Streaming/tests/StreamingContextProvider.test.cpp",
+      "Client/RobloxStudio/Platform/StudioCrashHandler/CrashHndUpdater/tests/PluginLoadingListener.test.cpp",
+      "Client/RobloxStudio/Platform/StudioCrashHandler/InstanceCounter/tests/InstanceCounterV2.test.cpp",
+      "Client/RobloxStudio/Platform/StudioCrashHandler/tests/StudioCrashHandler.test.cpp",
+      "Client/RobloxStudio/Platform/StudioUsageTracker/tests/StudioUsageTracker.test.cpp",
+      "Client/RobloxStudio/Platform/StudioUsageTracker/tests/UsageTrackerPlaceSessionListener.test.cpp",
+      "Client/RobloxStudio/Platform/SystemCheck/tests/MaxInstanceCountChecker.test.cpp",
+      "Client/RobloxStudio/Platform/SystemMenu/tests/MenuBarFactory.test.cpp",
+      "Client/RobloxStudio/Platform/TaskRunner/tests/TaskRegistry.test.cpp",
+      "Client/RobloxStudio/Platform/TaskRunner/tests/TaskRunner.test.cpp",
+      "Client/RobloxStudio/Platform/TaskRunner/tests/TaskRunnerData.test.cpp",
+      "Client/RobloxStudio/Platform/Threading/UIContext/tests/UIContext.test.cpp",
+      "Client/RobloxStudio/Platform/Threading/UIThread/tests/UIThread.test.cpp",
+      "Client/RobloxStudio/Platform/TransactionalMemory/tests/Basic.test.cpp",
+      "Client/RobloxStudio/Platform/TransactionalMemory/tests/Nested.test.cpp",
+      "Client/RobloxStudio/Platform/TransactionalMemory/tests/Stress.test.cpp",
+      "Client/RobloxStudio/Platform/Translation/tests/StudioAmpersandUtil.test.cpp",
+      "Client/RobloxStudio/Platform/Translation/tests/StudioFileTypeUtils.test.cpp",
+      "Client/RobloxStudio/Platform/WindowManagement/tests/DumpWindowHierarchy.test.cpp",
+      "Client/RobloxStudio/Platform/WindowManagement/tests/DumpWindowHierarchyToLogAction.test.cpp"
+    ]
+  },
+  {
+    "owners": [
+      "@GameEngine/game-engine-studio-packages"
+    ],
+    "batch_id": "game-engine-studio-packages-001",
+    "files": [
+      "Client/App.UnitTest/HistoryIdTest.cpp",
+      "Client/App.UnitTest/PackageMetadataRequestManagerTest.cpp"
+    ]
+  },
+  {
+    "owners": [
+      "@GameEngine/game-engine-studio-plugins"
+    ],
+    "batch_id": "game-engine-studio-plugins-001",
+    "files": [
+      "Client/App.UnitTest/PermissionTest.cpp"
+    ]
+  },
+  {
+    "owners": [
+      "@GameEngine/game-engine-systems"
+    ],
+    "batch_id": "game-engine-systems-001",
+    "files": [
+      "Client/App.UnitTest/DateTimeTest.cpp",
+      "Client/App.UnitTest/FastLogSettingsTest.cpp",
+      "Client/App.UnitTest/MemoryTests.cpp",
+      "Client/App.UnitTest/Performance.cpp",
+      "Client/App.UnitTest/WebParserTest.cpp",
+      "Client/App.UnitTest/v8datamodel/DataModelFlagTests.cpp",
+      "Client/ReflectionChecks/tests/ClassChecks.test.cpp",
+      "Client/ReflectionChecks/tests/ReflectionInternals.test.cpp",
+      "Client/ReflectionChecks/tests/ServiceChecks.test.cpp"
+    ]
+  },
+  {
+    "owners": [
+      "@GameEngine/game-engine-systems-core"
+    ],
+    "batch_id": "game-engine-systems-core-001",
+    "files": [
+      "Client/App.UnitTest.Lib/App.UnitTest.Lib.Entrypoint.cpp",
+      "Client/App.UnitTest.Lib/App.UnitTest.Lib.cpp",
+      "Client/App.UnitTest.Lib/include/DataModelBuilder.h",
+      "Client/App.UnitTest.Lib/include/rbx/test/App.UnitTest.Lib.h",
+      "Client/App.UnitTest.Lib/include/rbx/test/TestUtils.h",
+      "Client/App.UnitTest.Lib/src/JointUtil.cpp",
+      "Client/App.UnitTest/DataModelSnapshotJobTest.cpp",
+      "Client/App.UnitTest/DataModelSuspendTest.cpp",
+      "Client/App.UnitTest/DebounceDataModelJobTest.cpp",
+      "Client/App.UnitTest/EmaAggregatorTest.cpp",
+      "Client/App.UnitTest/MachineIdUploaderTest.cpp",
+      "Client/App.UnitTest/PercentileAggregatorTest.cpp",
+      "Client/App.UnitTest/UtilitiesTest.cpp",
+      "Client/Base/tests/AppendOnlyBuffer.cpp",
+      "Client/Base/tests/CEvent.cpp",
+      "Client/Base/tests/CgroupsCpuMaxTest.cpp",
+      "Client/Base/tests/ChannelPreferenceUtil.test.cpp",
+      "Client/Base/tests/ChildProcessTest.cpp",
+      "Client/Base/tests/CommandLineTest.cpp",
+      "Client/Base/tests/EnvironmentTest.cpp",
+      "Client/Base/tests/FilePathRulesTest.cpp",
+      "Client/Base/tests/GenericMacroTest.cpp",
+      "Client/Base/tests/GraphemeTest.cpp",
+      "Client/Base/tests/InferredCrashTest.cpp",
+      "Client/Base/tests/LeakyBucketTest.cpp",
+      "Client/Base/tests/Log.cpp",
+      "Client/Base/tests/ManifestTest.cpp",
+      "Client/Base/tests/MemoryStatsTest.cpp",
+      "Client/Base/tests/MetricStatTest.cpp",
+      "Client/Base/tests/MicroProfileEventsTest.cpp",
+      "Client/Base/tests/MicroProfileScopeStackAllocTrackerTest.cpp",
+      "Client/Base/tests/MicroProfilerTest.cpp",
+      "Client/Base/tests/NamedMutexTest.cpp",
+      "Client/Base/tests/OpenSSLTest.cpp",
+      "Client/Base/tests/Parallel/ForEachTest.cpp",
+      "Client/Base/tests/Parallel/ReduceTest.cpp",
+      "Client/Base/tests/Parallel/SortTest.cpp",
+      "Client/Base/tests/ProfileFrameTimeTest.cpp",
+      "Client/Base/tests/PsiStatsTest.cpp",
+      "Client/Base/tests/ReadOnlyMappedFileTest.cpp"
+    ]
+  },
+  {
+    "owners": [
+      "@GameEngine/game-engine-systems-core"
+    ],
+    "batch_id": "game-engine-systems-core-002",
+    "files": [
+      "Client/Base/tests/RunningAverageTest.cpp",
+      "Client/Base/tests/SessionTransitionFSMTest.cpp",
+      "Client/Base/tests/SystemValueTest.cpp",
+      "Client/Base/tests/TDigestTests.cpp",
+      "Client/Base/tests/TaskScheduler.cpp",
+      "Client/Base/tests/TaskSchedulerImpl.cpp",
+      "Client/Base/tests/TestFindUp.cpp",
+      "Client/Base/tests/ThreadPoolTest.cpp",
+      "Client/Base/tests/ThreadsafeTest.cpp",
+      "Client/Base/tests/TimeFixtureTest.cpp",
+      "Client/Base/tests/UnboundedCircularBufferTest.cpp",
+      "Client/Base/tests/UrlTest.cpp",
+      "Client/Base/tests/Utf8Test.cpp",
+      "Client/Base/tests/UtilitiesStringParserTest.cpp",
+      "Client/Base/tests/VersionTest.cpp",
+      "Client/Base/tests/VfsTest.cpp",
+      "Client/Base/tests/WorkerThreadTest.cpp",
+      "Client/Core/tests/AllocCallbacksTest.cpp",
+      "Client/Core/tests/AppArchitectureLinuxTest.cpp",
+      "Client/Core/tests/AppArchitectureMacTest.cpp",
+      "Client/Core/tests/AppArchitectureWinTest.cpp",
+      "Client/Core/tests/AppSectionTrackerTest.cpp",
+      "Client/Core/tests/ArrayViewTest.cpp",
+      "Client/Core/tests/AtomicHashMapTest.cpp",
+      "Client/Core/tests/AtomicHashSetTest.cpp",
+      "Client/Core/tests/AtomicPoolTest.cpp",
+      "Client/Core/tests/AtomicSetTest.cpp",
+      "Client/Core/tests/AtomicStackTest.cpp",
+      "Client/Core/tests/BacktraceTests.cpp",
+      "Client/Core/tests/Base64Test.cpp",
+      "Client/Core/tests/BitmaskEnumTest.cpp",
+      "Client/Core/tests/BitsTest.cpp",
+      "Client/Core/tests/BitsetAllocatorTest.cpp",
+      "Client/Core/tests/ConditionTest.cpp",
+      "Client/Core/tests/ConditionalScopeTest.cpp",
+      "Client/Core/tests/ConstexprContainersTest.cpp",
+      "Client/Core/tests/Crypt.cpp",
+      "Client/Core/tests/DenseHashSet.cpp",
+      "Client/Core/tests/DenseMapTest.cpp",
+      "Client/Core/tests/DenseSetTest.cpp"
+    ]
+  },
+  {
+    "owners": [
+      "@GameEngine/game-engine-systems-core"
+    ],
+    "batch_id": "game-engine-systems-core-003",
+    "files": [
+      "Client/Core/tests/DisjointSetsTest.cpp",
+      "Client/Core/tests/DynamicInitializerTest.cpp",
+      "Client/Core/tests/ExceptionHelperTest.cpp",
+      "Client/Core/tests/FilePathUtilTest.cpp",
+      "Client/Core/tests/FileSystemTests.cpp",
+      "Client/Core/tests/FlatContainerTest.cpp",
+      "Client/Core/tests/FlyweightTest.cpp",
+      "Client/Core/tests/Format.cpp",
+      "Client/Core/tests/FunctionRefTest.cpp",
+      "Client/Core/tests/Guid128Test.cpp",
+      "Client/Core/tests/HashTest.cpp",
+      "Client/Core/tests/HostArchitectureAppleTest.cpp",
+      "Client/Core/tests/HostArchitectureTest.cpp",
+      "Client/Core/tests/HostArchitectureWinTest.cpp",
+      "Client/Core/tests/IndexedPriorityQueueTests.cpp",
+      "Client/Core/tests/IntrinsicsTest.cpp",
+      "Client/Core/tests/JsonTest.cpp",
+      "Client/Core/tests/JsonTests.cpp",
+      "Client/Core/tests/LatchTest.cpp",
+      "Client/Core/tests/LockTest.cpp",
+      "Client/Core/tests/LockableTest.cpp",
+      "Client/Core/tests/MSTTTest.cpp",
+      "Client/Core/tests/MathUtilTest.cpp",
+      "Client/Core/tests/MemoryAllocatorTests.cpp",
+      "Client/Core/tests/MemoryInternalTest.cpp",
+      "Client/Core/tests/MutexTest.cpp",
+      "Client/Core/tests/NoncopyableTest.cpp",
+      "Client/Core/tests/PooledKeyMapTest.cpp",
+      "Client/Core/tests/ProcessorArchitecturesTest.cpp",
+      "Client/Core/tests/RCUTest.cpp",
+      "Client/Core/tests/RbxAssertTest.cpp",
+      "Client/Core/tests/RbxClockTest.cpp",
+      "Client/Core/tests/RbxRandTest.cpp",
+      "Client/Core/tests/ReadOnlySharedBufferOpsTest.cpp",
+      "Client/Core/tests/ReadOnlySharedBufferTest.cpp",
+      "Client/Core/tests/STLExtrasTest.cpp",
+      "Client/Core/tests/SafeFormatTest.cpp",
+      "Client/Core/tests/SchedulerTest.cpp",
+      "Client/Core/tests/ScopedAssignTest.cpp",
+      "Client/Core/tests/ScopedExitTest.cpp"
+    ]
+  },
+  {
+    "owners": [
+      "@GameEngine/game-engine-systems-core"
+    ],
+    "batch_id": "game-engine-systems-core-004",
+    "files": [
+      "Client/Core/tests/SemaphoreTest.cpp",
+      "Client/Core/tests/SharedArrayTest.cpp",
+      "Client/Core/tests/SharedRecursiveMutexTest.cpp",
+      "Client/Core/tests/SmallFlatContainerTest.cpp",
+      "Client/Core/tests/SmallStringTest.cpp",
+      "Client/Core/tests/SmallVectorTest.cpp",
+      "Client/Core/tests/SplitHashTest.cpp",
+      "Client/Core/tests/StatTimerTest.cpp",
+      "Client/Core/tests/StaticConcurrentIndexerTest.cpp",
+      "Client/Core/tests/StringConvNotWindowsTest.cpp",
+      "Client/Core/tests/StringConvWindowsTest.cpp",
+      "Client/Core/tests/StringUtilTest.cpp",
+      "Client/Core/tests/StringViewTest.cpp",
+      "Client/Core/tests/SubsystemTest.cpp",
+      "Client/Core/tests/SymbolsCacheTest.cpp",
+      "Client/Core/tests/TestFilePathUtils.cpp",
+      "Client/Core/tests/ThreadMonitorTest.cpp",
+      "Client/Core/tests/ThreadName.test.cpp",
+      "Client/Core/tests/ThreadTest.cpp",
+      "Client/Core/tests/UniqueFunctionTest.cpp",
+      "Client/Core/tests/Utf8PathEncodingTest.cpp",
+      "Client/Core/tests/VarIntTest.cpp",
+      "Client/Core/tests/ViewStridedMatrixTest.cpp",
+      "Client/Core/tests/ViewStridedVectorTest.cpp",
+      "Client/Core/tests/WriteOnlyBufferTest.cpp",
+      "Client/Core/tests/atomic.cpp",
+      "Client/Core/tests/intrusive_ptr.cpp",
+      "Client/Core/tests/latched_signalTest.cpp",
+      "Client/Core/tests/make_shared.cpp",
+      "Client/Core/tests/signals.cpp",
+      "Client/Core/tests/spin_mutex_test.cpp",
+      "Client/FileWatcher/tests/FileWatcherTest.cpp",
+      "Client/ProgramOptions/tests/TestFastFlagConfig.cpp",
+      "Client/ProgramOptions/tests/TestJsonConfig.cpp",
+      "Client/ProgramOptions/tests/TestSplitKeyValue.cpp",
+      "Client/ProgramOptions/tests/TestSubcommands.cpp",
+      "Client/ProgramOptions/tests/TestVariablesExpander.cpp",
+      "Client/RbxZstd/tests/src/ZstdCompatibility.test.cpp",
+      "Client/RobloxTest/Tests.cpp",
+      "Client/RobloxTest/main.cpp"
+    ]
+  },
+  {
+    "owners": [
+      "@GameEngine/game-engine-systems-core",
+      "@GameEngine/release-engineering"
+    ],
+    "batch_id": "game-engine-systems-core-001",
+    "files": [
+      "Client/Core/tests/Flags/FFlagDataBankTest.cpp",
+      "Client/Core/tests/Flags/VersionedFFlagsTest.cpp",
+      "Client/LoadSettings/tests/FlagCacheUtils.test.cpp",
+      "Client/LoadSettings/tests/LoadSettings.test.cpp",
+      "Client/LoadSettings/tests/Tombstone.test.cpp"
+    ]
+  },
+  {
+    "owners": [
+      "@GameEngine/game-engine-textchat"
+    ],
+    "batch_id": "game-engine-textchat-001",
+    "files": [
+      "Client/App.UnitTest/ChatTests.cpp",
+      "Client/App.UnitTest/TextBoxServiceTest.cpp",
+      "Client/App.UnitTest/TextChatTests.cpp",
+      "Client/App/communication/tests/ChatReconcileAccessTest.cpp",
+      "Client/App/communication/tests/PresetChatIntegrationTest.cpp",
+      "Client/App/communication/tests/PresetChatManagerTest.cpp",
+      "Client/App/communication/tests/SocialAmpFeatureEvaluationManagerTest.cpp",
+      "Client/App/communication/tests/SocialCounterpartyManagerBlockingBackfillTest.cpp",
+      "Client/App/communication/tests/SocialCounterpartyManagerTest.cpp",
+      "Client/App/communication/tests/TextChatServiceUniverseChatTest.cpp",
+      "Client/App/communication/tests/UniverseChatChannelMonitorTest.cpp",
+      "Client/App/communication/tests/UniverseChatMessageManagerTest.cpp"
+    ]
+  },
+  {
+    "owners": [
+      "@GameEngine/game-engine-ui-subsystem"
+    ],
+    "batch_id": "game-engine-ui-subsystem-001",
+    "files": [
+      "Client/App/ui/tests/AutomaticSizeTest.cpp",
+      "Client/App/ui/tests/BillboardGui.test.cpp",
+      "Client/App/ui/tests/FlexLayoutTest.cpp",
+      "Client/App/ui/tests/GuiLayerCollectorTest.cpp",
+      "Client/App/ui/tests/GuiObjectTest.cpp",
+      "Client/App/ui/tests/GuiServiceTest.cpp",
+      "Client/App/ui/tests/GuiTextTest.cpp",
+      "Client/App/ui/tests/LayoutModifier.test.cpp",
+      "Client/App/ui/tests/LayoutNodeTest.cpp",
+      "Client/App/ui/tests/Path2DControlPointSerializerTest.cpp",
+      "Client/App/ui/tests/Path2DTest.cpp",
+      "Client/App/ui/tests/PropertyStyling/GuiButtonStyling.test.cpp",
+      "Client/App/ui/tests/PropertyStyling/GuiImageStyling.test.cpp",
+      "Client/App/ui/tests/PropertyStyling/GuiObjectStyling.test.cpp",
+      "Client/App/ui/tests/PropertyStyling/GuiTextStyling.test.cpp",
+      "Client/App/ui/tests/PropertyStyling/ScrollingFrameStyling.test.cpp",
+      "Client/App/ui/tests/PropertyStyling/UIGridStyleLayoutStyling.test.cpp",
+      "Client/App/ui/tests/PropertyStyling/UIScaleStyling.test.cpp",
+      "Client/App/ui/tests/PropertyStyling/UISizeConstraintStyling.test.cpp",
+      "Client/App/ui/tests/PropertyStyling/ViewportFrameStyling.test.cpp",
+      "Client/App/ui/tests/QuadTreeTest.cpp",
+      "Client/App/ui/tests/RichTextParserTest.cpp",
+      "Client/App/ui/tests/RichTextTest.cpp",
+      "Client/App/ui/tests/ScreenGuiTest.cpp",
+      "Client/App/ui/tests/ScrollingFrameTest.cpp",
+      "Client/App/ui/tests/TattletaleTest.cpp",
+      "Client/App/ui/tests/TestUtil/UIFixture.h",
+      "Client/App/ui/tests/TextBoxTest.cpp",
+      "Client/App/ui/tests/TextServiceTest.cpp",
+      "Client/App/ui/tests/UICornerGuiObjectTest.cpp",
+      "Client/App/ui/tests/UICornerStatsTest.cpp",
+      "Client/App/ui/tests/UIGridLayoutTest.cpp",
+      "Client/App/ui/tests/UIListLayoutTest.cpp",
+      "Client/App/ui/tests/UISizeConstraint.test.cpp",
+      "Client/App/ui/tests/UITableLayoutTest.cpp",
+      "Client/App/ui/tests/UITextSizeConstraint.test.cpp",
+      "Client/Rendering/GfxBase/UIBase/tests/BezierSubdivision.test.cpp",
+      "Client/Rendering/GfxBase/UIBase/tests/IrcRoundedRect.test.cpp",
+      "Client/UI/Styling/tests/InstanceStyle.test.cpp",
+      "Client/UI/Styling/tests/SelectorParser.test.cpp"
+    ]
+  },
+  {
+    "owners": [
+      "@GameEngine/game-engine-ui-subsystem"
+    ],
+    "batch_id": "game-engine-ui-subsystem-002",
+    "files": [
+      "Client/UI/Styling/tests/StyleBase.test.cpp",
+      "Client/UI/Styling/tests/StyleCache.test.cpp",
+      "Client/UI/Styling/tests/StyleEngine.test.cpp",
+      "Client/UI/Styling/tests/StyleSecurity.test.cpp",
+      "Client/UI/Styling/tests/StyleTree.test.cpp",
+      "Client/UI/Styling/tests/Variables.test.cpp",
+      "Client/UI/Text/tests/FontInfo.test.cpp",
+      "Client/UI/Text/tests/FontProvider.test.cpp"
+    ]
+  },
+  {
+    "owners": [
+      "@GameEngine/game-engine-video"
+    ],
+    "batch_id": "game-engine-video-001",
+    "files": [
+      "Client/App.UnitTest/PosixTest.cpp",
+      "Client/App.UnitTest/VideoCaptureServiceTest.cpp",
+      "Client/App/video/tests/GraphicBufferSourceTests.cpp",
+      "Client/App/video/tests/MediaDecodeDriverTests.cpp",
+      "Client/App/video/tests/VideoCaptureEngineTest.cpp",
+      "Client/App/video/tests/VideoFeatureControlTest.cpp",
+      "Client/App/video/tests/VideoFrameSamplerTest.cpp",
+      "Client/App/video/tests/VideoFrameTest.cpp",
+      "Client/App/video/tests/VideoNodesTest.cpp",
+      "Client/App/video/tests/VideoPlayerTest.cpp",
+      "Client/App/video/tests/VideoScreenCaptureRequestTest.cpp",
+      "Client/App/video/tests/VideoScreenCaptureServiceTest.cpp",
+      "Client/App/video/tests/VideoServiceClientTest.cpp",
+      "Client/App/video/tests/VideoServiceTest.cpp",
+      "Client/App/video/tests/VideoStreamTest.cpp",
+      "Client/App/video/tests/VideoTest.cpp",
+      "Client/App/video/tests/VideoTestUtils.cpp",
+      "Client/App/video/tests/VideoThumbnailGeneratorTest.cpp",
+      "Client/App/video/tests/VideoVisibilityTest.cpp",
+      "Client/AssetImport/VideoImport/tests/Bento4Mp4Parser.test.cpp",
+      "Client/AssetImport/VideoImport/tests/SimpleMp4Parser.test.cpp",
+      "Client/AssetImport/VideoImport/tests/VideoChunker.test.cpp",
+      "Client/AssetImport/VideoImport/tests/VideoUtils.test.cpp",
+      "Client/Video/tests/Aes128Tests.cpp",
+      "Client/Video/tests/DataCacheTest.cpp",
+      "Client/Video/tests/EncoderMuxerTests.cpp",
+      "Client/Video/tests/H264AacCodecTests.cpp",
+      "Client/Video/tests/HLSParserTest.cpp",
+      "Client/Video/tests/HlsInputFormatTests.cpp",
+      "Client/Video/tests/LibMicroWebrtcTest.cpp",
+      "Client/Video/tests/MicroWebrtcTest.cpp",
+      "Client/Video/tests/MockCodecTests.cpp",
+      "Client/Video/tests/MockInputFormatTests.cpp",
+      "Client/Video/tests/Mp4InputFormatTests.cpp",
+      "Client/Video/tests/Mp4OutputFormatTests.cpp",
+      "Client/Video/tests/MpegTsInputFormatTests.cpp",
+      "Client/Video/tests/OggOutputFormatTests.cpp",
+      "Client/Video/tests/OpusCodecTests.cpp",
+      "Client/Video/tests/PlaylistSelectorFactoryTests.cpp",
+      "Client/Video/tests/PlaylistSelectorTests.cpp"
+    ]
+  },
+  {
+    "owners": [
+      "@GameEngine/game-engine-video"
+    ],
+    "batch_id": "game-engine-video-002",
+    "files": [
+      "Client/Video/tests/RVScaleTest.cpp",
+      "Client/Video/tests/RawH264InputFormatTests.cpp",
+      "Client/Video/tests/RvBipBufferTests.cpp",
+      "Client/Video/tests/RvByteBuffTests.cpp",
+      "Client/Video/tests/RvCacheTests.cpp",
+      "Client/Video/tests/RvCaptureTest.cpp",
+      "Client/Video/tests/RvCodecPoolTest.cpp",
+      "Client/Video/tests/RvCodecTests.cpp",
+      "Client/Video/tests/RvHttpClientTest.cpp",
+      "Client/Video/tests/RvInputFormatTests.cpp",
+      "Client/Video/tests/RvIoTests.cpp",
+      "Client/Video/tests/RvPlaylistGroupTests.cpp",
+      "Client/Video/tests/RvUtilTests.cpp",
+      "Client/Video/tests/StratusInputEventSerializerTests.cpp",
+      "Client/Video/tests/TestUtils.cpp",
+      "Client/Video/tests/WebmInputFormatTests.cpp",
+      "Client/Video/tests/WebrtcParsingUtilsTests.cpp",
+      "Client/Video/tests/WebrtcStackTest.cpp"
+    ]
+  },
+  {
+    "owners": [
+      "@GameEngine/game-engine-voice-chat"
+    ],
+    "batch_id": "game-engine-voice-chat-001",
+    "files": [
+      "Client/App.UnitTest/VoiceChatClientGameDataClientImplTest.cpp",
+      "Client/App.UnitTest/VoiceChatGameDataClientImplTest.cpp",
+      "Client/App.UnitTest/VoiceChatServiceTest.cpp",
+      "Client/Voice/Client/ClientOperations/tests/AudioQualityEncoderUnitTest.cpp",
+      "Client/Voice/Client/ClientOperations/tests/ClientContextParsingOperationUnitTest.cpp",
+      "Client/Voice/Client/ClientOperations/tests/ClientICETrickleOperationUnitTest.cpp",
+      "Client/Voice/Client/ClientOperations/tests/ClientJoinOperationUnitTest.cpp",
+      "Client/Voice/Client/ClientOperations/tests/ClientLeaveOperationUnitTest.cpp",
+      "Client/Voice/Client/ClientOperations/tests/ClientMuteUnmuteOperationUnitTest.cpp",
+      "Client/Voice/Client/ClientOperations/tests/ClientOperationCollectionUnitTest.cpp",
+      "Client/Voice/Client/ClientOperations/tests/ClientOperationUnitTest.cpp",
+      "Client/Voice/Client/ClientOperations/tests/ClientPeerLocalMuteUnmuteOperationUnitTest.cpp",
+      "Client/Voice/Client/ClientOperations/tests/ClientPeerRemoteMuteUnmuteOperationUnitTest.cpp",
+      "Client/Voice/Client/ClientOperations/tests/ClientPublishOperationUnitTest.cpp",
+      "Client/Voice/Client/ClientOperations/tests/ClientRebootOperationUnitTest.cpp",
+      "Client/Voice/Client/ClientOperations/tests/ClientSubscribeOperationUnitTest.cpp",
+      "Client/Voice/Client/ClientOperations/tests/ClientTurnAuthOperationUnitTest.cpp",
+      "Client/Voice/Client/ClientOperations/tests/ClientVoiceRtcStatsOperationUnitTest.cpp",
+      "Client/Voice/Client/ClientOperations/tests/ClientVoiceWebrtcConnectionChangesOperationUnitTest.cpp",
+      "Client/Voice/RCC/CallState/tests/CallStateTest.cpp",
+      "Client/Voice/RCC/Operations/tests/ContextParsingOperationUnitTest.cpp",
+      "Client/Voice/RCC/Operations/tests/ExponentialBackoffTest.cpp",
+      "Client/Voice/RCC/Operations/tests/FetchPlatformMutedUsersOperationUnitTest.cpp",
+      "Client/Voice/RCC/Operations/tests/FetchUserTurnAuthOperationUnitTest.cpp",
+      "Client/Voice/RCC/Operations/tests/IceTrickleOperationUnitTest.cpp",
+      "Client/Voice/RCC/Operations/tests/MuteUnmutePublishOperationUnitTest.cpp",
+      "Client/Voice/RCC/Operations/tests/MuteUnmuteSubscriptionsOperationUnitTest.cpp",
+      "Client/Voice/RCC/Operations/tests/OperationCollectionIntegrationTest.cpp",
+      "Client/Voice/RCC/Operations/tests/OperationCollectionUnitTest.cpp",
+      "Client/Voice/RCC/Operations/tests/PublishingHandshakeOperationUnitTest.cpp",
+      "Client/Voice/RCC/Operations/tests/RetryPolicyTest.cpp",
+      "Client/Voice/RCC/Operations/tests/RoomCloseOperationUnitTest.cpp",
+      "Client/Voice/RCC/Operations/tests/RoomSetupOperationUnitTest.cpp",
+      "Client/Voice/RCC/Operations/tests/SubscriptionCloseOperationTest.cpp",
+      "Client/Voice/RCC/Operations/tests/SubscriptionSwitchOperationTest.cpp",
+      "Client/Voice/RCC/Operations/tests/SubscriptionUpdateOperationTest.cpp",
+      "Client/Voice/RCC/Operations/tests/UserJoinOperationUnitTest.cpp",
+      "Client/Voice/RCC/Operations/tests/UserLeaveOperationUnitTest.cpp",
+      "Client/Voice/RCC/Operations/tests/VoiceChatEventLoggerUnitTest.cpp",
+      "Client/Voice/RCC/RoomServiceClient/grpc/tests/integration/ConnectionTest.cpp"
+    ]
+  },
+  {
+    "owners": [
+      "@GameEngine/game-engine-voice-chat"
+    ],
+    "batch_id": "game-engine-voice-chat-002",
+    "files": [
+      "Client/Voice/RCC/RoomServiceClient/grpc/tests/unit/GrpcRoomServiceClientManagerTest.cpp",
+      "Client/Voice/RCC/RoomServiceClient/grpc/tests/unit/GrpcRoomServiceClientTest.cpp",
+      "Client/Voice/RCC/RoomServiceClient/grpc/tests/unit/RoomServiceClientTelemetryLoggerTest.cpp",
+      "Client/Voice/RCC/RoomServiceClient/grpc/tests/unit/RoomServiceMessageFactoryTest.cpp",
+      "Client/Voice/RCC/RoomServiceClient/grpc/tests/utils/include/Eventually.h",
+      "Client/Voice/RCC/VoiceApiClient/tests/VoiceApiClientTelemetryLoggerTest.cpp",
+      "Client/Voice/RCC/VoiceApiClient/tests/VoiceApiClientTest.cpp",
+      "Client/Voice/Server/tests/DataPlane/Base/PacketTests.cpp",
+      "Client/Voice/Server/tests/HttpCurlPrimeFixture.cpp",
+      "Client/Voice/Server/tests/Utils.h",
+      "Client/Voice/Shared/CombinedTests/NameCollisionTest.cpp",
+      "Client/Voice/Shared/IntegrationTests/include/Helpers.h",
+      "Client/Voice/Shared/IntegrationTests/include/IntegrationFixture.h",
+      "Client/Voice/Shared/IntegrationTests/include/ScopedAudioGraph.h",
+      "Client/Voice/Shared/IntegrationTests/src/Helpers.cpp",
+      "Client/Voice/Shared/IntegrationTests/src/IntegrationTest.cpp",
+      "Client/Voice/Shared/IntegrationTests/src/IntegrationTestDoSResilience.cpp",
+      "Client/Voice/Shared/IntegrationTests/src/IntegrationTestEventRateLimit.cpp",
+      "Client/Voice/Shared/IntegrationTests/src/IntegrationTestFAEUpdateRejoin.cpp",
+      "Client/Voice/Shared/IntegrationTests/src/IntegrationTestMigration.cpp",
+      "Client/Voice/Shared/IntegrationTests/src/IntegrationTestRtpFlow.cpp",
+      "Client/Voice/Shared/IntegrationTests/src/IntegrationTestSpatialCulling.cpp",
+      "Client/Voice/Shared/IntegrationTests/src/IntegrationTestStreamSwitching.cpp",
+      "Client/Voice/Shared/IntegrationTests/src/IntegrationTestTurnRelay.cpp",
+      "Client/Voice/Shared/Utilities/tests/AccumulatorTest.cpp",
+      "Client/Voice/Shared/Utilities/tests/ClientTelemetryLoggerHelperTest.cpp",
+      "Client/Voice/Shared/Utilities/tests/PacedTelemetryTest.cpp",
+      "Client/Voice/Shared/Utilities/tests/SampledPacedTelemetryTest.cpp",
+      "Client/Voice/Shared/Utilities/tests/SubscriptionDataTest.cpp",
+      "Client/Voice/Shared/Utilities/tests/ThreadSafeMessageMapTest.cpp",
+      "Client/Voice/Shared/Utilities/tests/TurnServerInfoSerializationTest.cpp",
+      "Client/Voice/Shared/Utilities/tests/UtilsTest.cpp",
+      "Client/Voice/Shared/Utilities/tests/VoiceChatStatsTest.cpp",
+      "Client/WebRTC/client_tests/PlayoutDeviceManagerUnitTest.cpp",
+      "Client/WebRTC/client_tests/RecordingDeviceManagerUnitTest.cpp",
+      "Client/WebRTC/tests/RTCStatsCallbackAdapterTest.cpp",
+      "Client/WebRTC/tests/VoiceRtcStatsEmitterTest.cpp"
+    ]
+  },
+  {
+    "owners": [
+      "@GameEngine/game-engine-windows"
+    ],
+    "batch_id": "game-engine-windows-001",
+    "files": [
+      "Client/AppBridge/tests/platform/microsoft/CookieStorageTest.cpp",
+      "Client/AppBridge/tests/platform/microsoft/WindowsCryptTest.cpp",
+      "Client/WinUtil/tests/ArgsUtil.test.cpp",
+      "Client/WinUtil/tests/DirectXVersion.test.cpp",
+      "Client/WinUtil/tests/ErrorUtil.test.cpp",
+      "Client/WinUtil/tests/FileSysUtil.test.cpp",
+      "Client/WinUtil/tests/GdipImageLoader.test.cpp",
+      "Client/WinUtil/tests/LocalizedText.test.cpp",
+      "Client/WinUtil/tests/Registry.test.cpp",
+      "Client/WinUtil/tests/WmiWrapper.test.cpp"
+    ]
+  },
+  {
+    "owners": [
+      "@GameEngine/luau-toolchain"
+    ],
+    "batch_id": "luau-toolchain-001",
+    "files": [
+      "Client/CLI/csclib/tests/MPBundlerFixture.h",
+      "Client/CLI/csclib/tests/TestCoreScriptsConfig.cpp",
+      "Client/CLI/csclib/tests/TestFileLookup.cpp",
+      "Client/CLI/csclib/tests/TestPipelineBinaryGeneratorStep.cpp",
+      "Client/CLI/tests/CLICommandService.test.cpp",
+      "Client/CLI/tests/CliConvertTests.cpp",
+      "Client/CLI/tests/CliLuaCheckTests.cpp",
+      "Client/CLI/tests/CliRunAppFixture.cpp",
+      "Client/CLI/tests/CliRunAppFixture.h",
+      "Client/CLI/tests/CliRunCoverageTests.cpp",
+      "Client/CLI/tests/CliRunLuaTests.cpp",
+      "Client/CLI/tests/ConfigResolverFixture.h",
+      "Client/CLI/tests/DepFileHelpersTests.cpp",
+      "Client/CLI/tests/DiffModelsTests.cpp",
+      "Client/CLI/tests/DumpFlagsTests.cpp",
+      "Client/CLI/tests/EnrollmentsTests.cpp",
+      "Client/CLI/tests/FileSystemSandboxTests.cpp",
+      "Client/CLI/tests/FileSystemServiceTests.cpp",
+      "Client/CLI/tests/GuacApiUtilitiesTests.cpp",
+      "Client/CLI/tests/LuaProjectBuilderTest.cpp",
+      "Client/CLI/tests/ProjectConfigResolverTests.cpp",
+      "Client/CLI/tests/ProjectFileResolverTests.cpp",
+      "Client/CLI/tests/SigningTests.cpp",
+      "Client/CLI/tests/TryoutsTests.cpp"
+    ]
+  },
+  {
+    "owners": [
+      "@GameEngine/mlruntime"
+    ],
+    "batch_id": "mlruntime-001",
+    "files": [
+      "Client/App/MLModelDelivery/tests/MLModelDelivery/MLModelDeliveryServiceTest.cpp",
+      "Client/App/MLModelDelivery/tests/MLModelDelivery/MLModelManifestTest.cpp",
+      "Client/App/MLRuntime/tests/MLRuntime/MLRuntimeServiceTest.cpp",
+      "Client/App/MLRuntime/tests/MLRuntime/MLRuntimeUtilTest.cpp",
+      "Client/MLRuntime/MLRuntime/tests/MLRuntimeTests.cpp",
+      "Client/MLRuntime/MLRuntime/tests/VoiceActivationDetectionPipelineTests.cpp",
+      "Client/MLRuntime/MLRuntime/tests/VoiceToxicityDetectionPipelineTests.cpp",
+      "Client/MLRuntime/RbxNeuralNet/tests/CoreMLBackendTests.cpp",
+      "Client/MLRuntime/RbxNeuralNet/tests/ModelBundleTests.cpp",
+      "Client/MLRuntime/RbxNeuralNet/tests/NCNNBackendTests.cpp",
+      "Client/MLRuntime/RbxNeuralNet/tests/OnnxruntimeBackendTests.cpp",
+      "Client/MLRuntime/RbxNeuralNet/tests/OpenvinoBackendTests.cpp",
+      "Client/MLRuntime/RbxNeuralNet/tests/RbxNNTests.cpp",
+      "Client/MLRuntime/RbxNeuralNet/tests/SerializationContainerTests.cpp",
+      "Client/MLRuntime/RbxNeuralNet/tests/SerializationMappedDataTests.cpp",
+      "Client/MLRuntime/RbxNeuralNet/tests/SerializationMetadataTests.cpp",
+      "Client/MLRuntime/RbxNeuralNet/tests/SerializationStringTests.cpp"
+    ]
+  },
+  {
+    "owners": [
+      "@GameEngine/payments-and-fraud-client"
+    ],
+    "batch_id": "payments-and-fraud-client-001",
+    "files": [
+      "Client/Protocols/Payments/tests/Android/PaymentsProtocolV2Test.cpp",
+      "Client/Protocols/Payments/tests/Default/PaymentsProtocolImplTests.cpp",
+      "Client/Protocols/Payments/tests/PCGDK/PaymentsProtocolImplTests.cpp"
+    ]
+  },
+  {
+    "owners": [
+      "@GameEngine/protocol-owners-communication"
+    ],
+    "batch_id": "protocol-owners-communication-001",
+    "files": [
+      "Client/Protocols/Call/tests/CallProtocolCore.test.cpp",
+      "Client/Protocols/ExternalContentSharing/tests/ExternalContentSharingProtocolCore.test.cpp",
+      "Client/Protocols/ExternalContentSharing/tests/Win32/ExternalContentSharingProtocol.test.cpp"
+    ]
+  },
+  {
+    "owners": [
+      "@GameEngine/safety"
+    ],
+    "batch_id": "safety-001",
+    "files": [
+      "Client/App/safety/tests/AMCv2Test.cpp",
+      "Client/App/safety/tests/AvatarIdentificationTest.cpp",
+      "Client/App/safety/tests/AvatarMovementCaptureJobTest.cpp",
+      "Client/App/safety/tests/AvatarProtoUtilTest.cpp",
+      "Client/App/safety/tests/RCCSafetyTest.cpp",
+      "Client/App/safety/tests/RM3Tier0ConfigRefreshTest.cpp",
+      "Client/App/safety/tests/RM3Tier0MonitoringTest.cpp",
+      "Client/App/safety/tests/RM3Tier0VisualFilterMonitoringTest.cpp",
+      "Client/App/safety/tests/SafetyContextTest.cpp",
+      "Client/App/safety/tests/SafetyServiceTest.cpp",
+      "Client/App/safety/tests/SusBumpDetectionJobTest.cpp",
+      "Client/App/safety/tests/SusBumpMonitoringTest.cpp",
+      "Client/App/safety/tests/SusBumpTelemetryTest.cpp",
+      "Client/RCCService/tests/GameServerReportEnricherTests.cpp"
+    ]
+  },
+  {
+    "owners": [
+      "@GameEngine/services-latency-working-group"
+    ],
+    "batch_id": "services-latency-working-group-001",
+    "files": [
+      "Client/OpenTelemetryTracing/tests/OpenTelemetryTracingTest.cpp"
+    ]
+  },
+  {
+    "owners": [
+      "@GameEngine/studio-collaboration"
+    ],
+    "batch_id": "studio-collaboration-001",
+    "files": [
+      "Client/App.UnitTest/UniqueIdTests.cpp",
+      "Client/App.UnitTest/VersionHistoryCommitCoordinatorTests.cpp",
+      "Client/EngineCloudProcessingServices/SessionTaskService/tests/SessionTaskService.test.cpp"
+    ]
+  },
+  {
+    "owners": [
+      "@GameEngine/studio-collaboration",
+      "@GameEngine/studio-platform-systems"
+    ],
+    "batch_id": "studio-collaboration-001",
+    "files": [
+      "Client/App.UnitTest/ChangeHistoryTest.cpp"
+    ]
+  },
+  {
+    "owners": [
+      "@GameEngine/studio-platform-systems"
+    ],
+    "batch_id": "studio-platform-systems-001",
+    "files": [
+      "Client/ComponentManager/tests/ComponentManagerFixture.h",
+      "Client/ComponentManager/tests/GlobalComponents.test.cpp",
+      "Client/ComponentManager/tests/KeyedComponents.test.cpp",
+      "Client/ComponentManager/tests/Validation.test.cpp",
+      "Client/CoreComponentManager/tests/ComponentEntryPoint.test.cpp",
+      "Client/CoreComponentManager/tests/CoreComponentManager.test.cpp",
+      "Client/KeyValueStorage/tests/src/MultiUserKeyValueStorage.test.cpp",
+      "Client/KeyValueStorage/tests/src/linux/NaiveXorNotSecureStorageTests.cpp",
+      "Client/KeyValueStorage/tests/src/microsoft/CredStoreSecureStorageCRUDTest.cpp",
+      "Client/KeyValueStorage/tests/src/microsoft/CredStoreSecureStorageInitializationTest.cpp",
+      "Client/OAuth2/tests/AuthTokenManagerTest.cpp",
+      "Client/OAuth2/tests/PKCEGeneratorTest.cpp",
+      "Client/OAuth2/tests/TokenHttpRequestTest.cpp",
+      "Client/PerformanceTelemetry/tests/PerformanceTelemetryTests.cpp",
+      "Client/Tasks/tests/Channel.test.cpp",
+      "Client/Tasks/tests/Future.test.cpp",
+      "Client/Tasks/tests/Result.test.cpp",
+      "Client/Tasks/tests/Sleep.test.cpp",
+      "Client/Tasks/tests/StopCallback.test.cpp",
+      "Client/Tasks/tests/StopSource.test.cpp",
+      "Client/Tasks/tests/TaskData.test.cpp",
+      "Client/Tasks/tests/Util.test.cpp",
+      "Client/Tasks/tests/WhenAll.test.cpp"
+    ]
+  },
+  {
+    "owners": [
+      "@GameEngine/test-tools"
+    ],
+    "batch_id": "test-tools-001",
+    "files": [
+      "Client/App.UnitTest/TestServiceTest.cpp",
+      "Client/App/v8datamodel/include/v8datamodel/TestService.h",
+      "Client/AppBridge/tests/VirtualInputTest.cpp"
+    ]
+  },
+  {
+    "owners": [
+      "@GameEngine/universal-app-exp-containerization"
+    ],
+    "batch_id": "universal-app-exp-containerization-001",
+    "files": [
+      "Client/App/util/tests/session/SessionizedEventIngestTest.cpp"
+    ]
+  },
+  {
+    "owners": [
+      "UNOWNED"
+    ],
+    "batch_id": "UNOWNED-001",
+    "files": [
+      "Client/App/v8datamodel/tests/BackpackItem.test.cpp",
+      "Client/App/v8datamodel/tests/BasePart.test.cpp",
+      "Client/App/v8datamodel/tests/Camera.test.cpp",
+      "Client/App/v8datamodel/tests/DataModelComponents.benchmark.cpp",
+      "Client/App/v8datamodel/tests/FallenPartsKillPlane.test.cpp",
+      "Client/App/v8datamodel/tests/HapticEffect.test.cpp",
+      "Client/App/v8datamodel/tests/HapticMixer.test.cpp",
+      "Client/App/v8datamodel/tests/HapticService.test.cpp",
+      "Client/App/v8datamodel/tests/LogService.test.cpp",
+      "Client/App/v8datamodel/tests/MeshPart.test.cpp",
+      "Client/App/v8datamodel/tests/NetworkUtil.test.cpp",
+      "Client/App/v8datamodel/tests/PartCookie.test.cpp",
+      "Client/App/v8datamodel/tests/PartOperation.test.cpp",
+      "Client/App/v8datamodel/tests/PlayerCharacterLoaderMetrics.test.cpp",
+      "Client/App/v8datamodel/tests/Preloaded.test.cpp",
+      "Client/App/v8datamodel/tests/PreloadedCacheVerifier.test.cpp",
+      "Client/App/v8datamodel/tests/ProceduralModel.test.cpp",
+      "Client/App/v8datamodel/tests/PublishService.test.cpp",
+      "Client/App/v8datamodel/tests/RCCPackageManagerTest.cpp",
+      "Client/App/v8datamodel/tests/RunServiceTest.cpp",
+      "Client/App/v8datamodel/tests/SceneAnalysisService.test.cpp",
+      "Client/App/v8datamodel/tests/SerializationService.test.cpp",
+      "Client/App/v8datamodel/tests/UploadMultipartBatchTasks.test.cpp",
+      "Client/App/v8datamodel/tests/WireTest.cpp",
+      "Client/CookieJar/tests/CookieTest.cpp",
+      "Client/Http/CookieStore/tests/CookieStoreCoreTest.cpp",
+      "Client/Http/include/Http/test/HttpUtils.h",
+      "Client/Http/tests/HTTPTest.cpp",
+      "Client/Http/tests/Http.UnitTest.cpp",
+      "Client/Http/tests/HttpBufTest.cpp",
+      "Client/Http/tests/HttpCacheEntryTest.cpp",
+      "Client/Http/tests/HttpClientTest.cpp",
+      "Client/Http/tests/HttpCookieProtocolNotAvailableTest.cpp",
+      "Client/Http/tests/HttpCookieProtocolRollForwardTest.cpp",
+      "Client/Http/tests/HttpCookieProtocolTest.cpp",
+      "Client/Http/tests/HttpMultipartTest.cpp",
+      "Client/Http/tests/HttpParsingTest.cpp",
+      "Client/Http/tests/HttpProxyAllowedCidrTest.cpp",
+      "Client/Http/tests/HttpThrottlingTest.cpp",
+      "Client/Http/tests/WebSocketTest.cpp"
+    ]
+  },
+  {
+    "owners": [
+      "UNOWNED"
+    ],
+    "batch_id": "UNOWNED-002",
+    "files": [
+      "Client/PeerMonotonicClock/tests/PeerMonotonicClockTests.cpp",
+      "Client/Recommendation/tests/RecommendationCommonParser.test.cpp"
+    ]
+  }
+]
