@@ -343,23 +343,6 @@ def pad(s, n):
     return s + " " * max(0, n - vis(s))
 
 
-# Title gets a stable column so identity is always readable; the annotation
-# tail (groups/reviewers/integrator) follows and may wrap on very busy PRs —
-# preferable to truncating either the title or the actionable reviewer info.
-def title_width():
-    return max(28, min(52, term_width() - 55))
-
-
-def render_row(pr, tail):
-    """`  #NNNNN  <ci>  Title…             <tail>` — title in a fixed column."""
-    num = pad(c.cyn(f"#{pr['number']}"), 7)
-    ci = pad(ci_cell(pr), 4)
-    draft = c.gry("(draft) ") if pr.get("isDraft") else ""
-    tw = title_width()
-    title = pad(trunc(pr.get("title", ""), tw), tw)
-    return f"  {num} {ci} {title}  {draft}{tail}"
-
-
 def _cap(items, n):
     """Join up to n names, appending '+K' when the list is longer."""
     if len(items) <= n:
@@ -367,71 +350,100 @@ def _cap(items, n):
     return ", ".join(items[:n]) + f" +{len(items) - n}"
 
 
-def group_tail(rev, checks, decision):
-    """The right-hand annotation: outstanding groups, reviewer states, integrator."""
-    bits = []
-    if rev["req_teams"]:
-        bits.append(c.yel("⦿ " + _cap(rev["req_teams"], 6)))  # ⦿ = CODEOWNERS groups
-    if rev["req_users"]:
-        bits.append(c.dim("@" + _cap(rev["req_users"], 6).replace(", ", ", @")))
-    if rev["changes"]:
-        bits.append(c.red("⟲ changes: " + _cap(rev["changes"], 4)))
-    if rev["commenters"]:
-        bits.append(c.mag("\U0001f4ac " + _cap(rev["commenters"], 4)))
-    if rev["approvers"]:
-        bits.append(c.grn("✔ " + _cap(rev["approvers"], 6)))
-    integ = checks["integrator"]
-    if integ and integ["state"] == "fail":
-        bid = integ["build_id"]
-        bits.append(c.red(f"[integrator ✗ tc:{bid}]" if bid else "[integrator ✗]"))
-    return "  ".join(bits)
+# The default view is deliberately terse — number, CI glyph, title — so the
+# queue scans like a table. All the per-PR detail (groups, reviewers, integrator
+# build) lives in `drill`, shown only when you ask about one PR.
+def render_row(pr):
+    num = pad(c.cyn(f"#{pr['number']}"), 8)
+    ci = pad(ci_cell(pr), 4)
+    title = trunc(pr.get("title", ""), max(24, term_width() - 16))
+    if pr.get("isDraft"):
+        title = c.gry(title + "  (draft)")
+    return f"  {num}{ci}  {title}"
 
 
 def section(title, prs, color):
     print(color(f"▌ {title} ({len(prs)})"))
     if not prs:
-        print(c.dim("    — none —"))
-        return
-    for pr in prs:
-        tail = group_tail(pr["_rev"], pr["_checks"], pr.get("reviewDecision"))
-        print(render_row(pr, tail))
+        print(c.dim("    —"))
+    else:
+        for pr in prs:
+            print(render_row(pr))
     print()
 
 
-def render(data, which, only_failing):
+def me_requested(pr):
+    """True only when amason is an *individual* requested reviewer.
+
+    `review-requested:@me` search also returns PRs where merely a team amason
+    belongs to is requested; the review bucket should show only PRs actually
+    waiting on amason personally, so we filter on the individual request."""
+    return ME in pr["_rev"]["req_users"]
+
+
+def categorize(data, teams=False, terms=None, failing=False):
+    """Enrich + split into (review, {waiting,comments,approved}) with filters.
+
+    review is individual-request-only unless `teams`; `terms` keeps only titles
+    containing every term (case-insensitive); `failing` keeps only CI-red mine."""
     authored = [enrich(p) for p in data.get("authored", [])]
     review = [enrich(p) for p in data.get("review", [])]
-    if only_failing:
+    if not teams:
+        review = [p for p in review if me_requested(p)]
+    if failing:
         authored = [p for p in authored if p["_ci_red"]]
-
+    if terms:
+        keep = lambda p: all(t in p["title"].lower() for t in terms)
+        authored = [p for p in authored if keep(p)]
+        review = [p for p in review if keep(p)]
     buckets = {"waiting": [], "comments": [], "approved": []}
     for pr in authored:
         buckets[bucket_authored(pr)].append(pr)
     for v in buckets.values():
         v.sort(key=lambda p: p["number"], reverse=True)
     review.sort(key=lambda p: p["number"], reverse=True)
+    return review, buckets
+
+
+def render(data, which, failing, teams, terms):
+    review, buckets = categorize(data, teams=teams, terms=terms, failing=failing)
 
     age = cache_age()
     stamp = f"cached {int(age)}s ago" if age is not None else "live"
     hdr = f"PR Dashboard — {ME}@{REPO}  ({stamp})"
+    if terms:
+        hdr += f"  /{' '.join(terms)}/"
     print(c.bold(hdr))
-    print(c.dim("─" * min(len(hdr), term_width())))
+    print(c.dim("─" * min(vis(hdr), term_width())))
 
     show_review = which in ("all", "review")
     show_mine = which in ("all", "mine")
     if show_review:
         section("Assigned to me to review", review, c.blu)
-    if show_mine or only_failing:
+    if show_mine or failing:
         section("Waiting for reviewers", buckets["waiting"], c.yel)
-        section("Comments / changes (maybe unaddressed)", buckets["comments"], c.mag)
+        section("Comments / changes", buckets["comments"], c.mag)
         section("Approved", buckets["approved"], c.grn)
 
-    tot = len(review) + sum(len(v) for v in buckets.values())
-    red = sum(1 for p in authored if p["_ci_red"])
-    print(c.dim(f"{tot} PRs · {len(review)} to review · "
-                f"{len(buckets['waiting'])} waiting · "
-                f"{len(buckets['comments'])} commented · "
-                f"{len(buckets['approved'])} approved · {red} CI-red"))
+    red = sum(len([p for p in v if p["_ci_red"]]) for v in buckets.values())
+    print(c.dim(f"{len(review)} to review · {len(buckets['waiting'])} waiting · "
+                f"{len(buckets['comments'])} commented · {len(buckets['approved'])} approved"
+                f" · {red} CI-red"))
+    print(c.dim("prd <#> = drill   ·   prd search <words>   ·   prd find (fzf)"))
+
+
+def list_prs(data, teams=False):
+    """Emit one tab-separated `number<TAB>display` line per PR, for fzf."""
+    review, buckets = categorize(data, teams=teams)
+    def ci_plain(pr):
+        ck = pr["_checks"]
+        return (f"✗{len(ck['failing'])}" if ck["failing"] else
+                "●" if ck["pending"] else "~" if ck["stale"] else "✓")
+    rows = [(p, "review") for p in review]
+    for name in ("waiting", "comments", "approved"):
+        rows += [(p, name) for p in buckets[name]]
+    for pr, bucket in rows:
+        print(f"{pr['number']}\t{ci_plain(pr):<3} [{bucket:<8}] {pr.get('title','')}")
 
 
 # ------------------------------------------------------------------ drill
@@ -457,6 +469,23 @@ def drill(num, want_logs):
           f"{len(ck['failing'])} failing, {len(ck['pending'])} pending"
           + (c.yel("  ~stale") if ck["stale"] else ""))
     print()
+
+    rev = pr["_rev"]
+    if any(rev[k] for k in ("req_teams", "req_users", "approvers", "commenters", "changes")) or pr["_comment_n"]:
+        print(c.bold("Review:"))
+        if rev["req_teams"]:
+            print(c.yel("  groups still required: ") + ", ".join(rev["req_teams"]))
+        if rev["req_users"]:
+            print("  users requested: " + ", ".join(rev["req_users"]))
+        if rev["approvers"]:
+            print(c.grn("  approved by: ") + ", ".join(rev["approvers"]))
+        if rev["changes"]:
+            print(c.red("  changes requested by: ") + ", ".join(rev["changes"]))
+        if rev["commenters"]:
+            print(c.mag("  commented: ") + ", ".join(rev["commenters"]))
+        if pr["_comment_n"]:
+            print(f"  conversation comments: {pr['_comment_n']}")
+        print()
 
     integ = ck["integrator"]
     if integ:
@@ -508,11 +537,19 @@ def main():
     sp_show.add_argument("--review", action="store_const", const="review", dest="which")
     sp_show.add_argument("--mine", action="store_const", const="mine", dest="which")
     sp_show.add_argument("--failing", action="store_true", help="only CI-red authored PRs")
+    sp_show.add_argument("--teams", action="store_true",
+                         help="also show review PRs requested only via my teams")
+    sp_show.add_argument("--grep", nargs="+", metavar="WORD",
+                         help="only PRs whose title contains every WORD")
     sp_show.add_argument("--refresh", action="store_true", help="force refresh first")
     sp_show.add_argument("--cached", action="store_true", help="never auto-refresh")
     add_common(sp_show)
 
     sub.add_parser("refresh", help="force a fetch + rewrite cache")
+
+    sp_list = sub.add_parser("list", help="tab-separated PR list (for fzf)")
+    sp_list.add_argument("--teams", action="store_true")
+    sp_list.add_argument("--cached", action="store_true")
 
     sp_drill = sub.add_parser("drill", help="detail one PR")
     sp_drill.add_argument("number", type=int)
@@ -548,17 +585,25 @@ def main():
         drill(args.number, args.logs)
         return
 
+    def ensure_fresh(force=False, cached=False):
+        age = cache_age()
+        if force or age is None or (age > TTL and not cached):
+            print("Refreshing cache...", file=sys.stderr)
+            save(fetch())
+
+    if cmd == "list":
+        ensure_fresh(cached=args.cached)
+        list_prs(load(), teams=args.teams)
+        return
+
     # show
-    age = cache_age()
-    need = args.refresh or age is None or (age > TTL and not args.cached)
-    if need:
-        print("Refreshing cache...", file=sys.stderr)
-        save(fetch())
+    ensure_fresh(force=args.refresh, cached=args.cached)
     data = load()
     if args.json:
         print(json.dumps(data, indent=2))
         return
-    render(data, args.which or "all", args.failing)
+    terms = [w.lower() for w in args.grep] if args.grep else None
+    render(data, args.which or "all", args.failing, args.teams, terms)
 
 
 if __name__ == "__main__":

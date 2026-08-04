@@ -27,26 +27,35 @@ seconds for `show`, default 300), `GH_HOST`.
 ## Commands
 
 ```bash
-python3 "$SCRIPT" refresh          # force fetch + rewrite cache (~60s at 200 PRs)
-python3 "$SCRIPT" show             # tables from cache; auto-refresh if >TTL stale
-python3 "$SCRIPT" show --cached    # never auto-refresh (use the cache as-is)
-python3 "$SCRIPT" show --review    # only the "assigned to me to review" bucket
-python3 "$SCRIPT" show --mine      # only my authored buckets
-python3 "$SCRIPT" show --failing   # only my CI-red authored PRs
-python3 "$SCRIPT" show --json      # raw cached dataset (for further processing)
-python3 "$SCRIPT" drill <PR#>          # one PR: non-green checks + integrator build
+python3 "$SCRIPT" refresh              # force fetch + rewrite cache (~60s at 200 PRs)
+python3 "$SCRIPT" show                 # compact tables from cache; auto-refresh if >TTL
+python3 "$SCRIPT" show --cached        # never auto-refresh (use the cache as-is)
+python3 "$SCRIPT" show --review        # only PRs where I'm an INDIVIDUAL requested reviewer
+python3 "$SCRIPT" show --review --teams  # ...also PRs requested only via a team I'm on
+python3 "$SCRIPT" show --mine          # only my authored buckets
+python3 "$SCRIPT" show --failing       # only my CI-red authored PRs
+python3 "$SCRIPT" show --grep WORD...  # only titles containing every WORD (case-insensitive)
+python3 "$SCRIPT" show --json          # raw cached dataset (for further processing)
+python3 "$SCRIPT" list                 # tab-separated "number<TAB>display" (fzf feed)
+python3 "$SCRIPT" drill <PR#>          # one PR: reviewers, non-green checks, integrator build
 python3 "$SCRIPT" drill <PR#> --logs   # also pull failing GHA job logs
 ```
 
+The default `show` is deliberately terse (number · CI glyph · title); all per-PR
+detail — outstanding CODEOWNERS groups, reviewer states, integrator build id —
+appears only in `drill`.
+
 Interactively, the `prd` shell function wraps all of these (`prd`, `prd refresh`,
-`prd <PR#>`, `prd failing`, `prd watch`). Agents should call the script directly
-(the shell function isn't defined in non-interactive shells).
+`prd review`, `prd failing`, `prd search <words>`, bare `prd <words>` for a title
+filter, `prd find` for an fzf picker with a live drill preview, `prd <PR#>`,
+`prd watch`). Agents should call the script directly (the shell function isn't
+defined in non-interactive shells).
 
 ## Buckets
 
 | Bucket    | Meaning                                                            |
 |-----------|-------------------------------------------------------------------|
-| review    | PRs where I'm a requested reviewer                                |
+| review    | PRs where I'm an **individual** requested reviewer (`--teams` also shows team-only requests) |
 | waiting   | my open PRs waiting on reviewers / CODEOWNERS groups (no comments) |
 | comments  | my PRs with human comments or CHANGES_REQUESTED (maybe unaddressed)|
 | approved  | my fully-approved PRs                                              |
