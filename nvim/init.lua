@@ -83,12 +83,21 @@ require("lazy").setup({
   -- Syntax highlighting via Treesitter -----------------------------------
   {
     "nvim-treesitter/nvim-treesitter",
+    branch = "main",             -- master is archived + breaks at runtime on nvim 0.12
     build = ":TSUpdate",
     config = function()
-      require("nvim-treesitter.configs").setup({
-        ensure_installed = { "c", "cpp", "lua", "python", "bash", "json", "vim", "vimdoc", "markdown" },
-        highlight = { enable = true },
-        indent = { enable = true },
+      -- The main branch installs parsers on demand and does NOT auto-enable
+      -- highlighting; we install our languages then start core treesitter
+      -- per buffer. markdown_inline is needed so LSP hover floats highlight.
+      require("nvim-treesitter").install({
+        "c", "cpp", "lua", "python", "bash", "json",
+        "vim", "vimdoc", "markdown", "markdown_inline",
+      })
+      vim.api.nvim_create_autocmd("FileType", {
+        callback = function()
+          -- pcall guards filetypes whose parser isn't installed yet.
+          pcall(vim.treesitter.start)
+        end,
       })
     end,
   },
@@ -96,7 +105,7 @@ require("lazy").setup({
   -- Fuzzy finding ---------------------------------------------------------
   {
     "nvim-telescope/telescope.nvim",
-    branch = "0.1.x",
+    branch = "master",           -- 0.1.x predates nvim 0.11 make_position_params(encoding)
     dependencies = {
       "nvim-lua/plenary.nvim",
       -- Native FZF sorter: much faster on a repo this size. Needs `make`.
@@ -142,12 +151,14 @@ require("lazy").setup({
           map("K", vim.lsp.buf.hover, "Hover")
           map("<leader>rn", vim.lsp.buf.rename, "Rename symbol")
           map("<leader>ca", vim.lsp.buf.code_action, "Code action")
-          map("[d", vim.diagnostic.goto_prev, "Prev diagnostic")
-          map("]d", vim.diagnostic.goto_next, "Next diagnostic")
+          map("[d", function() vim.diagnostic.jump({ count = -1 }) end, "Prev diagnostic")
+          map("]d", function() vim.diagnostic.jump({ count = 1 }) end, "Next diagnostic")
         end,
       })
 
-      require("lspconfig").clangd.setup({
+      -- nvim 0.11+ native LSP API. nvim-lspconfig ships the base clangd config
+      -- (lsp/clangd.lua); we deep-merge overrides here, then enable it.
+      vim.lsp.config("clangd", {
         cmd = {
           "clangd",
           "--background-index",
@@ -156,10 +167,11 @@ require("lazy").setup({
           "--function-arg-placeholders",
           "--offset-encoding=utf-16",      -- match Neovim's expected encoding
         },
-        -- Anchor the project root so clangd finds compile_commands.json even
-        -- when editing headers deep in the tree.
-        root_dir = require("lspconfig.util").root_pattern("compile_commands.json", ".git"),
+        -- Find the project root (where compile_commands.json lives) even when
+        -- editing headers deep in the tree.
+        root_markers = { "compile_commands.json", ".git" },
       })
+      vim.lsp.enable("clangd")
     end,
   },
 
