@@ -86,13 +86,23 @@ require("lazy").setup({
     branch = "main",             -- master is archived + breaks at runtime on nvim 0.12
     build = ":TSUpdate",
     config = function()
-      -- The main branch installs parsers on demand and does NOT auto-enable
-      -- highlighting; we install our languages then start core treesitter
-      -- per buffer. markdown_inline is needed so LSP hover floats highlight.
-      require("nvim-treesitter").install({
-        "c", "cpp", "lua", "python", "bash", "json",
-        "vim", "vimdoc", "markdown", "markdown_inline",
-      })
+      -- The main branch compiles parsers with the `tree-sitter` CLI and does
+      -- NOT auto-enable highlighting. Only attempt installs when the CLI is on
+      -- PATH, so a missing CLI degrades to nvim's built-in syntax highlighting
+      -- with a one-time hint instead of erroring on every startup.
+      -- markdown_inline is needed so LSP hover floats highlight.
+      if vim.fn.executable("tree-sitter") == 1 then
+        require("nvim-treesitter").install({
+          "c", "cpp", "lua", "python", "bash", "json",
+          "vim", "vimdoc", "markdown", "markdown_inline",
+        })
+      else
+        vim.schedule(function()
+          vim.notify(
+            "nvim-treesitter: `tree-sitter` CLI not found — run `brew install tree-sitter` for full C++ highlighting.",
+            vim.log.levels.WARN)
+        end)
+      end
       vim.api.nvim_create_autocmd("FileType", {
         callback = function()
           -- pcall guards filetypes whose parser isn't installed yet.
