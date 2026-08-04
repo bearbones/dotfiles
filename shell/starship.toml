@@ -1,0 +1,51 @@
+# Starship prompt — one config, identical in zsh (local) and bash (devspaces).
+# The hostname segment only appears over SSH and is red, so a devspace prompt
+# is instantly distinguishable from a local one.
+
+add_newline = false
+
+format = """
+$hostname\
+$directory\
+$git_branch$git_status\
+$cmd_duration\
+$character"""
+
+palette = "gruvbox_dark"
+
+[palettes.gruvbox_dark]
+fg = "#ebdbb2"
+red = "#fb4934"
+green = "#b8bb26"
+yellow = "#fabd2f"
+blue = "#83a598"
+aqua = "#8ec07c"
+orange = "#fe8019"
+gray = "#928374"
+
+[hostname]
+ssh_only = true                 # only shown when connected over SSH (i.e. a devspace)
+format = "[$hostname]($style) "
+style = "bold red"
+
+[directory]
+style = "bold blue"
+truncation_length = 3
+truncate_to_repo = true
+
+[git_branch]
+symbol = " "
+style = "yellow"
+
+[git_status]
+style = "orange"
+
+[cmd_duration]
+min_time = 2000                 # only show for commands slower than 2s
+format = "[$duration]($style) "
+style = "gray"
+
+[character]
+success_symbol = "[❯](green)"
+error_symbol = "[❯](red)"
+vicmd_symbol = "[❮](aqua)"      # shown in vi normal mode
