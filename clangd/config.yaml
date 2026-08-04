@@ -1,0 +1,22 @@
+# Global clangd configuration (applies to every project).
+# Each repo's compile_commands.json is discovered at its own root, so this
+# file only carries cross-project behavior. Tune CompileFlags.Remove if
+# clangd reports "unknown argument" errors against game-engine TUs.
+
+CompileFlags:
+  Remove:
+    # Flags emitted by cross/other toolchains that clang's frontend rejects.
+    - -fsanitize=*
+    - -fno-sanitize-recover*
+    - -m*avx*
+  # Add: []   # add -isystem paths here if headers can't be found
+
+Index:
+  Background: Build        # build a background index -> fast find-references
+
+Diagnostics:
+  UnusedIncludes: None     # this codebase intentionally leans on transitive includes
+  MissingIncludes: None
+
+InlayHints:
+  Enabled: false
