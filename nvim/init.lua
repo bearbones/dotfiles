@@ -99,7 +99,7 @@ require("lazy").setup({
       else
         vim.schedule(function()
           vim.notify(
-            "nvim-treesitter: `tree-sitter` CLI not found — run `brew install tree-sitter` for full C++ highlighting.",
+            "nvim-treesitter: `tree-sitter` CLI not found — run `brew install tree-sitter-cli` for full C++ highlighting.",
             vim.log.levels.WARN)
         end)
       end
