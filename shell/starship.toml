@@ -1,4 +1,5 @@
 # Starship prompt — one config, identical in zsh (local) and bash (devspaces).
+# Catppuccin Mocha to match the terminal/tmux chrome (Neovim stays Gruvbox).
 # The hostname segment only appears over SSH and is red, so a devspace prompt
 # is instantly distinguishable from a local one.
 
@@ -11,22 +12,33 @@ $git_branch$git_status\
 $cmd_duration\
 $character"""
 
-palette = "gruvbox_dark"
+palette = "catppuccin_mocha"
 
-[palettes.gruvbox_dark]
-fg = "#ebdbb2"
-red = "#fb4934"
-green = "#b8bb26"
-yellow = "#fabd2f"
-blue = "#83a598"
-aqua = "#8ec07c"
-orange = "#fe8019"
-gray = "#928374"
+[palettes.catppuccin_mocha]
+rosewater = "#f5e0dc"
+flamingo = "#f2cdcd"
+pink = "#f5c2e7"
+mauve = "#cba6f7"
+red = "#f38ba8"
+maroon = "#eba0ac"
+peach = "#fab387"
+yellow = "#f9e2af"
+green = "#a6e3a1"
+teal = "#94e2d5"
+sky = "#89dceb"
+sapphire = "#74c7ec"
+blue = "#89b4fa"
+lavender = "#b4befe"
+text = "#cdd6f4"
+overlay1 = "#7f849c"
+overlay0 = "#6c7086"
+surface0 = "#313244"
+base = "#1e1e2e"
 
 [hostname]
-ssh_only = true                 # only shown when connected over SSH (i.e. a devspace)
+ssh_only = true                 # only shown over SSH (i.e. a devspace)
 format = "[$hostname]($style) "
-style = "bold red"
+style = "bold red"              # the devspace cue
 
 [directory]
 style = "bold blue"
@@ -35,17 +47,17 @@ truncate_to_repo = true
 
 [git_branch]
 symbol = " "
-style = "yellow"
+style = "mauve"
 
 [git_status]
-style = "orange"
+style = "peach"
 
 [cmd_duration]
 min_time = 2000                 # only show for commands slower than 2s
 format = "[$duration]($style) "
-style = "gray"
+style = "overlay1"
 
 [character]
 success_symbol = "[❯](green)"
 error_symbol = "[❯](red)"
-vicmd_symbol = "[❮](aqua)"      # shown in vi normal mode
+vicmd_symbol = "[❮](sky)"       # shown in vi normal mode
