@@ -32,4 +32,64 @@ config.adjust_window_size_when_changing_font_size = false
 config.send_composed_key_when_left_alt_is_pressed = false
 config.send_composed_key_when_right_alt_is_pressed = true
 
+-- ── Devspaces ─────────────────────────────────────────────────────────────
+-- Coder writes `Host coder.<name>` aliases into ~/.ssh/config (with an absolute
+-- ProxyCommand, so a plain `ssh` spawn works despite the minimal GUI PATH).
+-- Read the primary host of each — skipping the `.dev`/`.main` agent aliases —
+-- so both the launcher and the shortcut track whatever `ds` / `coder config-ssh`
+-- last wrote, with nothing hardcoded.
+local function devspace_hosts()
+  local hosts, home = {}, os.getenv("HOME") or ""
+  local f = io.open(home .. "/.ssh/config", "r")
+  if not f then return hosts end
+  for line in f:lines() do
+    local h = line:match("^%s*[Hh]ost%s+(coder%.[^.%s]+)%s*$")
+    if h then hosts[#hosts + 1] = h end
+  end
+  f:close()
+  return hosts
+end
+
+-- Register each as an SSH domain. multiplexing="None" because devspaces don't
+-- run a wezterm mux server — persistence comes from remote tmux, not wezterm.
+-- This makes `wezterm connect coder.<name>` and the built-in launcher list them
+-- (they drop you at the remote shell; run `work`/tmux there yourself).
+config.ssh_domains = {}
+for _, h in ipairs(devspace_hosts()) do
+  table.insert(config.ssh_domains, { name = h, remote_address = h, multiplexing = "None" })
+end
+
+-- CMD+SHIFT+D → fuzzy-pick a devspace and open it in a NEW WINDOW attaching the
+-- remote persistent tmux 'main' session — identical to the `ds` shell command,
+-- so a dropped connection loses nothing (re-run to reconnect).
+wezterm.on("open-devspace", function(window, pane)
+  local choices = {}
+  for _, h in ipairs(devspace_hosts()) do
+    choices[#choices + 1] = { id = h, label = (h:gsub("^coder%.", "")) }
+  end
+  if #choices == 0 then
+    window:toast_notification("wezterm",
+      "No coder.* hosts in ~/.ssh/config — run `ds` or `coder config-ssh` first", nil, 4000)
+    return
+  end
+  window:perform_action(wezterm.action.InputSelector({
+    title = "Attach devspace",
+    fuzzy = true,
+    choices = choices,
+    action = wezterm.action_callback(function(win, p, id)
+      if id then
+        win:perform_action(wezterm.action.SpawnCommandInNewWindow({
+          args = { "/usr/bin/ssh", "-t", id, "tmux new-session -A -s main" },
+        }), p)
+      end
+    end),
+  }), pane)
+end)
+
+config.keys = config.keys or {}
+table.insert(config.keys, {
+  key = "d", mods = "CMD|SHIFT",
+  action = wezterm.action.EmitEvent("open-devspace"),
+})
+
 return config
