@@ -18,6 +18,9 @@ fi
 # Serve the current directory (data visualizations, etc.) over HTTP.
 alias serve='python3 -m http.server'
 
+# Keep the machine awake between unattended local task runs.
+alias redeye="$HOME/dotfiles/scripts/prevent-sleep"
+
 # work [session] — local tmux workspace with standard windows for a day's work.
 # Attaches if the session already exists. Windows:
 #   claude-1/2  two agent sessions

@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+
+if ! command -v systemd-inhibit >/dev/null 2>&1; then
+    echo "redeye: systemd-inhibit is not available" >&2
+    exit 127
+fi
+
+exec systemd-inhibit --what=idle:sleep --mode=block sleep infinity
