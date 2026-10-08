@@ -1,5 +1,5 @@
 #!/bin/bash
-# Bootstrap a fresh WSL2 Ubuntu 24.04 distro into a personal build/agent box.
+# Bootstrap a fresh WSL2 Ubuntu (24.04+) distro into a personal build/agent box.
 # Idempotent — safe to re-run after editing. Usage, from inside WSL:
 #
 #   git clone https://github.com/bearbones/dotfiles ~/dotfiles

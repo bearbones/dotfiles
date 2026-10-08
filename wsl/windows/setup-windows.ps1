@@ -8,7 +8,7 @@
 #  - -NoSleepOnAC: never sleep while plugged in (a desktop always is)
 
 param(
-    [string]$Distro = "Ubuntu-24.04",
+    [string]$Distro = "Ubuntu",
     [switch]$NoSleepOnAC
 )
 

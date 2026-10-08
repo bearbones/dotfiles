@@ -34,9 +34,11 @@ config.send_composed_key_when_right_alt_is_pressed = true
 
 -- Windows desktop: open straight into the WSL distro (wsl/bootstrap.sh), so
 -- tabs land in zsh + tmux exactly as on Linux. WezTerm auto-registers a
--- WSL:<distro> domain for each installed distro.
+-- WSL:<distro> domain for each installed distro; use the first rather than
+-- hardcoding a name (`wsl --install` names it plain "Ubuntu").
 if wezterm.target_triple:find("windows") then
-  config.default_domain = "WSL:Ubuntu-24.04"
+  local wsl = wezterm.default_wsl_domains()
+  if #wsl > 0 then config.default_domain = wsl[1].name end
 end
 
 -- ── Devspaces ─────────────────────────────────────────────────────────────
