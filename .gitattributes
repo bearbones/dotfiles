@@ -1,0 +1,3 @@
+# Shell scripts and configs must stay LF even when checked out on Windows.
+* text=auto eol=lf
+*.ps1 text eol=crlf

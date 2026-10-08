@@ -1,15 +1,20 @@
 #!/bin/bash
 # Standalone installer for the personal-configs subtree.
-# Usage: ./install.sh [--force]
+# Usage: ./install.sh [--force] [--shell]
+#   --shell  also link ~/.zshrc (personal machines; work machines own their zshrc)
 
 set -e
 
 DOTFILES="$(cd "$(dirname "$0")" && pwd)"
 FORCE=false
+SHELL_RC=false
 
-if [[ "$1" == "--force" ]]; then
-    FORCE=true
-fi
+for arg in "$@"; do
+    case "$arg" in
+        --force) FORCE=true ;;
+        --shell) SHELL_RC=true ;;
+    esac
+done
 
 echo "Installing personal dotfiles from $DOTFILES"
 
@@ -73,6 +78,12 @@ mkdir -p "$HOME/.git-hooks"
 for hook in "$DOTFILES/git/hooks/"*; do
     link_file "$hook" "$HOME/.git-hooks/$(basename "$hook")"
 done
+
+if [[ "$SHELL_RC" == true ]]; then
+    echo ""
+    echo "==> zshrc"
+    link_file "$DOTFILES/shell/zshrc" "$HOME/.zshrc"
+fi
 
 echo ""
 echo "Done! You may need to restart your shell or run: source ~/.zshrc"

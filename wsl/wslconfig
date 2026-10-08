@@ -1,0 +1,23 @@
+# WSL2 VM settings for the Windows desktop (i9-10900KF, 64 GB, RTX 3080).
+# Lives at %USERPROFILE%\.wslconfig on the Windows side; copy it there (not a
+# symlink — wsl.exe reads it before any Linux filesystem exists). Changes take
+# effect after `wsl --shutdown`.
+#
+# Sized for compute-heavy builds while leaving Windows enough headroom to stay
+# usable at the desk (games, browser, the Claude app).
+
+[wsl2]
+# Default is 50% of RAM (32 GB) — too tight for parallel C++/Rust link steps.
+memory=48GB
+processors=20
+swap=16GB
+
+# Let GUI apps (WSLg) and the GPU through; both are on by default, stated here
+# so it's obvious they're wanted.
+guiApplications=true
+
+[experimental]
+# Return freed guest memory to Windows gradually instead of holding the peak.
+autoMemoryReclaim=gradual
+# New distro disks are sparse, so the VHDX shrinks when build trees are deleted.
+sparseVhd=true

@@ -32,6 +32,13 @@ config.adjust_window_size_when_changing_font_size = false
 config.send_composed_key_when_left_alt_is_pressed = false
 config.send_composed_key_when_right_alt_is_pressed = true
 
+-- Windows desktop: open straight into the WSL distro (wsl/bootstrap.sh), so
+-- tabs land in zsh + tmux exactly as on Linux. WezTerm auto-registers a
+-- WSL:<distro> domain for each installed distro.
+if wezterm.target_triple:find("windows") then
+  config.default_domain = "WSL:Ubuntu-24.04"
+end
+
 -- ── Devspaces ─────────────────────────────────────────────────────────────
 -- Coder writes `Host coder.<name>` aliases into ~/.ssh/config (with an absolute
 -- ProxyCommand, so a plain `ssh` spawn works despite the minimal GUI PATH).

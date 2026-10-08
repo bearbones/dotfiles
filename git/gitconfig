@@ -18,3 +18,7 @@
     smudge = git-lfs smudge -- %f
     process = git-lfs filter-process
     required = true
+
+# Machine-local overrides (identity, credential helper) — must stay last.
+[include]
+    path = ~/.gitconfig.local

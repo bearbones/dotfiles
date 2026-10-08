@@ -41,19 +41,30 @@ work() {
 
     # dash: dashboard pane (top 70%) over a worker shell rooted in the repo.
     # -l 30% sizes the NEW (bottom) pane, leaving the dashboard the top 70%.
-    tmux new-window   -t "$s" -n dash
-    tmux split-window -t "$s:dash" -v -l 30% -c "$repo"
-    tmux send-keys    -t "$s:dash.0" 'prd' Enter   # render the dashboard on entry
-    tmux select-pane  -t "$s:dash.0"
+    # Work-only: skipped on personal machines, which have no `prd`.
+    if type prd >/dev/null 2>&1; then
+        tmux new-window   -t "$s" -n dash
+        tmux split-window -t "$s:dash" -v -l 30% -c "$repo"
+        tmux send-keys    -t "$s:dash.0" 'prd' Enter   # render the dashboard on entry
+        tmux select-pane  -t "$s:dash.0"
+    fi
 
     tmux new-window  -t "$s" -n serve
     tmux new-window  -t "$s" -n scratch
 
     # devspace: `ds` with no args lists devspaces; type `ds <name>` to attach one.
-    tmux new-window  -t "$s" -n devspace
-    tmux send-keys   -t "$s:devspace" 'ds' Enter
+    if type ds >/dev/null 2>&1; then
+        tmux new-window  -t "$s" -n devspace
+        tmux send-keys   -t "$s:devspace" 'ds' Enter
+    fi
 
     tmux select-window -t "$s:claude-1"
     tmux attach -t "$s"
 }
 alias mux=work
+
+# desk [session] — from the laptop, attach (or create) the `work` tmux session
+# on the Windows desktop's WSL distro over Tailscale SSH. Re-run to reconnect.
+desk() {
+    ssh -t "${DESKTOP_HOST:-desktop}" "zsh -lic 'work ${1:-work}'"
+}

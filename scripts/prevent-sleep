@@ -2,6 +2,20 @@
 
 set -euo pipefail
 
+# WSL: systemd-inhibit only affects the Linux VM — Windows still sleeps and
+# takes the VM with it. Hold a Windows execution-state request instead; it
+# lasts as long as the PowerShell process does, so Ctrl-C releases it.
+if [[ -e /proc/sys/fs/binfmt_misc/WSLInterop ]]; then
+    ps=/mnt/c/Windows/System32/WindowsPowerShell/v1.0/powershell.exe
+    echo "redeye: keeping Windows awake (Ctrl-C to release)" >&2
+    # ES_CONTINUOUS | ES_SYSTEM_REQUIRED; the display may still turn off.
+    exec "$ps" -NoProfile -Command '
+        $sig = "[DllImport(\"kernel32.dll\")] public static extern uint SetThreadExecutionState(uint f);"
+        $k = Add-Type -MemberDefinition $sig -Name Power -Namespace Win32 -PassThru
+        [void]$k::SetThreadExecutionState([uint32]"0x80000001")
+        while ($true) { Start-Sleep -Seconds 3600 }'
+fi
+
 if ! command -v systemd-inhibit >/dev/null 2>&1; then
     echo "redeye: systemd-inhibit is not available" >&2
     exit 127
