@@ -1,6 +1,6 @@
 [user]
     name = Alex Mason
-    email = amason@roblox.com
+    email = alex.mason.wire@gmail.com
 
 [core]
     autocrlf = input
@@ -19,6 +19,6 @@
     process = git-lfs filter-process
     required = true
 
-# Machine-local overrides (identity, credential helper) — must stay last.
+# Machine-local overrides (identity, credential helper) â€” must stay last.
 [include]
     path = ~/.gitconfig.local

@@ -79,6 +79,12 @@ for hook in "$DOTFILES/git/hooks/"*; do
     link_file "$hook" "$HOME/.git-hooks/$(basename "$hook")"
 done
 
+echo ""
+echo "==> Global agent policy (Claude / AGENTS)"
+mkdir -p "$HOME/.claude"
+link_file "$DOTFILES/AGENTS.md" "$HOME/.claude/CLAUDE.md"
+link_file "$DOTFILES/AGENTS.md" "$HOME/.claude/AGENTS.md"
+
 if [[ "$SHELL_RC" == true ]]; then
     echo ""
     echo "==> zshrc"
