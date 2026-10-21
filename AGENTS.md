@@ -1,6 +1,33 @@
 # Global Agent Policy & Dotfiles Guide
 
-This file is linked to `~/.claude/CLAUDE.md` and `~/.claude/AGENTS.md` by [`install.sh`](install.sh) so that its policies apply across all repositories on this machine, in addition to serving as the guide for the `dotfiles` repository itself.
+This file is linked to `~/.claude/CLAUDE.md`, `~/.claude/AGENTS.md`, `~/.codex/AGENTS.md`, and `~/.gemini/config/AGENTS.md` (`GEMINI.md`) by [`install.sh`](install.sh) so that its policies apply across all repositories on this machine, in addition to serving as the guide for the `dotfiles` repository itself.
+
+---
+
+## Global Policy: Performance & Data-Oriented Design (Best Practices)
+
+Across all projects—and especially in simulation, graphics, solver, and systems code where performance is a primary concern—adhere strictly to these architectural and implementation rules:
+
+### 1. Topology-Driven Data Flow, Never "Derive-on-Read"
+- **Schedule computations by data-dependency topology, not on-demand getters:** When a quantity (e.g., cell mixture aggregate, effective heat capacity, partial volume, inertia, or geometric aperture) depends on state planes $A$ and $B$, compute and materialize that derived plane **once** at the exact point in the pipeline where $A$ or $B$ mutates, and pass the flat plane to all downstream consumers.
+- **Ban hidden per-element reductions in accessors:** Never write innocent-looking helper functions (e.g., `cell_volume(state, i)`, `cell_capacity(state, i)`) that secretly loop over species/slots, re-validate material properties, or run compensated summations on every read. Downstream kernels should read flat precomputed arrays in $O(1)$.
+- **Separate mutable trial state from frozen interval state:** In iterative solvers (Newton, line search, adaptive substepping), never bundle invariant planes into the trial struct that gets copied or swapped on every iteration. Only the quantities that actually vary inside the loop belong in the iteration's ping-pong buffers.
+
+### 2. Zero Hot-Path Heap Allocations (Pre-Allocated Arenas & Buffer Swaps)
+- **Reserve all memory upfront:** Every simulation tick, solver step, and transport pass must run with **zero heap allocations** once the domain shape is initialized.
+- **No local `std::vector` temporaries in kernels:** Do not allocate full-grid `std::vector` scratch buffers, nested `std::vector<std::vector<...>>` accumulators, `std::map`/`std::set` trees, or `std::vector<bool>` bitvectors inside step functions or inner loops. Store scratch planes in a persistent workspace/arena owned by the system and swap buffers via pointer/handle exchange.
+- **No `.insert()` / `.erase()` padding shifts:** Never pad boundary/ghost rows by copying full-grid vectors and calling `.insert(begin(), ...)` / `.erase(begin(), ...)`. Allocate grids with ghost capacity upfront and index into the interior view (`std::span`).
+- **Use fixed compile-time capacities for bounded cardinalities:** Where a domain has a small bounded slot count (e.g., species per cell, stencil neighbors, contact points), use flat contiguous arrays or `std::array<T, kMax>` rather than pointer-chasing `std::vector`s of planes.
+
+### 3. `noexcept` Hot Paths & Assertions Instead of Per-Cell Exceptions
+- **Never run "unit tests in prod" inside hot loops:** Per-cell, per-face, and per-iteration kernels must be `noexcept`. Never place `throw` statements, `try`/`catch` blocks, string formatting (`std::ostringstream`), or constitutive property validation inside inner loops.
+- **Validate once at system boundaries:** Validate authored material tables, configuration parameters, and external buffer shapes **once** at load, initialization, or system-import boundaries—never repeatedly per cell on every substep or solver probe.
+- **Use debug assertions for internal invariants:** Express preconditions and representation invariants inside kernels with debug assertions (`assert(...)`), leaving release/production loops branch-free so the compiler can auto-vectorize (SIMD) and GPU shaders can execute without divergence.
+
+### 4. SIMD- & GPU-Friendly Arithmetic and Layout
+- **Structure-of-Arrays (SoA) & flat contiguous planes:** Lay out data for contiguous unit-stride streaming and coalesced GPU memory access. Avoid `std::optional<double>` or polymorphic dispatch inside per-cell records; resolve defaults at binding time.
+- **Precompute reciprocals of invariant divisors:** Store `inv_density = 1.0 / density`, `inv_mass`, etc. when parameters are bound or prepared rather than issuing floating-point divisions inside inner loops.
+- **Avoid branching compensated summation on tiny local reductions:** Reserve Neumaier/compensated summation for global/grid-wide conservation ledgers where $N \gg 1$. For summing 2–4 nonnegative slot values within a single cell, use flat fixed-order arithmetic that vectorizes cleanly across lanes.
 
 ---
 

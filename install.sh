@@ -80,10 +80,13 @@ for hook in "$DOTFILES/git/hooks/"*; do
 done
 
 echo ""
-echo "==> Global agent policy (Claude / AGENTS)"
-mkdir -p "$HOME/.claude"
+echo "==> Global agent policy (Claude / Codex / Gemini / AGENTS)"
+mkdir -p "$HOME/.claude" "$HOME/.codex" "$HOME/.gemini/config"
 link_file "$DOTFILES/AGENTS.md" "$HOME/.claude/CLAUDE.md"
 link_file "$DOTFILES/AGENTS.md" "$HOME/.claude/AGENTS.md"
+link_file "$DOTFILES/AGENTS.md" "$HOME/.codex/AGENTS.md"
+link_file "$DOTFILES/AGENTS.md" "$HOME/.gemini/config/AGENTS.md"
+link_file "$DOTFILES/AGENTS.md" "$HOME/.gemini/config/GEMINI.md"
 
 if [[ "$SHELL_RC" == true ]]; then
     echo ""
