@@ -93,8 +93,10 @@ echo "==> Agent skills (.agents/skills -> ~/.agents/skills, ~/.claude/skills)"
 # ~/.agents/skills is the shared location (Codex reads it); Claude Code only
 # reads ~/.claude/skills, so each skill is linked into both. Linked per skill,
 # not per directory, so harness-managed entries (e.g. synced/) are untouched.
+# Skills holding private data live in the private personal-utils repo and are
+# picked up from there when it is cloned.
 mkdir -p "$HOME/.agents/skills" "$HOME/.claude/skills"
-for skill in "$DOTFILES/.agents/skills/"*/; do
+for skill in "$DOTFILES/.agents/skills/"*/ "$HOME/git/personal-utils/.agents/skills/"*/; do
     [[ -f "$skill/SKILL.md" ]] || continue
     skill="${skill%/}"
     link_file "$skill" "$HOME/.agents/skills/$(basename "$skill")"

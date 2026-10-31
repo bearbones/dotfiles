@@ -23,6 +23,14 @@ python3 $Q                        # live poll if cache is older than 120s (~2-5s
 python3 $Q refresh                # force a live poll of all three providers
 ```
 
+The same script also reports the VPS hub (droplet vitals, Minecraft players
+and backups, Cloudflare Pages playtests):
+
+```sh
+python3 $Q hub [--json]                           # local view
+python3 ~/git/personal-utils/vps/hub.py --ssh agent-host   # query the VPS directly
+```
+
 Start from `show --cached --json`. Check `collected_at`: if it's older than
 ~30 min the timer is probably not running (see Troubleshooting), so do a
 `refresh` before answering.
