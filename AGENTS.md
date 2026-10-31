@@ -53,6 +53,17 @@ Temporary development artifacts must stay temporary or go into **GitHub Issues**
 
 ---
 
+## Global Policy: Subprocess Timeouts & WSL2 Windows GPU Execution
+
+1. **Always Bound Subprocess & Worker Commands with Explicit Timeouts**:
+   - Every agent and subagent (`DeepCoder`, `DeepInvestigator`, background workers) must wrap commands it waits on—especially headless engines (`godot --headless`, `blender -b`), GPU runners, builds, and test suites—with an explicit `timeout <N>s ...` (or `subprocess.run(..., timeout=...)`).
+   - In headless engine/scene test scripts (e.g., Godot `SceneTree` runners), verify that loaded scripts compiled before running scene logic (e.g., `if scene.get_script() == null: quit(1); return`) so parse or reload errors exit immediately with a non-zero code instead of hanging in the main loop.
+2. **WSL2 Windows Native GPU Staging & Direct Video Streaming**:
+   - When running GPU workloads from WSL2 where Linux falls back to CPU `llvmpipe`, stage the Windows binary (`*.exe`) and working assets under `/mnt/c/Users/scant/.cache/<project>-win/` on the Windows filesystem so execution uses the native Windows NVIDIA Vulkan/OpenGL driver.
+   - Stream rendered video frames directly into `ffmpeg` rather than dumping and re-reading per-frame PNGs on disk.
+
+---
+
 ## `dotfiles` Repository Layout
 
 - `install.sh` — Idempotent symlink installer (`./install.sh [--force] [--shell]`). Links git config/hooks, tmux, vim/nvim, WezTerm, Starship, clangd, and global agent instructions (`~/.claude/CLAUDE.md`, `~/.claude/AGENTS.md`).
