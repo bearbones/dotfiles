@@ -55,7 +55,7 @@ Temporary development artifacts must stay temporary or go into **GitHub Issues**
 
 ## `dotfiles` Repository Layout
 
-- `install.sh` — Idempotent symlink installer (`./install.sh [--force] [--shell]`). Links git config/hooks, tmux, vim/nvim, WezTerm, Starship, clangd, and global agent instructions (`~/.claude/CLAUDE.md`, `~/.claude/AGENTS.md`).
+- `install.sh` — Idempotent symlink installer (`./install.sh [--force] [--shell]`). Links git config/hooks, tmux, vim/nvim, WezTerm, Starship, clangd, and global agent instructions (`~/.claude/CLAUDE.md`, `~/.claude/AGENTS.md`), and each skill in `.agents/skills/` into `~/.agents/skills/` and `~/.claude/skills/`.
 - `git/` — `gitconfig` (default author: `Alex Mason <alex.mason.wire@gmail.com>`, used across personal desktop and Pop!_OS laptop; machine-local overrides go in `~/.gitconfig.local`) and global hooks (`~/.git-hooks`):
   - `pre-commit` dispatches `git/hooks/checks/[0-9]*.sh` (`01-conflict-markers.sh`, `02-debug-leftovers.sh`, `03-ruff.sh`, `04-ephemeral-docs.sh`).
   - `pre-push` guards against accidental large diffs (`LARGE_DIFF_OK=1` to override).
@@ -63,4 +63,4 @@ Temporary development artifacts must stay temporary or go into **GitHub Issues**
 - `nvim/` & `vim/` — Neovim (`init.lua`) and Vim (`vimrc`) configuration.
 - `tmux/` & `wezterm/` — Multiplexer and terminal configuration.
 - `wsl/` — WSL2 Ubuntu bootstrap (`wsl/bootstrap.sh`) and Windows keepalive setup.
-- `claude/skills/` — Personal and workflow skills.
+- `.agents/skills/` — Personal and workflow skills (agent-neutral `SKILL.md` format; e.g. `quota` for AI subscription usage).

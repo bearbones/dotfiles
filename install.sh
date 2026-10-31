@@ -88,6 +88,19 @@ link_file "$DOTFILES/AGENTS.md" "$HOME/.codex/AGENTS.md"
 link_file "$DOTFILES/AGENTS.md" "$HOME/.gemini/config/AGENTS.md"
 link_file "$DOTFILES/AGENTS.md" "$HOME/.gemini/config/GEMINI.md"
 
+echo ""
+echo "==> Agent skills (.agents/skills -> ~/.agents/skills, ~/.claude/skills)"
+# ~/.agents/skills is the shared location (Codex reads it); Claude Code only
+# reads ~/.claude/skills, so each skill is linked into both. Linked per skill,
+# not per directory, so harness-managed entries (e.g. synced/) are untouched.
+mkdir -p "$HOME/.agents/skills" "$HOME/.claude/skills"
+for skill in "$DOTFILES/.agents/skills/"*/; do
+    [[ -f "$skill/SKILL.md" ]] || continue
+    skill="${skill%/}"
+    link_file "$skill" "$HOME/.agents/skills/$(basename "$skill")"
+    link_file "$skill" "$HOME/.claude/skills/$(basename "$skill")"
+done
+
 if [[ "$SHELL_RC" == true ]]; then
     echo ""
     echo "==> zshrc"
